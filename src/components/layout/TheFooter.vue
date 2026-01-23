@@ -15,10 +15,12 @@
             Taste the difference of true craftsmanship.
           </p>
           <div class="social-links">
-            <!-- Placeholders for icons -->
-            <a href="#" aria-label="Instagram">IG</a>
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="TikTok">TK</a>
+            <a href="https://www.instagram.com/mastercrepesdoral/" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/mastercrepes1/?locale=es_LA" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
           </div>
         </div>
 
@@ -57,7 +59,9 @@
 
       <div class="footer-bottom">
         <p>&copy; {{ new Date().getFullYear() }} Master Crepes. All rights reserved.</p>
-        <p class="designer-credit">Designed for Excellence.</p>
+        <p class="designer-credit">
+          Developed by <a href="https://yeyo.dev/" target="_blank" rel="noopener">YeyoDev</a>
+        </p>
       </div>
     </div>
   </footer>
@@ -194,6 +198,21 @@ address {
     flex-direction: column;
     gap: 10px;
     text-align: center;
+  }
+
+  .designer-credit {
+    font-size: 0.8rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #d4af37;
+      }
+    }
   }
 }
 </style>
