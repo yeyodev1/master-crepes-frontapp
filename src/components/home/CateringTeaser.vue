@@ -16,13 +16,13 @@
         
         <ul class="features-list">
           <li>
-            <span class="check">✓</span> Live Chef Stations
+            <span class="check"><i class="fas fa-check"></i></span> Live Chef Stations
           </li>
           <li>
-            <span class="check">✓</span> Sweet & Savory Menus
+            <span class="check"><i class="fas fa-check"></i></span> Sweet & Savory Menus
           </li>
           <li>
-            <span class="check">✓</span> Customized Setup
+            <span class="check"><i class="fas fa-check"></i></span> Customized Setup
           </li>
         </ul>
 
