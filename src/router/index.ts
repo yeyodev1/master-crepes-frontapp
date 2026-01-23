@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: '/catering',
       name: 'catering',
-      component: () => import('../views/HomeView.vue'), // Placeholder: reusing HomeView for now
+      component: () => import('../views/CateringView.vue'),
     },
     {
       path: '/franchises',
