@@ -116,7 +116,9 @@
 .menu-card {
   background-color: #fcfcfc;
   padding: 50px;
+  padding: 50px;
   border: 1px solid #eee;
+  border-radius: $border-radius-md;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
