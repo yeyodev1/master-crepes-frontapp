@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue';
+import CustomDatePicker from '@/components/ui/CustomDatePicker.vue';
+import CustomTimePicker from '@/components/ui/CustomTimePicker.vue';
 
 // CateringForm.vue
 // Detailed lead capture form for GoHighLevel integration
@@ -129,20 +131,27 @@ const submitForm = async () => {
             <legend>Event Logistics</legend>
             <div class="form-grid">
               <div class="form-group">
-                <label for="eventDate">Event Date *</label>
-                <input type="date" id="eventDate" v-model="formData.eventDate" required>
+                <CustomDatePicker
+                  label="Event Date"
+                  v-model="formData.eventDate"
+                  :required="true"
+                />
               </div>
               <div class="form-group">
                 <label for="guestCount">Number of Guests *</label>
                 <input type="number" id="guestCount" v-model="formData.guestCount" required min="10">
               </div>
               <div class="form-group">
-                <label for="startTime">Start Time</label>
-                <input type="time" id="startTime" v-model="formData.startTime">
+                <CustomTimePicker
+                  label="Start Time"
+                  v-model="formData.startTime"
+                />
               </div>
               <div class="form-group">
-                <label for="endTime">End Time</label>
-                <input type="time" id="endTime" v-model="formData.endTime">
+                <CustomTimePicker
+                   label="End Time"
+                   v-model="formData.endTime"
+                />
               </div>
                <div class="form-group">
                 <label for="eventNature">Nature of Event *</label>
@@ -216,7 +225,7 @@ const submitForm = async () => {
         </form>
 
         <div v-else class="success-screen">
-           <div class="check-circle">✓</div>
+           <div class="check-circle"><i class="fas fa-check"></i></div>
            <h3>Request Received!</h3>
            <p>Thank you for inquiring about Master Crepes Catering.</p>
            <p>We receive your details and will send you a personalized proposal within 24 hours.</p>
@@ -358,7 +367,9 @@ fieldset {
   position: relative;
 
   &::after {
-    content: '▼';
+    content: "\f0d7";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
     font-size: 0.7rem;
     position: absolute;
     right: 15px;
