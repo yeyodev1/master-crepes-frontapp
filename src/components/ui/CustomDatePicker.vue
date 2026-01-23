@@ -203,7 +203,7 @@ onUnmounted(() => {
   padding: 12px 15px;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 2px;
+  border-radius: $border-radius-md;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -297,7 +297,7 @@ onUnmounted(() => {
   @include body-font(400);
   font-size: 0.9rem;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: $border-radius-md;
   transition: all 0.2s;
 
   &.empty {
