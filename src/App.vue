@@ -11,7 +11,11 @@ import TheFooter from '@/components/layout/TheFooter.vue';
     <TheHeader />
     
     <main>
-      <RouterView />
+      <RouterView v-slot="{ Component }">
+        <Transition name="page-slide" mode="out-in">
+          <component :is="Component" />
+        </Transition>
+      </RouterView>
     </main>
     
     <TheFooter />
@@ -24,5 +28,22 @@ import TheFooter from '@/components/layout/TheFooter.vue';
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+// Page Transition Effects
+// "Scroll from bottom to top" feel
+.page-slide-enter-active,
+.page-slide-leave-active {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.page-slide-enter-from {
+  opacity: 0;
+  transform: translateY(20px); // Starts slightly below
+}
+
+.page-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-20px); // Exits slightly above to continue the flow
 }
 </style>
