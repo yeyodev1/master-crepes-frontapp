@@ -126,6 +126,9 @@
   min-width: 180px;
   cursor: pointer;
 
+  border-radius: $border-radius-md;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
   &-primary {
     background-color: #d4af37;
     color: #000; // Contrast on gold
@@ -134,6 +137,8 @@
     &:hover {
       background-color: transparent;
       color: #d4af37;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
     }
   }
 
@@ -145,6 +150,8 @@
     &:hover {
       background-color: #fff;
       color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
     }
   }
 }
