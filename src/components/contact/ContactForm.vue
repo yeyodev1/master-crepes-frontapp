@@ -168,6 +168,7 @@ const submitForm = async () => {
     padding: 15px;
     background-color: #f5f5f5;
     border: 1px solid #e0e0e0;
+    border-radius: $border-radius-md;
     @include body-font(400);
     font-size: 1rem;
     transition: all 0.3s;
@@ -176,6 +177,8 @@ const submitForm = async () => {
       outline: none;
       border-color: #d4af37;
       background-color: #fff;
+      box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+      transform: translateY(-1px);
     }
   }
 }
@@ -194,6 +197,7 @@ const submitForm = async () => {
   background-color: #000;
   color: #fff;
   border: none;
+  border-radius: $border-radius-md;
   padding: 18px 40px;
   @include interface-font(600);
   text-transform: uppercase;
