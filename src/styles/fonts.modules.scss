@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --font-primary: 'Playfair Display', serif;
-  --font-montserrat: 'Montserrat', sans-serif;
+  --font-primary: 'Abril Fatface', serif;
+  --font-secondary: 'Montserrat', sans-serif;
 }
 
-$font-principal: 'Playfair Display', serif;
+$font-principal: 'Abril Fatface', serif;
 $font-secondary: 'Montserrat', sans-serif;
-$font-accent: 'Montserrat', sans-serif;
-$font-interface: 'Montserrat', sans-serif;
+$font-accent: $font-secondary; // Reusing Montserrat for accent to maintain visual consistency
+$font-interface: $font-secondary; // Reusing Montserrat for UI elements
 $font-fallback: 'Arial', sans-serif;
 
-@mixin heading-font($weight: 600) {
+// Abril Fatface is a display font with a strong personality.
+// Ideally used at larger sizes. It usually comes in Regular (400).
+@mixin heading-font($weight: 400) {
   font-family: $font-principal;
   font-weight: $weight;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  line-height: 1.15; // Slightly tighter for display headings
+  letter-spacing: 0.01em;
 }
 
 @mixin body-font($weight: 400) {
