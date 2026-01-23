@@ -22,15 +22,15 @@
           
           <div class="highlights">
              <div class="highlight-item">
-               <span class="icon">👨‍🍳</span>
+               <span class="icon"><i class="fas fa-fire"></i></span>
                <h4>Live Stations</h4>
              </div>
              <div class="highlight-item">
-               <span class="icon">🍓</span>
+               <span class="icon"><i class="fas fa-leaf"></i></span>
                <h4>Fresh Ingredients</h4>
              </div>
              <div class="highlight-item">
-               <span class="icon">⚜️</span>
+               <span class="icon"><i class="fas fa-star"></i></span>
                <h4>French Tradition</h4>
              </div>
           </div>
