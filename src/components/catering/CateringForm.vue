@@ -41,11 +41,6 @@ const showSuccess = ref(false);
 
 const eventStyles = [
   'Full-Service Catering',
-  'Drop-off Catering',
-  'Pick-up',
-  'Private Chef Experience',
-  'Corporate Event',
-  'Wedding'
 ];
 
 const referralSources = [
