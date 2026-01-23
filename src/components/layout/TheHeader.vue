@@ -230,7 +230,7 @@ const navItems = [
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    border-radius: 2px;
+    border-radius: $border-radius-md;
     transition: all 0.3s ease;
 
     &:hover {
@@ -360,6 +360,7 @@ const navItems = [
     font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
+    border-radius: $border-radius-md;
   }
 }
 
