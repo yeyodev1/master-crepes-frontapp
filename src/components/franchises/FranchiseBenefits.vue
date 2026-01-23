@@ -154,7 +154,9 @@
     color: #333;
 
     &::before {
-      content: '✓';
+      content: "\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
       color: #d4af37;
       margin-right: 12px;
       font-weight: bold;
