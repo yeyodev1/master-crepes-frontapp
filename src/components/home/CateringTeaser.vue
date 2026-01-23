@@ -149,11 +149,14 @@
   @include interface-font(600);
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: $border-radius-md;
   letter-spacing: 0.1em;
   transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #d4af37;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
   }
 }
 
