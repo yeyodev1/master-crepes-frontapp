@@ -178,6 +178,7 @@ const submitForm = async () => {
     padding: 15px;
     background-color: #222;
     border: 1px solid #333;
+    border-radius: $border-radius-md;
     color: #fff;
     @include body-font(400);
     font-size: 1rem;
@@ -187,6 +188,7 @@ const submitForm = async () => {
       outline: none;
       border-color: #d4af37;
       background-color: #2a2a2a;
+      box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.2);
     }
 
     &::placeholder {
@@ -211,6 +213,7 @@ const submitForm = async () => {
   background-color: #d4af37;
   color: #000;
   border: none;
+  border-radius: $border-radius-md;
   @include interface-font(600);
   text-transform: uppercase;
   letter-spacing: 0.1em;
