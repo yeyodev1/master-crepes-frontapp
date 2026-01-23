@@ -202,7 +202,7 @@
     .main-focus {
       width: 100%;
       height: auto;
-      border-radius: 2px;
+      border-radius: $border-radius-md;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     }
   }
@@ -212,7 +212,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: $border-radius-md;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s ease;
 
