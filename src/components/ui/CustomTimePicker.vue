@@ -150,7 +150,7 @@ onUnmounted(() => {
   padding: 12px 15px;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 2px;
+  border-radius: $border-radius-md;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
