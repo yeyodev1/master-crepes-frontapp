@@ -177,6 +177,7 @@
   top: 0;
   right: 0;
   z-index: 1;
+  border-radius: $border-radius-md;
 }
 
 .secondary-img {
@@ -186,5 +187,6 @@
   left: 0;
   z-index: 2;
   border: 8px solid #fff; // Thick white border to separate from underlying image
+  border-radius: $border-radius-md;
 }
 </style>
