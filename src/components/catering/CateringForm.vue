@@ -340,7 +340,7 @@ fieldset {
     padding: 12px 15px;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 2px;
+    border-radius: $border-radius-md;
     @include body-font(400);
     font-size: 1rem;
     color: #333;
@@ -349,7 +349,8 @@ fieldset {
     &:focus {
       outline: none;
       border-color: #d4af37;
-      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+      box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+      transform: translateY(-1px);
     }
   }
 
@@ -419,6 +420,11 @@ fieldset {
   &:hover:not(:disabled) {
     background-color: #d4af37;
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
   }
 
   &:disabled {
