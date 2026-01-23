@@ -8,7 +8,7 @@
     <div class="container">
       <div class="grid-layout">
         <div class="content-col" data-aos="fade-right">
-          <span class="eyebrow">SINCE 2016</span>
+          <span class="eyebrow">SINCE 2017</span>
           <h2 class="section-title">Welcome to <br>Master Crepes</h2>
           <div class="separator"></div>
           <p class="section-text">
