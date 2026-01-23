@@ -95,7 +95,7 @@ const submitForm = async () => {
         </form>
 
         <div v-else class="success-message">
-            <div class="icon">✉️</div>
+            <div class="icon"><i class="fas fa-check-circle"></i></div>
             <h3>Message Sent!</h3>
             <p>Thanks for reaching out. We'll get back to you shortly.</p>
         </div>
