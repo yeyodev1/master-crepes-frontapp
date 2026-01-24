@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { ref, reactive } from 'vue';
+import { ref, reactive, computed } from 'vue';
 import CustomDatePicker from '@/components/ui/CustomDatePicker.vue';
 import CustomTimePicker from '@/components/ui/CustomTimePicker.vue';
+import ghlService from '@/services/ghlService';
 
 // CateringForm.vue
 // Detailed lead capture form for GoHighLevel integration
@@ -56,28 +57,34 @@ const referralSources = [
 const submitForm = async () => {
   isSubmitting.value = true;
 
-  // Construct payload for GHL (Mocking the structure)
-  const payload = {
-    ...formData,
-    // Add specific tags or source info if needed
-    source: 'website_catering_form',
-    submittedAt: new Date().toISOString()
-  };
+  console.log('Sending to GHL...');
 
-  console.log('Sending to GHL:', payload);
-
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 2000));
-
-  showSuccess.value = true;
-  isSubmitting.value = false;
+  try {
+    await ghlService.submitCatering(formData);
+    showSuccess.value = true;
+  } catch (error) {
+    console.error('Submission failed', error);
+    alert('There was an error submitting your request. Please try again or call us directly.');
+  } finally {
+    isSubmitting.value = false;
+  }
 
   // Reset optional
+  /*
   setTimeout(() => {
     showSuccess.value = false;
-    // Reset logic here if needed, but for big forms usually keep data or redirect
   }, 8000);
+  */
 };
+
+const isFormValid = computed(() => {
+  return formData.firstName.trim() !== '' &&
+    formData.lastName.trim() !== '' &&
+    formData.email.trim() !== '' &&
+    formData.phone.trim() !== '' &&
+    formData.guestCount !== '' &&
+    formData.eventNature.trim() !== '';
+});
 </script>
 
 <template>
@@ -144,11 +151,11 @@ const submitForm = async () => {
               </div>
               <div class="form-group">
                 <CustomTimePicker
-                   label="End Time"
-                   v-model="formData.endTime"
+                  label="End Time"
+                  v-model="formData.endTime"
                 />
               </div>
-               <div class="form-group">
+              <div class="form-group">
                 <label for="eventNature">Nature of Event *</label>
                 <input type="text" id="eventNature" v-model="formData.eventNature" placeholder="e.g. Birthday, Office Lunch" required>
               </div>
@@ -167,7 +174,7 @@ const submitForm = async () => {
           <!-- Section 3: Location -->
           <fieldset>
             <legend>Event Location</legend>
-             <div class="form-grid">
+            <div class="form-grid">
               <div class="form-group full-width">
                 <label for="streetAddress">Street Address</label>
                 <input type="text" id="streetAddress" v-model="formData.streetAddress" placeholder="Venue Address">
@@ -181,7 +188,7 @@ const submitForm = async () => {
                 <input type="text" id="zipCode" v-model="formData.zipCode">
               </div>
             </div>
-             <div class="form-group full-width mt-20">
+            <div class="form-group full-width mt-20">
                 <label for="instructions">Delivery/Arrival Instructions</label>
                 <textarea id="instructions" v-model="formData.deliveryInstructions" rows="2" placeholder="Gate codes, parking info, etc."></textarea>
               </div>
@@ -212,7 +219,7 @@ const submitForm = async () => {
               Subscribe to newsletter for updates and offers
             </label>
             
-            <button type="submit" class="submit-btn" :disabled="isSubmitting">
+            <button type="submit" class="submit-btn" :disabled="isSubmitting || !isFormValid">
               {{ isSubmitting ? 'Submitting Request...' : 'Request Quote' }}
             </button>
           </div>
@@ -220,11 +227,11 @@ const submitForm = async () => {
         </form>
 
         <div v-else class="success-screen">
-           <div class="check-circle"><i class="fas fa-check"></i></div>
-           <h3>Request Received!</h3>
-           <p>Thank you for inquiring about Master Crepes Catering.</p>
-           <p>We receive your details and will send you a personalized proposal within 24 hours.</p>
-           <button @click="showSuccess = false" class="reset-btn">Send Another Request</button>
+          <div class="check-circle"><i class="fas fa-check"></i></div>
+          <h3>Request Received!</h3>
+          <p>Thank you for inquiring about Master Crepes Catering.</p>
+          <p>We receive your details and will send you a personalized proposal within 24 hours.</p>
+          <button @click="showSuccess = false" class="reset-btn">Send Another Request</button>
         </div>
 
       </div>
