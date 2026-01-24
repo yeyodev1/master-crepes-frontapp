@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue';
+import ghlService from '@/services/ghlService';
 
 // FranchiseForm.vue
 // Lead capture form for potential franchisees
@@ -17,14 +18,19 @@ const showSuccess = ref(false);
 const submitForm = async () => {
   isSubmitting.value = true;
 
-  // Simulate API call
-  await new Promise(resolve => setTimeout(resolve, 1500));
-
-  console.log('Form submitted:', formData);
-  showSuccess.value = true;
-  isSubmitting.value = false;
+  try {
+    await ghlService.submitFranchise(formData);
+    console.log('Form submitted:', formData);
+    showSuccess.value = true;
+  } catch (error) {
+    console.error('Submission failed', error);
+    alert('Submission failed. Your application could not be sent. Please try again.');
+  } finally {
+    isSubmitting.value = false;
+  }
 
   // Reset form after delay
+  /*
   setTimeout(() => {
     formData.fullName = '';
     formData.phone = '';
@@ -32,6 +38,7 @@ const submitForm = async () => {
     formData.message = '';
     showSuccess.value = false;
   }, 5000);
+  */
 };
 </script>
 
