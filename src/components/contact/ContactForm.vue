@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { ref, reactive } from 'vue';
+import { ref, reactive, computed } from 'vue';
+import ghlService from '@/services/ghlService';
 
 // ContactForm.vue
 // General inquiry form
 
 const formData = reactive({
-  name: '',
+  firstName: '',
+  lastName: '',
   email: '',
   phone: '',
   message: ''
@@ -24,15 +26,23 @@ const submitForm = async () => {
   showSuccess.value = true;
   isSubmitting.value = false;
 
-  // Reset form
+  // Reset logic
   setTimeout(() => {
-    formData.name = '';
+    formData.firstName = '';
+    formData.lastName = '';
     formData.email = '';
     formData.phone = '';
     formData.message = '';
     showSuccess.value = false;
   }, 5000);
 };
+
+const isFormValid = computed(() => {
+  return formData.firstName.trim() !== '' &&
+    formData.lastName.trim() !== '' &&
+    formData.email.trim() !== '' &&
+    formData.message.trim() !== '';
+});
 </script>
 
 <template>
@@ -50,15 +60,35 @@ const submitForm = async () => {
         <form @submit.prevent="submitForm" class="inquiry-form" v-if="!showSuccess">
            <div class="form-row">
              <div class="form-group">
-               <label for="name">Your Name</label>
+               <label for="firstName">First Name</label>
                <input 
                  type="text" 
-                 id="name" 
-                 v-model="formData.name" 
+                 id="firstName" 
+                 v-model="formData.firstName" 
                  required
                >
              </div>
-             
+             <div class="form-group">
+               <label for="lastName">Last Name</label>
+               <input 
+                 type="text" 
+                 id="lastName" 
+                 v-model="formData.lastName" 
+                 required
+               >
+             </div>
+           </div>
+           
+           <div class="form-row">
+             <div class="form-group">
+               <label for="email">Email Address</label>
+               <input 
+                 type="email" 
+                 id="email" 
+                 v-model="formData.email" 
+                 required
+               >
+             </div>
              <div class="form-group">
                <label for="phone">Phone Number</label>
                <input 
@@ -67,16 +97,6 @@ const submitForm = async () => {
                  v-model="formData.phone" 
                >
              </div>
-           </div>
-           
-           <div class="form-group">
-             <label for="email">Email Address</label>
-             <input 
-               type="email" 
-               id="email" 
-               v-model="formData.email" 
-               required
-             >
            </div>
            
            <div class="form-group">
@@ -89,7 +109,7 @@ const submitForm = async () => {
              ></textarea>
            </div>
            
-           <button type="submit" class="submit-btn" :disabled="isSubmitting">
+           <button type="submit" class="submit-btn" :disabled="isSubmitting || !isFormValid">
               {{ isSubmitting ? 'Sending...' : 'Send Message' }}
            </button>
         </form>
