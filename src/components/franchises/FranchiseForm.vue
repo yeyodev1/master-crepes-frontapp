@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue';
 import ghlService from '@/services/ghlService';
+import PhoneInput from '@/components/ui/PhoneInput.vue';
 
 // FranchiseForm.vue
 // Lead capture form for potential franchisees
@@ -66,14 +67,10 @@ const submitForm = async () => {
 
           <div class="form-row">
             <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input 
-                type="tel" 
-                id="phone" 
+              <PhoneInput 
                 v-model="formData.phone" 
-                required
-                placeholder="(555) 123-4567"
-              >
+                :required="true"
+              />
             </div>
             
             <div class="form-group">
