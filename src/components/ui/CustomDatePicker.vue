@@ -182,12 +182,15 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss" scoped>
+@use 'sass:color';
 @use '@/styles/index.scss' as *;
 
 .custom-date-picker {
   position: relative;
   width: 100%;
 }
+
+
 
 .picker-label {
   display: block;
@@ -319,7 +322,7 @@ onUnmounted(() => {
     color: #fff;
 
     &:hover {
-      background-color: darken(#d4af37, 5%);
+      background-color: color.adjust(#d4af37, $lightness: -5%);
     }
   }
 
