@@ -1,6 +1,8 @@
 <script setup lang="ts">
 // ContactHero.vue
 // Visual header for the contact page
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
@@ -8,9 +10,9 @@
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content" data-aos="fade-up">
-      <h1 class="hero-title">Contact Us</h1>
+      <h1 class="hero-title">{{ t('contact.hero.title') }}</h1>
       <div class="separator"></div>
-      <p class="hero-subtitle">We'd love to hear from you</p>
+      <p class="hero-subtitle">{{ t('contact.hero.subtitle') }}</p>
     </div>
   </section>
 </template>
