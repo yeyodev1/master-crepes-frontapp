@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "catering": "Catering",
+    "franchises": "Franquicias",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "order_now": "Ordenar Ahora"
+  },
+  "promo": {
+    "topbar_text": "Deliciosas Crepas y Servicios de Catering",
+    "order_now": "ORDENAR AHORA"
+  },
+  "footer": {
+    "about_us": "Sobre Nosotros",
+    "follow_us": "Síguenos",
+    "contact": "Contáctanos",
+    "rights": "Todos los derechos reservados.",
+    "brand_desc": "Experiencia francesa auténtica disponible para catering y franquicias. Prueba la diferencia de la verdadera artesanía.",
+    "services": {
+      "wedding": "Catering para Bodas",
+      "corporate": "Eventos Corporativos",
+      "private": "Fiestas Privadas"
+    }
+  },
+  "home": {
+    "hero": {
+      "intro": "El Arte de las",
+      "title_span": "Crepas Francesas",
+      "subtitle": "La Mejor Experiencia de Catering y Franquicias en Miami",
+      "cta_book": "Reservar Catering",
+      "cta_order": "Ordenar Online"
+    },
+    "welcome": {
+      "eyebrow": "DESDE 2017",
+      "title_1": "Bienvenido a",
+      "title_2": "Master Crepes",
+      "p1": "Somos más que una simple crepería; somos una experiencia. Nacidos de la pasión por las auténticas tradiciones culinarias francesas, llevamos el arte de hacer crepas directamente a tu evento.",
+      "p2": "Utilizando solo los mejores ingredientes y técnicas tradicionales, cada crepa es una obra maestra de sabor y textura, doblada a la perfección."
+    },
+    "menu": {
+      "eyebrow": "NUESTRAS ESPECIALIDADES",
+      "title": "El Equilibrio Perfecto",
+      "subtitle": "Ya sea que desees la dulzura de frutas frescas y Nutella o la riqueza salada del queso gourmet, tenemos una crepa para ti.",
+      "sweet": {
+        "title": "Crepas Dulces",
+        "desc": "Disfruta de nuestras combinaciones clásicas con fresas frescas, plátanos, Nutella y nuestra crema batida casera.",
+        "item1": "Clásica de Nutella",
+        "item2": "Dulce de Leche",
+        "item3": "Frutos Rojos",
+        "cta": "Ordenar Dulces"
+      },
+      "savory": {
+        "title": "Crepas Saladas",
+        "desc": "Experimenta una comida completa envuelta en una delicada masa de trigo sarraceno. Con prosciutto, brie, salmón ahumado y hierbas frescas.",
+        "item1": "Jamón y Queso Suizo",
+        "item2": "Pollo Florentino",
+        "item3": "Caprese",
+        "cta": "Ordenar Saladas"
+      }
+    },
+    "catering": {
+      "eyebrow": "SERVICIOS PREMIUM",
+      "title": "Lleva París a tu Evento",
+      "desc": "Eleva tus bodas, eventos corporativos y fiestas privadas con nuestras estaciones de crepas en vivo. Ofrecemos un espectáculo culinario sofisticado que tus invitados nunca olvidarán.",
+      "feature1": "Estaciones con Chef en Vivo",
+      "feature2": "Menús Dulces y Salados",
+      "feature3": "Montaje Personalizado",
+      "cta": "Solicitar Cotización"
+    }
+  },
+  "catering": {
+    "hero_title": "Servicios de Catering",
+    "hero_subtitle": "Llevando el arte de las crepas a tu evento",
+    "title": "Servicios de Catering",
+    "subtitle": "Llevando París a tu evento",
+    "info": {
+      "eyebrow": "MOMENTOS INOLVIDABLES",
+      "title": "Llevamos París a Ti",
+      "lead": "Una experiencia culinaria única que deleitará a tus invitados. Nuestras estaciones de chef en vivo crean una atmósfera de elegancia y diversión.",
+      "desc": "Ya sea una boda, una gala corporativa o una fiesta privada íntima, Master Crepes ofrece un menú sofisticado de crepas dulces y saladas, hechas a la orden con los ingredientes más frescos.",
+      "feature1": "Estaciones en Vivo",
+      "feature2": "Ingredientes Frescos",
+      "feature3": "Tradición Francesa"
+    },
+    "form": {
+      "eyebrow": "COTIZACIÓN",
+      "title": "Planifica tu Evento",
+      "subtitle": "Cuéntanos sobre tu ocasión especial. Completa los detalles a continuación y crearemos una propuesta personalizada para ti.",
+      "legend_contact": "Información de Contacto",
+      "legend_event": "Logística del Evento",
+      "legend_location": "Ubicación del Evento",
+      "legend_details": "Detalles Finales",
+      "company": "Empresa (Opcional)",
+      "event_date": "Fecha del Evento",
+      "guest_count": "Número de Invitados *",
+      "start_time": "Hora de Inicio",
+      "end_time": "Hora de Fin",
+      "nature": "Tipo de Evento *",
+      "nature_placeholder": "ej. Cumpleaños, Almuerzo de Oficina",
+      "style": "Estilo de Evento",
+      "style_select": "Seleccionar Estilo",
+      "street": "Dirección",
+      "street_placeholder": "Dirección del lugar",
+      "city": "Ciudad",
+      "zip": "Código Postal",
+      "delivery": "Instrucciones de Llegada/Entrega",
+      "delivery_placeholder": "Códigos de puerta, info de estacionamiento, etc.",
+      "additional": "Información Adicional / Menú",
+      "referral": "¿Cómo te enteraste de nosotros?",
+      "referral_select": "Seleccionar Fuente",
+      "newsletter": "Suscribirse al boletín para ofertas",
+      "submit": "Solicitar Cotización",
+      "submitting": "Enviando...",
+      "success_title": "¡Solicitud Recibida!",
+      "success_msg1": "Gracias por consultar con Master Crepes Catering.",
+      "success_msg2": "Hemos recibido tus detalles y te enviaremos una propuesta personalizada en 24 horas.",
+      "reset": "Enviar Otra Solicitud"
+    }
+  },
+  "franchises": {
+    "hero": {
+      "title": "Franquicias",
+      "subtitle": "Únete a nuestra familia de éxito"
+    },
+    "benefits": {
+      "why_eyebrow": "UN MODELO PROBADO",
+      "why_title": "¿Por qué Master Crepes?",
+      "why_p1": "Un modelo probado para el éxito. En Master Crepes, ofrecemos más que crepas deliciosas: ofrecemos la oportunidad de ser parte de una marca sólida y en crecimiento.",
+      "why_p2": "Con un sistema comprobado, soporte continuo y un producto irresistible, te ayudamos a alcanzar tus objetivos comerciales mientras deleitas a tus clientes.",
+      "support_eyebrow": "SOPORTE TOTAL",
+      "support_title": "Todo lo que necesitas para triunfar",
+      "support_p1": "Como franquiciado de Master Crepes, recibirás un paquete completo que incluye capacitación inicial, soporte operativo, estrategias de marketing y acceso a proveedores confiables.",
+      "support_p2": "Nuestro equipo está contigo en cada paso para asegurar que tu franquicia prospere.",
+      "list_1": "Manual de Operaciones Detallado",
+      "list_2": "Asistencia en Selección de Sitio",
+      "list_3": "Soporte de Marketing y Redes Sociales",
+      "list_4": "Capacitación Continua",
+      "cta": "Comienza tu Viaje"
+    },
+    "form": {
+      "eyebrow": "DAR EL SIGUIENTE PASO",
+      "title": "Únete a la Familia",
+      "subtitle": "Completa el formulario a continuación y nuestro equipo te contactará pronto.",
+      "full_name": "Nombre Completo",
+      "full_name_placeholder": "Juan Pérez",
+      "email": "Correo Electrónico",
+      "message": "Mensaje (Opcional)",
+      "message_placeholder": "Cuéntanos sobre tu interés...",
+      "submit": "Enviar Solicitud",
+      "submitting": "Enviando...",
+      "success_title": "¡Gracias!",
+      "success_msg": "Tu solicitud ha sido recibida. Nos pondremos en contacto pronto."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contáctanos",
+      "subtitle": "Nos encantaría saber de ti"
+    },
+    "info": {
+      "title": "Visítanos",
+      "address_title": "Dirección",
+      "directions": "Obtener Direcciones",
+      "follow_title": "Síguenos",
+      "follow_desc": "Mantente actualizado con nuestras últimas creaciones y eventos.",
+      "hours_title": "Horarios de Atención",
+      "hours_desc": "Por favor revisa nuestro perfil en Google Maps para los horarios más actualizados."
+    },
+    "form": {
+      "eyebrow": "PONTE EN CONTACTO",
+      "title": "¿Tienes preguntas? ¡Hablemos!",
+      "subtitle": "Ya sea que tengas preguntas sobre nuestro menú, franquicias o simplemente quieras compartir comentarios, estamos aquí para ti.",
+      "message_label": "¿Cómo podemos ayudarte?",
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando...",
+      "success_title": "¡Mensaje Enviado!",
+      "success_msg": "Gracias por contactarnos. Te responderemos en breve."
+    }
+  },
+  "common": {
+    "first_name": "Nombre *",
+    "last_name": "Apellido *",
+    "email": "Correo Electrónico *",
+    "phone": "Teléfono *",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "loading": "Enviando...",
+    "success": "¡Recibido!",
+    "required": "Requerido"
+  }
+}

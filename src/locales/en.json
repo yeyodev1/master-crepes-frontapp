@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "home": "Home",
+    "catering": "Catering",
+    "franchises": "Franchises",
+    "services": "Services",
+    "contact": "Contact",
+    "order_now": "Order Now"
+  },
+  "promo": {
+    "topbar_text": "Delicious Crepes & Catering Services",
+    "order_now": "ORDER NOW"
+  },
+  "footer": {
+    "about_us": "About Us",
+    "follow_us": "Follow Us",
+    "contact": "Contact Us",
+    "rights": "All rights reserved.",
+    "brand_desc": "Authentic French expertise available for catering and franchises. Taste the difference of true craftsmanship.",
+    "services": {
+      "wedding": "Wedding Catering",
+      "corporate": "Corporate Events",
+      "private": "Private Parties"
+    }
+  },
+  "home": {
+    "hero": {
+      "intro": "The Art of",
+      "title_span": "French Crepes",
+      "subtitle": "Miami's Premier Crêpe Catering & Franchise Experience",
+      "cta_book": "Book Catering",
+      "cta_order": "Order Online"
+    },
+    "welcome": {
+      "eyebrow": "SINCE 2017",
+      "title_1": "Welcome to",
+      "title_2": "Master Crepes",
+      "p1": "We are more than just a crêperie; we are an experience. Born from a passion for authentic French culinary traditions, we bring the art of crêpe-making directly to your event.",
+      "p2": "Using only the finest ingredients and time-honored techniques, every crêpe is a masterpiece of flavor and texture, folded to perfection."
+    },
+    "menu": {
+      "eyebrow": "OUR SPECIALTIES",
+      "title": "The Perfect Balance",
+      "subtitle": "Whether you crave the sweetness of fresh fruits or the savory richness of gourmet cheese, we have a crêpe for you.",
+      "sweet": {
+        "title": "Sweet Crêpes",
+        "desc": "Indulge in our classic combinations featuring fresh strawberries, bananas, Nutella, and our homemade whipped cream.",
+        "item1": "Classic Nutella",
+        "item2": "Dulce de Leche",
+        "item3": "Fresh Berries",
+        "cta": "Order Sweet"
+      },
+      "savory": {
+        "title": "Savory Crêpes",
+        "desc": "Experience a full meal wrapped in a delicate buckwheat batter. Featuring prosciutto, brie, smoked salmon, and fresh herbs.",
+        "item1": "Ham & Swiss",
+        "item2": "Chicken Florentine",
+        "item3": "Caprese",
+        "cta": "Order Savory"
+      }
+    },
+    "catering": {
+      "eyebrow": "PREMIUM SERVICES",
+      "title": "Bring Paris to Your Event",
+      "desc": "Elevate your weddings, corporate events, and private parties with our live crêpe stations. We provide a sophisticated culinary show that your guests will never forget.",
+      "feature1": "Live Chef Stations",
+      "feature2": "Sweet & Savory Menus",
+      "feature3": "Customized Setup",
+      "cta": "Get a Quote"
+    }
+  },
+  "catering": {
+    "hero_title": "Catering Services",
+    "hero_subtitle": "Bringing the art of crêpes to your event",
+    "title": "Catering Services",
+    "subtitle": "Bringing Paris to your event",
+    "info": {
+      "eyebrow": "UNFORGETTABLE MOMENTS",
+      "title": "We Bring Paris to You",
+      "lead": "A unique culinary experience that will delight your guests. Our live chef stations create an atmosphere of elegance and fun.",
+      "desc": "Whether it's a wedding, corporate gala, or an intimate private party, Master Crepes offers a sophisticated menu of sweet and savory crêpes, made to order with the freshest ingredients.",
+      "feature1": "Live Stations",
+      "feature2": "Fresh Ingredients",
+      "feature3": "French Tradition"
+    },
+    "form": {
+      "eyebrow": "GET A QUOTE",
+      "title": "Plan Your Event",
+      "subtitle": "Tell us about your special occasion. Fill out the details below and we'll create a custom proposal for you.",
+      "legend_contact": "Contact Information",
+      "legend_event": "Event Logistics",
+      "legend_location": "Event Location",
+      "legend_details": "Final Details",
+      "company": "Company (Optional)",
+      "event_date": "Event Date",
+      "guest_count": "Number of Guests *",
+      "start_time": "Start Time",
+      "end_time": "End Time",
+      "nature": "Nature of Event *",
+      "nature_placeholder": "e.g. Birthday, Office Lunch",
+      "style": "Event Style",
+      "style_select": "Select Style",
+      "street": "Street Address",
+      "street_placeholder": "Venue Address",
+      "city": "City",
+      "zip": "Zip Code",
+      "delivery": "Delivery/Arrival Instructions",
+      "delivery_placeholder": "Gate codes, parking info, etc.",
+      "additional": "Additional Information / Menu Requests",
+      "referral": "How did you hear about us?",
+      "referral_select": "Select Source",
+      "newsletter": "Subscribe to newsletter for updates and offers",
+      "submit": "Request Quote",
+      "submitting": "Submitting Request...",
+      "success_title": "Request Received!",
+      "success_msg1": "Thank you for inquiring about Master Crepes Catering.",
+      "success_msg2": "We receive your details and will send you a personalized proposal within 24 hours.",
+      "reset": "Send Another Request"
+    }
+  },
+  "franchises": {
+    "hero": {
+      "title": "Franchises",
+      "subtitle": "Join our successful family"
+    },
+    "benefits": {
+      "why_eyebrow": "A PROVEN MODEL",
+      "why_title": "Why Master Crepes?",
+      "why_p1": "A proven model for success. At Master Crepes, we offer more than just delicious crepes: we provide the opportunity to be part of a growing and solid brand.",
+      "why_p2": "With a proven system, continuous support, and an irresistible product, we help you achieve your business goals while delighting your customers.",
+      "support_eyebrow": "FULL SUPPORT",
+      "support_title": "Everything you need to succeed",
+      "support_p1": "As a Master Crepes franchisee, you'll receive a comprehensive package including initial training, operational support, marketing strategies, and access to reliable suppliers.",
+      "support_p2": "Our team is with you every step of the way to ensure your franchise thrives.",
+      "list_1": "Detailed Operations Manual",
+      "list_2": "Site Selection Assistance",
+      "list_3": "Marketing & Social Media Support",
+      "list_4": "Ongoing Training",
+      "cta": "Start Your Journey"
+    },
+    "form": {
+      "eyebrow": "TAKE THE NEXT STEP",
+      "title": "Join the Family",
+      "subtitle": "Fill out the form below and our team will contact you shortly.",
+      "full_name": "Full Name",
+      "full_name_placeholder": "John Doe",
+      "email": "Email Address",
+      "message": "Message (Optional)",
+      "message_placeholder": "Tell us about your interest...",
+      "submit": "Send Application",
+      "submitting": "Sending...",
+      "success_title": "Thank You!",
+      "success_msg": "Your application has been received. We will be in touch soon."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "We'd love to hear from you"
+    },
+    "info": {
+      "title": "Visit Us",
+      "address_title": "Address",
+      "directions": "Get Directions",
+      "follow_title": "Follow Us",
+      "follow_desc": "Stay updated with our latest creations and events.",
+      "hours_title": "Operating Hours",
+      "hours_desc": "Please check our Google Maps listing for the most up-to-date hours."
+    },
+    "form": {
+      "eyebrow": "GET IN TOUCH",
+      "title": "Got a question? Let's talk!",
+      "subtitle": "Whether you have questions about our menu, franchises, or just want to share feedback, we're here for you.",
+      "message_label": "How can we help?",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success_title": "Message Sent!",
+      "success_msg": "Thanks for reaching out. We'll get back to you shortly."
+    }
+  },
+  "common": {
+    "first_name": "First Name *",
+    "last_name": "Last Name *",
+    "email": "Email Address *",
+    "phone": "Phone Number *",
+    "message": "Message",
+    "send": "Send",
+    "loading": "Sending...",
+    "success": "Received!",
+    "required": "Required"
+  }
+}
