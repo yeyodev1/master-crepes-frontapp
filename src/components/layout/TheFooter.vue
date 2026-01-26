@@ -36,17 +36,6 @@ const { t } = useI18n();
           </ul>
         </div>
 
-        <!-- Services -->
-        <div class="footer-col services-col">
-          <h4>{{ t('nav.services') }}</h4>
-          <ul>
-            <li><a href="#">{{ t('footer.services.wedding') }}</a></li>
-            <li><a href="#">{{ t('footer.services.corporate') }}</a></li>
-            <li><a href="#">{{ t('footer.services.private') }}</a></li>
-            <li><a href="#">{{ t('nav.order_now') }}</a></li>
-          </ul>
-        </div>
-
         <!-- Contact -->
         <div class="footer-col contact-col">
           <h4>{{ t('footer.contact') }}</h4>
@@ -86,7 +75,7 @@ const { t } = useI18n();
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 2fr 1fr 1.5fr;
   gap: 40px;
   margin-bottom: 60px;
 
