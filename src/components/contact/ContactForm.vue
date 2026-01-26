@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { ref, reactive, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import ghlService from '@/services/ghlService';
 import PhoneInput from '@/components/ui/PhoneInput.vue';
 
 // ContactForm.vue
 // General inquiry form
+
+const { t } = useI18n();
 
 const formData = reactive({
   firstName: '',
@@ -56,17 +59,17 @@ const isFormValid = computed(() => {
     <div class="container">
       <div class="content-wrapper" data-aos="fade-up">
         <div class="header-text">
-          <span class="eyebrow">GET IN TOUCH</span>
-          <h2 class="title">Got a question? Let's talk!</h2>
+          <span class="eyebrow">{{ t('contact.form.eyebrow') }}</span>
+          <h2 class="title">{{ t('contact.form.title') }}</h2>
           <p class="subtitle">
-            Whether you have questions about our menu, franchises, or just want to share feedback, we're here for you.
+            {{ t('contact.form.subtitle') }}
           </p>
         </div>
 
         <form @submit.prevent="submitForm" class="inquiry-form" v-if="!showSuccess">
            <div class="form-row">
              <div class="form-group">
-               <label for="firstName">First Name</label>
+               <label for="firstName">{{ t('common.first_name') }}</label>
                <input 
                  type="text" 
                  id="firstName" 
@@ -75,7 +78,7 @@ const isFormValid = computed(() => {
                >
              </div>
              <div class="form-group">
-               <label for="lastName">Last Name</label>
+               <label for="lastName">{{ t('common.last_name') }}</label>
                <input 
                  type="text" 
                  id="lastName" 
@@ -87,7 +90,7 @@ const isFormValid = computed(() => {
            
            <div class="form-row">
              <div class="form-group">
-               <label for="email">Email Address</label>
+               <label for="email">{{ t('common.email') }}</label>
                <input 
                  type="email" 
                  id="email" 
@@ -103,7 +106,7 @@ const isFormValid = computed(() => {
            </div>
            
            <div class="form-group">
-             <label for="message">How can we help?</label>
+             <label for="message">{{ t('contact.form.message_label') }}</label>
              <textarea 
                id="message" 
                v-model="formData.message" 
@@ -113,14 +116,14 @@ const isFormValid = computed(() => {
            </div>
            
            <button type="submit" class="submit-btn" :disabled="isSubmitting || !isFormValid">
-              {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+              {{ isSubmitting ? t('contact.form.submitting') : t('contact.form.submit') }}
            </button>
         </form>
 
         <div v-else class="success-message">
             <div class="icon"><i class="fas fa-check-circle"></i></div>
-            <h3>Message Sent!</h3>
-            <p>Thanks for reaching out. We'll get back to you shortly.</p>
+            <h3>{{ t('contact.form.success_title') }}</h3>
+            <p>{{ t('contact.form.success_msg') }}</p>
         </div>
       </div>
     </div>
