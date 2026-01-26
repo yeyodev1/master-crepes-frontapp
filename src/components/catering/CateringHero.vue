@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
 // CateringHero.vue
 // Visual header for the catering page
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -8,9 +12,9 @@
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content" data-aos="fade-up">
-      <h1 class="hero-title">Catering Services</h1>
+      <h1 class="hero-title">{{ t('catering.hero_title') }}</h1>
       <div class="separator"></div>
-      <p class="hero-subtitle">Bringing the art of crêpes to your event</p>
+      <p class="hero-subtitle">{{ t('catering.hero_subtitle') }}</p>
     </div>
   </section>
 </template>
