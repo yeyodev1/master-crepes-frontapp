@@ -1,33 +1,34 @@
 <script setup lang="ts">
 // CateringTeaser.vue
 // Highlights the catering service, a core business pillar
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
   <section class="catering-teaser">
     <div class="content-wrapper">
       <div class="text-content" data-aos="fade-up">
-        <span class="eyebrow">PREMIUM SERVICES</span>
-        <h2 class="title">Bring Paris to Your Event</h2>
+        <span class="eyebrow">{{ t('home.catering.eyebrow') }}</span>
+        <h2 class="title">{{ t('home.catering.title') }}</h2>
         <p class="description">
-          Elevate your weddings, corporate events, and private parties with our live crêpe stations. 
-          We provide a sophisticated culinary show that your guests will never forget.
+          {{ t('home.catering.desc') }}
         </p>
         
         <ul class="features-list">
           <li>
-            <span class="check"><i class="fas fa-check"></i></span> Live Chef Stations
+            <span class="check"><i class="fas fa-check"></i></span> {{ t('home.catering.feature1') }}
           </li>
           <li>
-            <span class="check"><i class="fas fa-check"></i></span> Sweet & Savory Menus
+            <span class="check"><i class="fas fa-check"></i></span> {{ t('home.catering.feature2') }}
           </li>
           <li>
-            <span class="check"><i class="fas fa-check"></i></span> Customized Setup
+            <span class="check"><i class="fas fa-check"></i></span> {{ t('home.catering.feature3') }}
           </li>
         </ul>
 
         <a href="/catering" class="cta-button">
-          Get a Quote
+          {{ t('home.catering.cta') }}
         </a>
       </div>
     </div>

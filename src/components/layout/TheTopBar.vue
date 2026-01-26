@@ -1,19 +1,21 @@
 <script setup lang="ts">
 // TheTopBar.vue
 // Minimalist top bar for urgent actions (Order Now)
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="top-bar">
     <div class="container">
-      <p class="promo-text">Delicious Crepes & Catering Services</p>
+      <p class="promo-text">{{ t('promo.topbar_text') }}</p>
       <a
         href="https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106"
         target="_blank"
         rel="noopener noreferrer"
         class="order-link"
       >
-        ORDER NOW
+        {{ t('promo.order_now') }}
       </a>
     </div>
   </div>

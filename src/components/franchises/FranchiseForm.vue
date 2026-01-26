@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue';
+import { useI18n } from 'vue-i18n';
 import ghlService from '@/services/ghlService';
 import PhoneInput from '@/components/ui/PhoneInput.vue';
 
 // FranchiseForm.vue
 // Lead capture form for potential franchisees
+const { t } = useI18n();
 
 const formData = reactive({
   fullName: '',
@@ -48,20 +50,20 @@ const submitForm = async () => {
     <div class="container">
       <div class="form-wrapper" data-aos="fade-up">
         <div class="form-header">
-          <span class="eyebrow">TAKE THE NEXT STEP</span>
-          <h2 class="title">Join the Family</h2>
-          <p class="subtitle">Fill out the form below and our team will contact you shortly.</p>
+          <span class="eyebrow">{{ t('franchises.form.eyebrow') }}</span>
+          <h2 class="title">{{ t('franchises.form.title') }}</h2>
+          <p class="subtitle">{{ t('franchises.form.subtitle') }}</p>
         </div>
 
         <form @submit.prevent="submitForm" class="contact-form" v-if="!showSuccess">
           <div class="form-group">
-            <label for="fullName">Full Name</label>
+            <label for="fullName">{{ t('franchises.form.full_name') }}</label>
             <input 
               type="text" 
               id="fullName" 
               v-model="formData.fullName" 
               required
-              placeholder="John Doe"
+              :placeholder="t('franchises.form.full_name_placeholder')"
             >
           </div>
 
@@ -74,7 +76,7 @@ const submitForm = async () => {
             </div>
             
             <div class="form-group">
-              <label for="email">Email Address</label>
+              <label for="email">{{ t('common.email') }}</label>
               <input 
                 type="email" 
                 id="email" 
@@ -86,24 +88,24 @@ const submitForm = async () => {
           </div>
           
           <div class="form-group">
-             <label for="message">Message (Optional)</label>
+             <label for="message">{{ t('franchises.form.message') }}</label>
              <textarea 
                id="message" 
                v-model="formData.message"
-               placeholder="Tell us about your interest..."
+               :placeholder="t('franchises.form.message_placeholder')"
                rows="3"
              ></textarea>
           </div>
 
           <button type="submit" class="submit-btn" :disabled="isSubmitting">
-            {{ isSubmitting ? 'Sending...' : 'Send Application' }}
+            {{ isSubmitting ? t('franchises.form.submitting') : t('franchises.form.submit') }}
           </button>
         </form>
         
         <div v-else class="success-message">
            <div class="check-icon"><i class="fas fa-check"></i></div>
-           <h3>Thank You!</h3>
-           <p>Your application has been received. We will be in touch soon.</p>
+           <h3>{{ t('franchises.form.success_title') }}</h3>
+           <p>{{ t('franchises.form.success_msg') }}</p>
         </div>
       </div>
     </div>

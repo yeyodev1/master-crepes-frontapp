@@ -1,6 +1,8 @@
 <script setup lang="ts">
 // FranchiseBenefits.vue
 // Details the "Why" and "What" of franchising with Master Crepes
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
@@ -11,15 +13,13 @@
       <div class="container">
         <div class="grid-layout">
           <div class="text-col" data-aos="fade-right">
-            <span class="eyebrow">A PROVEN MODEL</span>
-            <h2 class="section-title">Why Master Crepes?</h2>
+            <span class="eyebrow">{{ t('franchises.benefits.why_eyebrow') }}</span>
+            <h2 class="section-title">{{ t('franchises.benefits.why_title') }}</h2>
             <p class="section-text">
-              A proven model for success. At Master Crepes, we offer more than just delicious crepes: 
-              we provide the opportunity to be part of a growing and solid brand.
+              {{ t('franchises.benefits.why_p1') }}
             </p>
             <p class="section-text">
-              With a proven system, continuous support, and an irresistible product, 
-              we help you achieve your business goals while delighting your customers.
+              {{ t('franchises.benefits.why_p2') }}
             </p>
           </div>
           <div class="image-col">
@@ -42,24 +42,23 @@
             </div>
           </div>
           <div class="text-col" data-aos="fade-left">
-            <span class="eyebrow">FULL SUPPORT</span>
-            <h2 class="section-title">Everything you need to succeed</h2>
+            <span class="eyebrow">{{ t('franchises.benefits.support_eyebrow') }}</span>
+            <h2 class="section-title">{{ t('franchises.benefits.support_title') }}</h2>
             <p class="section-text">
-              As a Master Crepes franchisee, you'll receive a comprehensive package including 
-              initial training, operational support, marketing strategies, and access to reliable suppliers.
+              {{ t('franchises.benefits.support_p1') }}
             </p>
             <p class="section-text">
-              Our team is with you every step of the way to ensure your franchise thrives.
+              {{ t('franchises.benefits.support_p2') }}
             </p>
             
             <ul class="benefit-list">
-              <li>Detailed Operations Manual</li>
-              <li>Site Selection Assistance</li>
-              <li>Marketing & Social Media Support</li>
-              <li>Ongoing Training</li>
+              <li>{{ t('franchises.benefits.list_1') }}</li>
+              <li>{{ t('franchises.benefits.list_2') }}</li>
+              <li>{{ t('franchises.benefits.list_3') }}</li>
+              <li>{{ t('franchises.benefits.list_4') }}</li>
             </ul>
              <div class="action-wrapper">
-                <a href="#franchise-form" class="cta-link">Start Your Journey &darr;</a>
+                <a href="#franchise-form" class="cta-link">{{ t('franchises.benefits.cta') }} &darr;</a>
              </div>
           </div>
         </div>

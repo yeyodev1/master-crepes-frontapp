@@ -1,49 +1,49 @@
 <script setup lang="ts">
 // MenuHighlights.vue
 // Showcases the two main product pillars: Sweet & Savory
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
   <section class="menu-highlights">
     <div class="container">
       <div class="section-header text-center">
-        <span class="eyebrow">OUR SPECIALTIES</span>
-        <h2 class="title">The Perfect Balance</h2>
-        <p class="subtitle">Whether you crave the sweetness of fresh fruits or the savory richness of gourmet cheese, we have a crêpe for you.</p>
+        <span class="eyebrow">{{ t('home.menu.eyebrow') }}</span>
+        <h2 class="title">{{ t('home.menu.title') }}</h2>
+        <p class="subtitle">{{ t('home.menu.subtitle') }}</p>
       </div>
 
       <div class="cards-grid">
         <!-- Sweet Card -->
         <div class="menu-card sweet-card" data-aos="fade-up" data-aos-delay="100">
           <div class="card-content">
-            <h3 class="card-title">Sweet Crêpes</h3>
+            <h3 class="card-title">{{ t('home.menu.sweet.title') }}</h3>
             <p class="card-desc">
-              Indulge in our classic combinations featuring fresh strawberries, 
-              bananas, Nutella, and our homemade whipped cream.
+              {{ t('home.menu.sweet.desc') }}
             </p>
             <ul class="highlight-list">
-              <li>Classic Nutella</li>
-              <li>Dulce de Leche</li>
-              <li>Fresh Berries</li>
+              <li>{{ t('home.menu.sweet.item1') }}</li>
+              <li>{{ t('home.menu.sweet.item2') }}</li>
+              <li>{{ t('home.menu.sweet.item3') }}</li>
             </ul>
-            <a href="https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106" target="_blank" class="card-link">Order Sweet</a>
+            <a href="https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106" target="_blank" class="card-link">{{ t('home.menu.sweet.cta') }}</a>
           </div>
         </div>
 
         <!-- Savory Card -->
         <div class="menu-card savory-card" data-aos="fade-up" data-aos-delay="200">
           <div class="card-content">
-            <h3 class="card-title">Savory Crêpes</h3>
+            <h3 class="card-title">{{ t('home.menu.savory.title') }}</h3>
             <p class="card-desc">
-              Experience a full meal wrapped in a delicate buckwheat batter. 
-              Featuring prosciutto, brie, smoked salmon, and fresh herbs.
+              {{ t('home.menu.savory.desc') }}
             </p>
             <ul class="highlight-list">
-              <li>Ham & Swiss</li>
-              <li>Chicken Florentine</li>
-              <li>Caprese</li>
+              <li>{{ t('home.menu.savory.item1') }}</li>
+              <li>{{ t('home.menu.savory.item2') }}</li>
+              <li>{{ t('home.menu.savory.item3') }}</li>
             </ul>
-            <a href="https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106" target="_blank" class="card-link">Order Savory</a>
+            <a href="https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106" target="_blank" class="card-link">{{ t('home.menu.savory.cta') }}</a>
           </div>
         </div>
       </div>

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 // FranchiseHero.vue
 // High impact visual introduction for the Franchises page
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
@@ -8,9 +10,9 @@
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content" data-aos="fade-up">
-      <h1 class="hero-title">Franchises</h1>
+      <h1 class="hero-title">{{ t('franchises.hero.title') }}</h1>
       <div class="separator"></div>
-      <p class="hero-subtitle">Join our successful family</p>
+      <p class="hero-subtitle">{{ t('franchises.hero.subtitle') }}</p>
     </div>
   </section>
 </template>

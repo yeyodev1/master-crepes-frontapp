@@ -1,15 +1,17 @@
 <script setup lang="ts">
 // ContactInfo.vue
 // Displays contact details and Google Maps embed
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="contact-info">
     <div class="info-content">
-      <h2 class="section-title">Visit Us</h2>
+      <h2 class="section-title">{{ t('contact.info.title') }}</h2>
       
       <div class="info-group">
-        <h3>Address</h3>
+        <h3>{{ t('contact.info.address_title') }}</h3>
         <p>
           3905 NW 107th Ave, Suite 106<br>
           Doral, FL 33178
@@ -19,13 +21,13 @@
           target="_blank" 
           class="map-link"
         >
-          Get Directions &rarr;
+          {{ t('contact.info.directions') }} &rarr;
         </a>
       </div>
 
       <div class="info-group">
-        <h3>Follow Us</h3>
-        <p>Stay updated with our latest creations and events.</p>
+        <h3>{{ t('contact.info.follow_title') }}</h3>
+        <p>{{ t('contact.info.follow_desc') }}</p>
         <div class="social-links">
            <a href="https://www.instagram.com/themastercrepes/" target="_blank" aria-label="Instagram">Instagram</a>
            <a href="https://www.facebook.com/themastercrepes" target="_blank" aria-label="Facebook">Facebook</a>
@@ -34,8 +36,8 @@
       </div>
       
       <div class="info-group">
-        <h3>Operating Hours</h3>
-        <p>Please check our Google Maps listing for the most up-to-date hours.</p>
+        <h3>{{ t('contact.info.hours_title') }}</h3>
+        <p>{{ t('contact.info.hours_desc') }}</p>
       </div>
     </div>
 

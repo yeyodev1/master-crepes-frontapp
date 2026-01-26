@@ -1,6 +1,8 @@
 <script setup lang="ts">
 // HeroSection.vue
 // High impact visual introduction using the brand's main imagery
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
@@ -10,16 +12,16 @@
     
     <div class="hero-content">
       <h1 class="hero-title animate-fade-up">
-        <span class="d-block">The Art of</span>
-        <span class="d-block text-gold">French Crepes</span>
+        <span class="d-block">{{ t('home.hero.intro') }}</span>
+        <span class="d-block text-gold">{{ t('home.hero.title_span') }}</span>
       </h1>
       <p class="hero-subtitle animate-fade-up delay-1">
-        Miami's Premier Crêpe Catering & Franchise Experience
+        {{ t('home.hero.subtitle') }}
       </p>
       
       <div class="hero-actions animate-fade-up delay-2">
-        <a href="/catering" class="btn btn-primary">Book Catering</a>
-        <a href="https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106" target="_blank" class="btn btn-outline">Order Online</a>
+        <a href="/catering" class="btn btn-primary">{{ t('home.hero.cta_book') }}</a>
+        <a href="https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106" target="_blank" class="btn btn-outline">{{ t('home.hero.cta_order') }}</a>
       </div>
     </div>
   </section>

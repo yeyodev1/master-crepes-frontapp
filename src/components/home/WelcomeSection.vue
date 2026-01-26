@@ -1,6 +1,8 @@
 <script setup lang="ts">
 // WelcomeSection.vue
 // Introduction to the brand philosophy with side-by-side layout
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
@@ -8,19 +10,15 @@
     <div class="container">
       <div class="grid-layout">
         <div class="content-col" data-aos="fade-right">
-          <span class="eyebrow">SINCE 2017</span>
-          <h2 class="section-title">Welcome to <br>Master Crepes</h2>
+          <span class="eyebrow">{{ t('home.welcome.eyebrow') }}</span>
+          <h2 class="section-title">{{ t('home.welcome.title_1') }} <br>{{ t('home.welcome.title_2') }}</h2>
           <div class="separator"></div>
           <p class="section-text">
-            We are more than just a crêperie; we are an experience. Born from a passion 
-            for authentic French culinary traditions, we bring the art of crêpe-making 
-            directly to your event.
+            {{ t('home.welcome.p1') }}
           </p>
           <p class="section-text">
-            Using only the finest ingredients and time-honored techniques, every crêpe 
-            is a masterpiece of flavor and texture, folded to perfection.
+            {{ t('home.welcome.p2') }}
           </p>
-          <a href="/about" class="text-link">Our Story &rarr;</a>
         </div>
         
         <div class="image-col">

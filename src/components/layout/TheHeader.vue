@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, computed } from 'vue';
 import { RouterLink } from 'vue-router';
+import { useI18n } from 'vue-i18n';
 import logoDesktop from '@/assets/logo/logo-horizontal.png';
 import logoMobile from '@/assets/logo/logo-vertical.png';
+import LanguageSwitcher from '@/components/common/LanguageSwitcher.vue';
 
+const { t } = useI18n();
 const isMenuOpen = ref(false);
 const isScrolled = ref(false);
 
@@ -33,12 +36,12 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
 
-const navItems = [
-  { name: 'Home', path: '/' },
-  { name: 'Catering', path: '/catering' },
-  { name: 'Franchises', path: '/franchises' },
-  { name: 'Contact', path: '/contact' },
-];
+const navItems = computed(() => [
+  { name: t('nav.home'), path: '/' },
+  { name: t('nav.catering'), path: '/catering' },
+  { name: t('nav.franchises'), path: '/franchises' },
+  { name: t('nav.contact'), path: '/contact' },
+]);
 </script>
 
 <template>
@@ -62,8 +65,11 @@ const navItems = [
               target="_blank" 
               class="nav-cta"
             >
-              Order Now
+              {{ t('nav.order_now') }}
             </a>
+          </li>
+          <li>
+            <LanguageSwitcher />
           </li>
         </ul>
       </nav>
@@ -97,8 +103,11 @@ const navItems = [
                   target="_blank" 
                   class="mobile-nav-cta"
                 >
-                  Order Now
+                  {{ t('nav.order_now') }}
                 </a>
+              </li>
+              <li class="mobile-lang-switch">
+                <LanguageSwitcher />
               </li>
             </ul>
           </div>

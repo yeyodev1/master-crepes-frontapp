@@ -1,6 +1,8 @@
 <script setup lang="ts">
 // TheFooter.vue
 // Professional footer with site map and contact info
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
@@ -11,8 +13,7 @@
         <div class="footer-col brand-col">
           <h3 class="footer-logo-text">Master Crepes</h3>
           <p class="brand-desc">
-            Authentic French expertise available for catering and franchises. 
-            Taste the difference of true craftsmanship.
+            {{ t('footer.brand_desc') }}
           </p>
           <div class="social-links">
             <a href="https://www.instagram.com/mastercrepesdoral/" target="_blank" aria-label="Instagram">
@@ -26,29 +27,29 @@
 
         <!-- Navigation -->
         <div class="footer-col nav-col">
-          <h4>Explore</h4>
+          <h4>{{ t('footer.about_us') }}</h4>
           <ul>
-            <li><RouterLink to="/">Home</RouterLink></li>
-            <li><RouterLink to="/catering">Catering</RouterLink></li>
-            <li><RouterLink to="/franchises">Franchises</RouterLink></li>
-            <li><RouterLink to="/contact">Contact</RouterLink></li>
+            <li><RouterLink to="/">{{ t('nav.home') }}</RouterLink></li>
+            <li><RouterLink to="/catering">{{ t('nav.catering') }}</RouterLink></li>
+            <li><RouterLink to="/franchises">{{ t('nav.franchises') }}</RouterLink></li>
+            <li><RouterLink to="/contact">{{ t('nav.contact') }}</RouterLink></li>
           </ul>
         </div>
 
         <!-- Services -->
         <div class="footer-col services-col">
-          <h4>Services</h4>
+          <h4>{{ t('nav.services') }}</h4>
           <ul>
-            <li><a href="#">Wedding Catering</a></li>
-            <li><a href="#">Corporate Events</a></li>
-            <li><a href="#">Private Parties</a></li>
-            <li><a href="#">Order Online</a></li>
+            <li><a href="#">{{ t('footer.services.wedding') }}</a></li>
+            <li><a href="#">{{ t('footer.services.corporate') }}</a></li>
+            <li><a href="#">{{ t('footer.services.private') }}</a></li>
+            <li><a href="#">{{ t('nav.order_now') }}</a></li>
           </ul>
         </div>
 
         <!-- Contact -->
         <div class="footer-col contact-col">
-          <h4>Contact Us</h4>
+          <h4>{{ t('footer.contact') }}</h4>
           <address>
             <p>Miami, Florida</p>
             <p><a href="tel:+13050000000">(305) 555-0123</a></p>
@@ -58,7 +59,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; {{ new Date().getFullYear() }} Master Crepes. All rights reserved.</p>
+        <p>&copy; {{ new Date().getFullYear() }} Master Crepes. {{ t('footer.rights') }}</p>
         <p class="designer-credit">
           Developed by <a href="https://yeyo.dev/" target="_blank" rel="noopener">YeyoDev</a>
         </p>
