@@ -3,6 +3,7 @@ import { RouterView } from 'vue-router';
 import TheTopBar from '@/components/layout/TheTopBar.vue';
 import TheHeader from '@/components/layout/TheHeader.vue';
 import TheFooter from '@/components/layout/TheFooter.vue';
+import WhatsAppButton from '@/components/ui/WhatsAppButton.vue';
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import TheFooter from '@/components/layout/TheFooter.vue';
     </main>
     
     <TheFooter />
+    <WhatsAppButton />
   </div>
 </template>
 
