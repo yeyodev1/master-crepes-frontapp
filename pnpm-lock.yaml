@@ -20,6 +20,9 @@ importers:
       vue-router:
         specifier: ^4.6.4
         version: 4.6.4(vue@3.5.27(typescript@5.9.3))
+      vue-tel-input:
+        specifier: ^9.6.0
+        version: 9.6.0(libphonenumber-js@1.12.35)(vue@3.5.27(typescript@5.9.3))
     devDependencies:
       '@tsconfig/node24':
         specifier: ^24.0.4
@@ -939,6 +942,9 @@ packages:
   kolorist@1.8.0:
     resolution: {integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==}
 
+  libphonenumber-js@1.12.35:
+    resolution: {integrity: sha512-T/Cz6iLcsZdb5jDncDcUNhSAJ0VlSC9TnsqtBNdpkaAmy24/R1RhErtNWVWBrcUZKs9hSgaVsBkc7HxYnazIfw==}
+
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
@@ -1216,6 +1222,12 @@ packages:
     resolution: {integrity: sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg==}
     peerDependencies:
       vue: ^3.5.0
+
+  vue-tel-input@9.6.0:
+    resolution: {integrity: sha512-oqa2DGWsO31jWbRYU9ouKNQBkLJQov88P9UXrmW/zvAVOEXknUKT+zgbffqebQYaRdgOYaGsXB1LisIUhH8tiA==}
+    peerDependencies:
+      libphonenumber-js: ^1.12.12
+      vue: ^3.5.4
 
   vue-tsc@3.2.3:
     resolution: {integrity: sha512-1RdRB7rQXGFMdpo0aXf9spVzWEPGAk7PEb/ejHQwVrcuQA/HsGiixIc3uBQeqY2YjeEEgvr2ShQewBgcN4c1Cw==}
@@ -2076,6 +2088,8 @@ snapshots:
 
   kolorist@1.8.0: {}
 
+  libphonenumber-js@1.12.35: {}
+
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
@@ -2334,6 +2348,11 @@ snapshots:
   vue-router@4.6.4(vue@3.5.27(typescript@5.9.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
+      vue: 3.5.27(typescript@5.9.3)
+
+  vue-tel-input@9.6.0(libphonenumber-js@1.12.35)(vue@3.5.27(typescript@5.9.3)):
+    dependencies:
+      libphonenumber-js: 1.12.35
       vue: 3.5.27(typescript@5.9.3)
 
   vue-tsc@3.2.3(typescript@5.9.3):
