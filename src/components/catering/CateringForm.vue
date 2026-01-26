@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, reactive, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import CustomDatePicker from '@/components/ui/CustomDatePicker.vue';
 import CustomTimePicker from '@/components/ui/CustomTimePicker.vue';
 import ghlService from '@/services/ghlService';
@@ -7,6 +8,8 @@ import PhoneInput from '@/components/ui/PhoneInput.vue';
 
 // CateringForm.vue
 // Detailed lead capture form for GoHighLevel integration
+
+const { t } = useI18n();
 
 // Form State matching GHL requirements
 const formData = reactive({
@@ -93,10 +96,10 @@ const isFormValid = computed(() => {
     <div class="container">
       <div class="form-card" data-aos="fade-up">
         <div class="form-header">
-          <span class="eyebrow">GET A QUOTE</span>
-          <h2 class="title">Plan Your Event</h2>
+          <span class="eyebrow">{{ t('catering.form.eyebrow') }}</span>
+          <h2 class="title">{{ t('catering.form.title') }}</h2>
           <p class="subtitle">
-            Tell us about your special occasion. Fill out the details below and we'll create a custom proposal for you.
+            {{ t('catering.form.subtitle') }}
           </p>
         </div>
 
@@ -104,18 +107,18 @@ const isFormValid = computed(() => {
           
           <!-- Section 1: Contact Information -->
           <fieldset>
-            <legend>Contact Information</legend>
+            <legend>{{ t('catering.form.legend_contact') }}</legend>
             <div class="form-grid">
               <div class="form-group">
-                <label for="firstName">First Name *</label>
+                <label for="firstName">{{ t('common.first_name') }}</label>
                 <input type="text" id="firstName" v-model="formData.firstName" required>
               </div>
               <div class="form-group">
-                <label for="lastName">Last Name *</label>
+                <label for="lastName">{{ t('common.last_name') }}</label>
                 <input type="text" id="lastName" v-model="formData.lastName" required>
               </div>
               <div class="form-group">
-                <label for="email">Email Address *</label>
+                <label for="email">{{ t('common.email') }}</label>
                 <input type="email" id="email" v-model="formData.email" required>
               </div>
               <div class="form-group">
@@ -125,7 +128,7 @@ const isFormValid = computed(() => {
                 />
               </div>
               <div class="form-group full-width">
-                <label for="company">Company (Optional)</label>
+                <label for="company">{{ t('catering.form.company') }}</label>
                 <input type="text" id="company" v-model="formData.company">
               </div>
             </div>
@@ -133,40 +136,40 @@ const isFormValid = computed(() => {
           
           <!-- Section 2: Event Details -->
           <fieldset>
-            <legend>Event Logistics</legend>
+            <legend>{{ t('catering.form.legend_event') }}</legend>
             <div class="form-grid">
               <div class="form-group">
                 <CustomDatePicker
-                  label="Event Date"
+                  :label="t('catering.form.event_date')"
                   v-model="formData.eventDate"
                   :required="true"
                 />
               </div>
               <div class="form-group">
-                <label for="guestCount">Number of Guests *</label>
+                <label for="guestCount">{{ t('catering.form.guest_count') }}</label>
                 <input type="number" id="guestCount" v-model="formData.guestCount" required min="10">
               </div>
               <div class="form-group">
                 <CustomTimePicker
-                  label="Start Time"
+                  :label="t('catering.form.start_time')"
                   v-model="formData.startTime"
                 />
               </div>
               <div class="form-group">
                 <CustomTimePicker
-                  label="End Time"
+                  :label="t('catering.form.end_time')"
                   v-model="formData.endTime"
                 />
               </div>
               <div class="form-group">
-                <label for="eventNature">Nature of Event *</label>
-                <input type="text" id="eventNature" v-model="formData.eventNature" placeholder="e.g. Birthday, Office Lunch" required>
+                <label for="eventNature">{{ t('catering.form.nature') }}</label>
+                <input type="text" id="eventNature" v-model="formData.eventNature" :placeholder="t('catering.form.nature_placeholder')" required>
               </div>
               <div class="form-group">
-                <label for="eventStyle">Event Style</label>
+                <label for="eventStyle">{{ t('catering.form.style') }}</label>
                 <div class="select-wrapper">
                   <select id="eventStyle" v-model="formData.eventStyle">
-                    <option value="" disabled>Select Style</option>
+                    <option value="" disabled>{{ t('catering.form.style_select') }}</option>
                     <option v-for="style in eventStyles" :key="style" :value="style">{{ style }}</option>
                   </select>
                 </div>
@@ -176,39 +179,39 @@ const isFormValid = computed(() => {
 
           <!-- Section 3: Location -->
           <fieldset>
-            <legend>Event Location</legend>
+            <legend>{{ t('catering.form.legend_location') }}</legend>
             <div class="form-grid">
               <div class="form-group full-width">
-                <label for="streetAddress">Street Address</label>
-                <input type="text" id="streetAddress" v-model="formData.streetAddress" placeholder="Venue Address">
+                <label for="streetAddress">{{ t('catering.form.street') }}</label>
+                <input type="text" id="streetAddress" v-model="formData.streetAddress" :placeholder="t('catering.form.street_placeholder')">
               </div>
               <div class="form-group">
-                <label for="city">City</label>
+                <label for="city">{{ t('catering.form.city') }}</label>
                 <input type="text" id="city" v-model="formData.city">
               </div>
               <div class="form-group">
-                <label for="zipCode">Zip Code</label>
+                <label for="zipCode">{{ t('catering.form.zip') }}</label>
                 <input type="text" id="zipCode" v-model="formData.zipCode">
               </div>
             </div>
             <div class="form-group full-width mt-20">
-                <label for="instructions">Delivery/Arrival Instructions</label>
-                <textarea id="instructions" v-model="formData.deliveryInstructions" rows="2" placeholder="Gate codes, parking info, etc."></textarea>
+                <label for="instructions">{{ t('catering.form.delivery') }}</label>
+                <textarea id="instructions" v-model="formData.deliveryInstructions" rows="2" :placeholder="t('catering.form.delivery_placeholder')"></textarea>
               </div>
           </fieldset>
 
            <!-- Section 4: Additional Info -->
           <fieldset>
-            <legend>Final Details</legend>
+            <legend>{{ t('catering.form.legend_details') }}</legend>
              <div class="form-group full-width">
-                <label for="additionalInfo">Additional Information / Menu Requests</label>
+                <label for="additionalInfo">{{ t('catering.form.additional') }}</label>
                 <textarea id="additionalInfo" v-model="formData.additionalInfo" rows="4"></textarea>
               </div>
               <div class="form-group">
-                <label for="referral">How did you hear about us?</label>
+                <label for="referral">{{ t('catering.form.referral') }}</label>
                 <div class="select-wrapper">
                   <select id="referral" v-model="formData.referralSource">
-                    <option value="" disabled>Select Source</option>
+                    <option value="" disabled>{{ t('catering.form.referral_select') }}</option>
                     <option v-for="source in referralSources" :key="source" :value="source">{{ source }}</option>
                   </select>
                 </div>
@@ -219,11 +222,11 @@ const isFormValid = computed(() => {
           <div class="form-actions">
             <label class="checkbox-label">
               <input type="checkbox" v-model="formData.newsletter">
-              Subscribe to newsletter for updates and offers
+              {{ t('catering.form.newsletter') }}
             </label>
             
             <button type="submit" class="submit-btn" :disabled="isSubmitting || !isFormValid">
-              {{ isSubmitting ? 'Submitting Request...' : 'Request Quote' }}
+              {{ isSubmitting ? t('catering.form.submitting') : t('catering.form.submit') }}
             </button>
           </div>
 
@@ -231,10 +234,10 @@ const isFormValid = computed(() => {
 
         <div v-else class="success-screen">
           <div class="check-circle"><i class="fas fa-check"></i></div>
-          <h3>Request Received!</h3>
-          <p>Thank you for inquiring about Master Crepes Catering.</p>
-          <p>We receive your details and will send you a personalized proposal within 24 hours.</p>
-          <button @click="showSuccess = false" class="reset-btn">Send Another Request</button>
+          <h3>{{ t('catering.form.success_title') }}</h3>
+          <p>{{ t('catering.form.success_msg1') }}</p>
+          <p>{{ t('catering.form.success_msg2') }}</p>
+          <button @click="showSuccess = false" class="reset-btn">{{ t('catering.form.reset') }}</button>
         </div>
 
       </div>
