@@ -3,6 +3,7 @@ import { ref, reactive, computed } from 'vue';
 import CustomDatePicker from '@/components/ui/CustomDatePicker.vue';
 import CustomTimePicker from '@/components/ui/CustomTimePicker.vue';
 import ghlService from '@/services/ghlService';
+import PhoneInput from '@/components/ui/PhoneInput.vue';
 
 // CateringForm.vue
 // Detailed lead capture form for GoHighLevel integration
@@ -118,8 +119,10 @@ const isFormValid = computed(() => {
                 <input type="email" id="email" v-model="formData.email" required>
               </div>
               <div class="form-group">
-                <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" v-model="formData.phone" required>
+                <PhoneInput 
+                  v-model="formData.phone" 
+                  :required="true"
+                />
               </div>
               <div class="form-group full-width">
                 <label for="company">Company (Optional)</label>
