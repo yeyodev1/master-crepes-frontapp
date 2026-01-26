@@ -1,0 +1,53 @@
+# Master Crepes - Project & Business Context
+
+## Overview
+Master Crepes is a premier catering and franchise business based in Miami, FL, specializing in authentic French crêpes. We provide live chef stations for weddings, corporate events, and private parties.
+
+## Core Offerings
+
+### 1. Catering Services
+"Bring Paris to Your Event"
+- **Live Chef Stations**: Professional chefs preparing crêpes on-site.
+- **Menus**:
+  - **Sweet**: Classic Nutella, Dulce de Leche, Fresh Berries, Bananas, Homemade Whipped Cream.
+  - **Savory/Galettes**: Buckwheat batter (gluten-friendly options). Ham & Swiss, Chicken Florentine, Caprese (Mozzarella, Tomato, Pesto).
+- **Event Types**: Weddings, Corporate Galas, Office Lunches, Private Parties, Birthdays, Bar/Bat Mitzvahs.
+- **Service Area**: Miami and South Florida.
+
+### 2. Franchises
+"Join Our Successful Family"
+- **Business Model**: A proven model offering low overhead and high customer appeal.
+- **Support**:
+  - Site selection assistance.
+  - Comprehensive training (Initial & Ongoing).
+  - Marketing & Social Media strategies.
+  - Detailed Operations Manual.
+  - Access to reliable suppliers.
+- **Ideal For**: Entrepreneurs looking for a solid brand with a unique product.
+
+### 3. Menu Highlights
+- **Sweet Crêpes**:
+  - *Classic Nutella*: The timeless favorite.
+  - *Dulce de Leche*: Rich caramel perfection.
+  - *Fresh Fruit*: Strawberries, Bananas, Berries.
+- **Savory Crêpes**:
+  - *Ham & Swiss*: Classic French lunch.
+  - *Chicken Florentine*: Chicken, spinach, creamy sauce.
+  - *Caprese*: Fresh and vegetarian friendly.
+
+## Technical Context
+- **Website URL**: https://www.themastercrepes.com
+- **Contact**:
+  - Email: info@themastercrepes.com
+  - Phone: (305) 555-0123
+  - Address: 3905 NW 107th Ave, Suite 106, Doral, FL 33178
+- **Social Media**:
+  - Instagram: @mastercrepesdoral
+  - Facebook: Master Crepes
+
+## Navigation Structure
+- **/** (Home): Brand introduction, "The Art of French Crepes", Menu Highlights.
+- **/catering**: Detailed catering info and "Get a Quote" form.
+- **/franchises**: Franchise benefits, "Why Master Crepes", and Application form.
+- **/contact**: General contact info, operating hours, map, and inquiry form.
+- **Order Online**: External link to ToastTab (https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106)
