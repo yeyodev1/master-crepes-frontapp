@@ -1,6 +1,8 @@
 <script setup lang="ts">
 // CateringInfo.vue
 // Explains the value proposition of the catering service
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
@@ -8,30 +10,27 @@
     <div class="container">
       <div class="info-grid">
         <div class="text-content" data-aos="fade-right">
-          <span class="eyebrow">UNFORGETTABLE MOMENTS</span>
-          <h2 class="section-title">We Bring Paris to You</h2>
+          <span class="eyebrow">{{ t('catering.info.eyebrow') }}</span>
+          <h2 class="section-title">{{ t('catering.info.title') }}</h2>
           <p class="section-text lead">
-            A unique culinary experience that will delight your guests.
-            Our live chef stations create an atmosphere of elegance and fun.
+            {{ t('catering.info.lead') }}
           </p>
           <p class="section-text">
-            Whether it's a wedding, corporate gala, or an intimate private party, 
-            Master Crepes offers a sophisticated menu of sweet and savory crêpes, 
-            made to order with the freshest ingredients.
+            {{ t('catering.info.desc') }}
           </p>
           
           <div class="highlights">
              <div class="highlight-item">
                <span class="icon"><i class="fas fa-fire"></i></span>
-               <h4>Live Stations</h4>
+               <h4>{{ t('catering.info.feature1') }}</h4>
              </div>
              <div class="highlight-item">
                <span class="icon"><i class="fas fa-leaf"></i></span>
-               <h4>Fresh Ingredients</h4>
+               <h4>{{ t('catering.info.feature2') }}</h4>
              </div>
              <div class="highlight-item">
                <span class="icon"><i class="fas fa-star"></i></span>
-               <h4>French Tradition</h4>
+               <h4>{{ t('catering.info.feature3') }}</h4>
              </div>
           </div>
         </div>
