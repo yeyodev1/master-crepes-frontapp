@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, reactive, computed } from 'vue';
 import ghlService from '@/services/ghlService';
+import PhoneInput from '@/components/ui/PhoneInput.vue';
 
 // ContactForm.vue
 // General inquiry form
@@ -22,9 +23,14 @@ const submitForm = async () => {
   // Simulate API call
   await new Promise(resolve => setTimeout(resolve, 1000));
 
-  console.log('Contact form submitted:', formData);
-  showSuccess.value = true;
-  isSubmitting.value = false;
+  try {
+    await ghlService.submitContact(formData);
+    showSuccess.value = true;
+  } catch (error) {
+    console.error('Submission failed', error);
+  } finally {
+    isSubmitting.value = false;
+  }
 
   // Reset logic
   setTimeout(() => {
@@ -90,12 +96,9 @@ const isFormValid = computed(() => {
                >
              </div>
              <div class="form-group">
-               <label for="phone">Phone Number</label>
-               <input 
-                 type="tel" 
-                 id="phone" 
+               <PhoneInput 
                  v-model="formData.phone" 
-               >
+               />
              </div>
            </div>
            
