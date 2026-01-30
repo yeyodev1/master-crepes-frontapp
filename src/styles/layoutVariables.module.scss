@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// SPACING & LAYOUT VARIABLES
+// -----------------------------------------------------------------------------
+
+// Spacing Scale
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 48px;
+$spacing-3xl: 64px;
+
+// Container Widths
+$container-max-width: 1200px;
+$mobile-max-width: 480px;
+
+// Z-Index Layers
+$z-index-modal: 1000;
+$z-index-overlay: 900;
+$z-index-header: 800;
+$z-index-dropdown: 700;

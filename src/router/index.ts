@@ -40,6 +40,15 @@ const router = createRouter({
         description: 'Get in touch for catering quotes, franchise information, or general inquiries. Serving Miami and South Florida.',
       }
     },
+    {
+      path: '/bio',
+      name: 'bio',
+      component: () => import('../views/BioView.vue'),
+      meta: {
+        title: 'Links - Master Crepes',
+        description: 'Connect with Master Crepes. Order online, book catering, or view our latest menus.',
+      }
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
