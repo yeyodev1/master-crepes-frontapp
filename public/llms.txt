@@ -25,15 +25,38 @@ Master Crepes is a premier catering and franchise business based in Miami, FL, s
   - Access to reliable suppliers.
 - **Ideal For**: Entrepreneurs looking for a solid brand with a unique product.
 
-### 3. Menu Highlights
-- **Sweet Crêpes**:
-  - *Classic Nutella*: The timeless favorite.
-  - *Dulce de Leche*: Rich caramel perfection.
-  - *Fresh Fruit*: Strawberries, Bananas, Berries.
+### 3. Menu Highlights (Accurate from ToastTab)
 - **Savory Crêpes**:
-  - *Ham & Swiss*: Classic French lunch.
-  - *Chicken Florentine*: Chicken, spinach, creamy sauce.
-  - *Caprese*: Fresh and vegetarian friendly.
+  - *Bacon Lovers*: Hickory smoked bacon bits, ham, melted mozzarella/cheddar blend, topped with two scrambled eggs.
+  - *Southwest Omelette*: Ham, red onions, green peppers, vine-ripened tomatoes, melted cheddar, two fluffy eggs.
+  - *Veggie Omelette*: Mozzarella, fresh spinach, sautéed portobello mushrooms, red onions, green peppers, tomatoes, two scrambled eggs.
+  - *Ham & Cheese*: Thinly sliced savory ham, melted cheese, fresh herbs, drizzle of creamy sauce.
+  - *Holy Crepe*: Bacon, tomatoes, melted mozzarella, spring mix, fired egg, chicken or steak, red onions.
+  - *Chicken Pesto*: Tender chicken, mushrooms, spinach, tomatoes, melted mozzarella, pesto.
+  - *Emperor*: Salad style with grilled chicken or steak, spring mix, mozzarella, tomatoes, mushrooms, Caesar dressing.
+  - *Honey Mustard*: Chicken or steak, spring mix, tomatoes, cheddar, bacon bits, honey mustard dressing.
+  - *Caprese*: Vine-ripened tomatoes, fresh mozzarella, prosciutto, delicate pesto sauce.
+  - *Veggie Delight*: Pesto sauce, spring mix, tomatoes, mushrooms, green peppers, mozzarella, red onions.
+  - *Southwest Chipotle*: Chicken or steak, spring mix, tomatoes, cheddar, creamy ancho chipotle dressing.
+  - *Teriyaki*: Chicken or steak, spring mix, cheddar/mozzarella, tomatoes, honeyed teriyaki sauce.
+  - *Texas BBQ*: Mozzarella, spring mix, red onions, tomatoes, zesty BBQ sauce, chicken or steak.
+  - *King Ranch*: Ranch dressing, bacon, cheddar, spring mix, tomatoes, chicken or steak.
+  - *Reina Pepiada*: Chicken with onions, mayonnaise, creamy avocado bits, Gouda cheese.
+  - *Cordon Bleu*: Chicken breast, diced ham, Swiss cheese, homemade Dijon cream sauce, Parmesan.
+  - *Mexican*: Green peppers, spring mix, onions, cheddar/mozzarella, avocado, tomatoes, cilantro, lime, hot sauce, chicken or steak.
+
+- **Sweet Crêpes**:
+  - *Dubai Crepe*: Strawberries, pistachio AND chocolate milk spreads, crunchy kataifi topping.
+  - *Sweet & Cheesy*: Strawberries, bananas, cheesecake slice, choice of spread (Nutella/Dulce/Pistachio).
+  - *Holy Fudge*: Rich chocolate cake slice, Nutella, Oreo crumbles, fudge drizzle.
+  - *Nutella*: The classic rich, velvety hazelnut spread.
+  - *Dulce de Leche*: Rich, creamy caramel spread.
+  - *Strawberry Lovers*: Fresh strawberries with choice of spread.
+  - *Banana Lovers*: Ripe bananas with choice of spread.
+  - *Strawberry-Banana*: The perfect fruit combo with choice of spread.
+  - *Oreo*: Nutella and crunchy Oreo cookie crumbles.
+  - *Piru*: Nutella, strawberries, crispy Pirouline wafers.
+  - *Cuban Timbita*: Guava, light cream cheese, condensed milk drizzle.
 
 ## Technical Context
 - **Website URL**: https://www.themastercrepes.com
@@ -42,12 +65,14 @@ Master Crepes is a premier catering and franchise business based in Miami, FL, s
   - Phone: (305) 555-0123
   - Address: 3905 NW 107th Ave, Suite 106, Doral, FL 33178
 - **Social Media**:
-  - Instagram: @mastercrepesdoral
-  - Facebook: Master Crepes
+  - Instagram: @mastercrepesoficial
+  - Facebook: mastercrepes1
+  - X: @MasterCrepes1
 
 ## Navigation Structure
 - **/** (Home): Brand introduction, "The Art of French Crepes", Menu Highlights.
 - **/catering**: Detailed catering info and "Get a Quote" form.
 - **/franchises**: Franchise benefits, "Why Master Crepes", and Application form.
 - **/contact**: General contact info, operating hours, map, and inquiry form.
+- **/bio**: Linktree-style page for social media bios.
 - **Order Online**: External link to ToastTab (https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106)

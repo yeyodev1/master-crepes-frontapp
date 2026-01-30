@@ -39,18 +39,18 @@
       "subtitle": "Whether you crave the sweetness of fresh fruits or the savory richness of gourmet cheese, we have a crêpe for you.",
       "sweet": {
         "title": "Sweet Crêpes",
-        "desc": "Indulge in our classic combinations featuring fresh strawberries, bananas, Nutella, and our homemade whipped cream.",
-        "item1": "Classic Nutella",
-        "item2": "Dulce de Leche",
-        "item3": "Fresh Berries",
+        "desc": "Indulge in our classic combinations featuring fresh strawberries, bananas, Nutella, and unique creations like the Dubai Crepe.",
+        "item1": "Dubai Crepe (Pistachio & Kataifi)",
+        "item2": "Sweet & Cheesy (Cheesecake)",
+        "item3": "Classic Nutella & Fruit",
         "cta": "Order Sweet"
       },
       "savory": {
         "title": "Savory Crêpes",
-        "desc": "Experience a full meal wrapped in a delicate buckwheat batter. Featuring prosciutto, brie, smoked salmon, and fresh herbs.",
-        "item1": "Ham & Swiss",
-        "item2": "Chicken Florentine",
-        "item3": "Caprese",
+        "desc": "Experience a full meal wrapped in a delicate batter. Featuring options like the Bacon Lovers, Cordon Bleu, and fresh Caprese.",
+        "item1": "Bacon Lovers (Eggs & Ham)",
+        "item2": "Cordon Bleu (Chicken & Swiss)",
+        "item3": "Caprese (Mozzarella & Pesto)",
         "cta": "Order Savory"
       }
     },
