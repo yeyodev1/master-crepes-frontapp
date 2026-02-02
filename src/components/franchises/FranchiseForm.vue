@@ -8,6 +8,24 @@ import PhoneInput from '@/components/ui/PhoneInput.vue';
 // Lead capture form for potential franchisees
 const { t } = useI18n();
 
+const props = defineProps({
+  title: {
+    type: String,
+    required: false,
+    default: ''
+  },
+  subtitle: {
+    type: String,
+    required: false,
+    default: ''
+  },
+  eyebrow: {
+    type: String,
+    required: false,
+    default: ''
+  }
+});
+
 const formData = reactive({
   fullName: '',
   phone: '',
@@ -50,9 +68,9 @@ const submitForm = async () => {
     <div class="container">
       <div class="form-wrapper" data-aos="fade-up">
         <div class="form-header">
-          <span class="eyebrow">{{ t('franchises.form.eyebrow') }}</span>
-          <h2 class="title">{{ t('franchises.form.title') }}</h2>
-          <p class="subtitle">{{ t('franchises.form.subtitle') }}</p>
+          <span class="eyebrow">{{ eyebrow || t('franchises.form.eyebrow') }}</span>
+          <h2 class="title">{{ title || t('franchises.form.title') }}</h2>
+          <p class="subtitle">{{ subtitle || t('franchises.form.subtitle') }}</p>
         </div>
 
         <form @submit.prevent="submitForm" class="contact-form" v-if="!showSuccess">

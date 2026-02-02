@@ -118,21 +118,6 @@
       "title": "Franquicias",
       "subtitle": "Únete a nuestra familia de éxito"
     },
-    "benefits": {
-      "why_eyebrow": "UN MODELO PROBADO",
-      "why_title": "¿Por qué Master Crepes?",
-      "why_p1": "Un modelo probado para el éxito. En Master Crepes, ofrecemos más que crepas deliciosas: ofrecemos la oportunidad de ser parte de una marca sólida y en crecimiento.",
-      "why_p2": "Con un sistema comprobado, soporte continuo y un producto irresistible, te ayudamos a alcanzar tus objetivos comerciales mientras deleitas a tus clientes.",
-      "support_eyebrow": "SOPORTE TOTAL",
-      "support_title": "Todo lo que necesitas para triunfar",
-      "support_p1": "Como franquiciado de Master Crepes, recibirás un paquete completo que incluye capacitación inicial, soporte operativo, estrategias de marketing y acceso a proveedores confiables.",
-      "support_p2": "Nuestro equipo está contigo en cada paso para asegurar que tu franquicia prospere.",
-      "list_1": "Manual de Operaciones Detallado",
-      "list_2": "Asistencia en Selección de Sitio",
-      "list_3": "Soporte de Marketing y Redes Sociales",
-      "list_4": "Capacitación Continua",
-      "cta": "Comienza tu Viaje"
-    },
     "form": {
       "eyebrow": "DAR EL SIGUIENTE PASO",
       "title": "Únete a la Familia",
@@ -146,6 +131,17 @@
       "submitting": "Enviando...",
       "success_title": "¡Gracias!",
       "success_msg": "Tu solicitud ha sido recibida. Nos pondremos en contacto pronto."
+    },
+    "coming_soon": {
+      "badge": "Próximamente",
+      "title": "Un Futuro con Sabor",
+      "subtitle": "Nuestro programa de franquicias está actualmente en desarrollo. Estamos diseñando meticulosamente un modelo de asociación que garantice la misma excelencia y pasión que define a Master Crepes.",
+      "waiting_list_title": "Únete a la Lista de Espera",
+      "waiting_list_subtitle": "Sé de los primeros en recibir actualizaciones sobre nuestra expansión y oportunidades exclusivas de franquicia.",
+      "vision_title": "Nuestra Visión",
+      "vision_desc": "Creemos en crecer juntos. Nuestro futuro modelo de franquicia se centrará en la calidad premium, la auténtica tradición francesa y un soporte integral para nuestros socios.",
+      "support_title": "Todo lo que necesitas para triunfar",
+      "support_p1": "Como franquiciado de Master Crepes, recibirás un paquete completo que incluye capacitación inicial, soporte operativo, estrategias de marketing y acceso a proveedores confiables."
     }
   },
   "contact": {

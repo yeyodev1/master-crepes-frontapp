@@ -10,9 +10,10 @@ const { t } = useI18n();
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content" data-aos="fade-up">
+      <span class="coming-soon-badge">{{ t('franchises.coming_soon.badge') }}</span>
       <h1 class="hero-title">{{ t('franchises.hero.title') }}</h1>
       <div class="separator"></div>
-      <p class="hero-subtitle">{{ t('franchises.hero.subtitle') }}</p>
+      <p class="hero-subtitle">{{ t('franchises.coming_soon.subtitle') }}</p>
     </div>
   </section>
 </template>
@@ -60,6 +61,20 @@ const { t } = useI18n();
   text-align: center;
   color: #fff;
   padding: 0 20px;
+  max-width: 900px;
+}
+
+.coming-soon-badge {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 50px;
+  @include interface-font(700);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .hero-title {
@@ -83,8 +98,11 @@ const { t } = useI18n();
 
 .hero-subtitle {
   @include body-font(300);
-  font-size: 1.5rem;
-  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
   opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 </style>

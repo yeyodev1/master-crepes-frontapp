@@ -118,21 +118,6 @@
       "title": "Franchises",
       "subtitle": "Join our successful family"
     },
-    "benefits": {
-      "why_eyebrow": "A PROVEN MODEL",
-      "why_title": "Why Master Crepes?",
-      "why_p1": "A proven model for success. At Master Crepes, we offer more than just delicious crepes: we provide the opportunity to be part of a growing and solid brand.",
-      "why_p2": "With a proven system, continuous support, and an irresistible product, we help you achieve your business goals while delighting your customers.",
-      "support_eyebrow": "FULL SUPPORT",
-      "support_title": "Everything you need to succeed",
-      "support_p1": "As a Master Crepes franchisee, you'll receive a comprehensive package including initial training, operational support, marketing strategies, and access to reliable suppliers.",
-      "support_p2": "Our team is with you every step of the way to ensure your franchise thrives.",
-      "list_1": "Detailed Operations Manual",
-      "list_2": "Site Selection Assistance",
-      "list_3": "Marketing & Social Media Support",
-      "list_4": "Ongoing Training",
-      "cta": "Start Your Journey"
-    },
     "form": {
       "eyebrow": "TAKE THE NEXT STEP",
       "title": "Join the Family",
@@ -146,6 +131,17 @@
       "submitting": "Sending...",
       "success_title": "Thank You!",
       "success_msg": "Your application has been received. We will be in touch soon."
+    },
+    "coming_soon": {
+      "badge": "Coming Soon",
+      "title": "A Future of Flavor",
+      "subtitle": "Our franchise program is currently in development. We are meticulously designing a partnership model that ensures the same excellence and passion that defines Master Crepes.",
+      "waiting_list_title": "Join the Waiting List",
+      "waiting_list_subtitle": "Be among the first to receive updates about our expansion and exclusive franchise opportunities.",
+      "vision_title": "Our Vision",
+      "vision_desc": "We believe in growing together. Our upcoming franchise model will focus on premium quality, authentic French tradition, and comprehensive support for our partners.",
+      "support_title": "Everything you need to succeed",
+      "support_p1": "As a Master Crepes franchisee, you'll receive a comprehensive package including initial training, operational support, marketing strategies, and access to reliable suppliers."
     }
   },
   "contact": {
