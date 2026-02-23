@@ -29,13 +29,16 @@ watch(() => props.modelValue, (newVal) => {
 });
 
 // Update logic
-const onInput = (number: string, phoneObject: any) => {
+const onInput = (value: any, phoneObject: any) => {
+  // Ensure we are dealing with a string, not an Event
+  const val = typeof value === 'string' ? value : (value?.target?.value || '');
+
   if (phoneObject?.valid) {
-    // If valid, emit the E.164 formatted number (e.g., +1234567890) recommended for CRMs
+    // If valid, emit the E.164 formatted number
     emit('update:modelValue', phoneObject.number);
   } else {
-    // If invalid or just typing, emit what is typed but maybe unformatted
-    emit('update:modelValue', number);
+    // If invalid or typing, emit the current input value
+    emit('update:modelValue', val);
   }
 };
 

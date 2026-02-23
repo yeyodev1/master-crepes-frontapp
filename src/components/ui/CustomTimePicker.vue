@@ -139,93 +139,124 @@ onUnmounted(() => {
 .picker-label {
   display: block;
   @include interface-font(600);
-  font-size: 0.8rem;
-  margin-bottom: 8px;
-  color: #555;
-  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  color: #444;
 }
 
 .input-display {
   width: 100%;
-  padding: 12px 15px;
+  padding: 14px 18px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1.5px solid #e1e1e1;
   border-radius: $border-radius-md;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
+  &:hover {
+    border-color: #ccc;
+  }
+
   &.is-open {
     border-color: #d4af37;
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.12);
+    transform: translateY(-1px);
+  }
+
+  .icon {
+    color: #999;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+
+  &.is-open .icon {
+    color: #d4af37;
   }
 }
 
 .value-text {
   @include body-font(400);
-  color: #000;
+  color: #1a1a1a;
+  font-size: 1rem;
 }
 
 .placeholder {
   @include body-font(400);
-  color: #999;
-}
-
-.icon {
-  opacity: 0.5;
+  color: #bbb;
+  font-size: 1rem;
 }
 
 .time-dropdown {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 8px);
   left: 0;
   width: 100%;
   max-height: 250px;
   overflow-y: auto;
   background-color: #fff;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  z-index: 100;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
   margin-top: 5px;
-  border-radius: 4px;
+  border-radius: $border-radius-md;
+
+  /* Scrollbar styling */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
 }
 
 .time-list {
   list-style: none;
-  padding: 0;
+  padding: 8px 0;
   margin: 0;
 
   li {
-    padding: 10px 15px;
+    padding: 12px 20px;
     cursor: pointer;
     @include body-font(400);
     font-size: 0.95rem;
-    transition: background-color 0.2s;
-    border-bottom: 1px solid #f5f5f5;
+    transition: all 0.2s;
+    color: #1a1a1a;
 
     &:hover {
-      background-color: #f9f9f9;
+      background-color: #f8f9fa;
       color: #d4af37;
+      padding-left: 25px;
     }
 
     &.selected {
-      background-color: #d4af37;
+      background-color: #000;
       color: #fff;
+      font-weight: 600;
     }
   }
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(0.98);
 }
 </style>

@@ -182,7 +182,6 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@use 'sass:color';
 @use '@/styles/index.scss' as *;
 
 .custom-date-picker {
@@ -190,85 +189,106 @@ onUnmounted(() => {
   width: 100%;
 }
 
-
-
 .picker-label {
   display: block;
   @include interface-font(600);
-  font-size: 0.8rem;
-  margin-bottom: 8px;
-  color: #555;
-  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  color: #444;
 }
 
 .input-display {
   width: 100%;
-  padding: 12px 15px;
+  padding: 14px 18px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1.5px solid #e1e1e1;
   border-radius: $border-radius-md;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
+  &:hover {
+    border-color: #ccc;
+  }
+
   &.is-open {
     border-color: #d4af37;
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.12);
+    transform: translateY(-1px);
+  }
+
+  .icon {
+    color: #999;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+
+  &.is-open .icon {
+    color: #d4af37;
   }
 }
 
 .value-text {
   @include body-font(400);
-  color: #000;
+  color: #1a1a1a;
+  font-size: 1rem;
 }
 
 .placeholder {
   @include body-font(400);
-  color: #999;
-}
-
-.icon {
-  opacity: 0.5;
+  color: #bbb;
+  font-size: 1rem;
 }
 
 .calendar-dropdown {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 8px);
   left: 0;
-  width: 300px; // Fixed width for consistent calendar
+  width: 320px;
   background-color: #fff;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  z-index: 100;
-  margin-top: 5px;
-  padding: 15px;
-  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+  padding: 24px;
+  border-radius: $border-radius-lg;
+  transform-origin: top left;
+
+  @media (max-width: 400px) {
+    width: 280px;
+    padding: 15px;
+  }
 }
 
 .calendar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   .current-month {
-    @include interface-font(600);
-    color: #000;
+    @include interface-font(700);
+    color: #1a1a1a;
+    font-size: 1.1rem;
   }
 
   .nav-btn {
-    background: none;
+    background: #f8f9fa;
     border: none;
     cursor: pointer;
-    font-size: 1.2rem;
-    padding: 0 10px;
-    color: #666;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #1a1a1a;
+    transition: all 0.2s;
 
     &:hover {
-      color: #d4af37;
+      background-color: #000;
+      color: #fff;
     }
   }
 }
@@ -277,30 +297,32 @@ onUnmounted(() => {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   span {
-    @include interface-font(600);
-    font-size: 0.75rem;
-    color: #999;
+    @include interface-font(700);
+    font-size: 0.7rem;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 }
 
 .days-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 2px;
+  gap: 4px;
 }
 
 .day-cell {
-  height: 36px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
-  @include body-font(400);
+  @include body-font(500);
   font-size: 0.9rem;
   cursor: pointer;
-  border-radius: $border-radius-md;
+  border-radius: 8px;
   transition: all 0.2s;
 
   &.empty {
@@ -308,42 +330,41 @@ onUnmounted(() => {
     pointer-events: none;
   }
 
-  &:not(.empty):hover {
-    background-color: #f5f5f5;
+  &:not(.empty):not(.disabled):hover {
+    background-color: #f8f9fa;
+    color: #d4af37;
   }
 
-  &.today {
+  &.today:not(.selected) {
     color: #d4af37;
-    font-weight: bold;
+    background-color: rgba(212, 175, 55, 0.05);
   }
 
   &.selected {
-    background-color: #d4af37;
+    background-color: #000;
     color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
     &:hover {
-      background-color: color.adjust(#d4af37, $lightness: -5%);
+      background-color: #333;
     }
   }
 
   &.disabled {
-    color: #ccc;
+    color: #eee;
     cursor: not-allowed;
-
-    &:hover {
-      background-color: transparent;
-    }
+    text-decoration: line-through;
   }
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(0.95);
 }
 </style>
