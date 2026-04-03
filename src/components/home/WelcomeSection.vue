@@ -24,15 +24,15 @@ const { t } = useI18n();
         <div class="image-col">
           <div class="image-wrapper main-img">
             <img 
-              src="https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230289/master-crepes/ilnvcspnsouwjhysqbdg.jpg"
+              src="https://res.cloudinary.com/dpjzfua3n/image/upload/master-crepes/h9hwzdzuykxqkpv5bjsg.jpg"
               alt="Making Crepes"
               loading="lazy"
             >
           </div>
           <div class="image-wrapper secondary-img">
             <img 
-              src="https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230290/master-crepes/dk103laqpwiiv1eqh3lk.jpg"
-              alt="Plated Crepe Presentation"
+              src="https://res.cloudinary.com/dpjzfua3n/image/upload/master-crepes/xcta6t5jz1sgn5vibrwv.jpg"
+              alt="Master Crepes Chef"
               loading="lazy"
             >
           </div>

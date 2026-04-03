@@ -5,6 +5,7 @@
     "franchises": "Franchises",
     "services": "Services",
     "contact": "Contact",
+    "gallery": "Gallery",
     "order_now": "Order Now"
   },
   "promo": {
@@ -169,6 +170,11 @@
       "success_title": "Message Sent!",
       "success_msg": "Thanks for reaching out. We'll get back to you shortly."
     }
+  },
+  "gallery": {
+    "eyebrow": "OUR CREATIONS",
+    "title": "The Gallery",
+    "subtitle": "A visual journey through our handcrafted crêpes and catering events."
   },
   "common": {
     "first_name": "First Name *",

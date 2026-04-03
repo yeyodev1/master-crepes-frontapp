@@ -41,6 +41,15 @@ const router = createRouter({
       }
     },
     {
+      path: '/gallery',
+      name: 'gallery',
+      component: () => import('../views/GalleryView.vue'),
+      meta: {
+        title: 'Gallery - Master Crepes',
+        description: 'Browse our gallery of authentic French crêpes and catering events in Miami.',
+      }
+    },
+    {
       path: '/bio',
       name: 'bio',
       component: () => import('../views/BioView.vue'),

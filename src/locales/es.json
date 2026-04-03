@@ -5,6 +5,7 @@
     "franchises": "Franquicias",
     "services": "Servicios",
     "contact": "Contacto",
+    "gallery": "Galería",
     "order_now": "Ordenar Ahora"
   },
   "promo": {
@@ -169,6 +170,11 @@
       "success_title": "¡Mensaje Enviado!",
       "success_msg": "Gracias por contactarnos. Te responderemos en breve."
     }
+  },
+  "gallery": {
+    "eyebrow": "NUESTRAS CREACIONES",
+    "title": "La Galería",
+    "subtitle": "Un viaje visual por nuestras crepas artesanales y eventos de catering."
   },
   "common": {
     "first_name": "Nombre *",

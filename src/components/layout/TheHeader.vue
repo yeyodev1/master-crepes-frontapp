@@ -39,6 +39,7 @@ onUnmounted(() => {
 const navItems = computed(() => [
   { name: t('nav.home'), path: '/' },
   { name: t('nav.catering'), path: '/catering' },
+  { name: t('nav.gallery'), path: '/gallery' },
   { name: t('nav.franchises'), path: '/franchises' },
   { name: t('nav.contact'), path: '/contact' },
 ]);

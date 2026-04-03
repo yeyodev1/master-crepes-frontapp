@@ -40,7 +40,7 @@ const { t } = useI18n();
   width: 100%;
   height: 100%;
   // Using scraped banner/hero image
-  background-image: url('https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230292/master-crepes/lskldlq83evb9gfhmvuz.jpg');
+  background-image: url('https://res.cloudinary.com/dpjzfua3n/image/upload/master-crepes/gyaklmzoysyc3s2n4bgm.jpg');
   background-size: cover;
   background-position: center;
   z-index: 1;
