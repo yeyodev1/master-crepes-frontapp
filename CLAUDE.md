@@ -3,6 +3,7 @@
 Vue 3 + TypeScript + Vite frontend for Master Crepes, a French crêperie in Doral, FL.
 
 ## Stack
+
 - **Framework:** Vue 3 (Composition API, `<script setup>`)
 - **Build:** Vite
 - **Styles:** SCSS (scoped per component), shared vars in `src/styles/`
@@ -10,6 +11,7 @@ Vue 3 + TypeScript + Vite frontend for Master Crepes, a French crêperie in Dora
 - **Package manager:** pnpm
 
 ## Project Structure
+
 ```
 src/
   components/
@@ -26,6 +28,7 @@ src/
 ```
 
 ## Business Info
+
 - **Business:** Master Crepes
 - **Address:** 3905 NW 107th Ave Suite 106, Doral, FL 33178
 - **Phone:** (786) 478-2727
@@ -36,19 +39,33 @@ src/
 - **Online orders:** https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106
 
 ## Images
+
 - Hosted on **Cloudinary** (cloud: `dpjzfua3n`)
 - All image URLs should use Cloudinary public URLs
 - Old URLs from `www.themastercrepes.com/wp-content/uploads/` are broken — do not use
 
 ## Key Rules
+
 - Never edit copy directly in `.vue` files — add/edit keys in `src/locales/*.json`
 - All phone numbers must be real: `(786) 478-2727` and `+1 (866) 827-3737`
 - Address must always be: `3905 NW 107th Ave Suite 106, Doral, FL 33178`
 - Use `pnpm` (not npm or yarn)
 
 ## Dev Commands
+
 ```bash
 pnpm dev       # Start dev server
 pnpm build     # Production build
 pnpm preview   # Preview build
 ```
+
+# CLAUDE.md - Token Efficient Rules
+
+1. Think before acting. Read existing files before writing code.
+2. Be concise in output but thorough in reasoning.
+3. Prefer editing over rewriting whole files.
+4. Do not re-read files you have already read unless the file may have changed.
+5. Test your code before declaring done.
+6. No sycophantic openers or closing fluff.
+7. Keep solutions simple and direct.
+8. User instructions always override this file.
