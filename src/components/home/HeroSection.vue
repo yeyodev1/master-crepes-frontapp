@@ -48,7 +48,7 @@ const { t } = useI18n();
   width: 100%;
   height: 100%;
   // Using the scraped high-quality background image
-  background-image: url('https://www.themastercrepes.com/wp-content/uploads/2024/10/Master-crepes-home.webp');
+  background-image: url('https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230288/master-crepes/mptkhqdndpean4zqgr5u.jpg');
   background-size: cover;
   background-position: center;
   // Subtle zoom animation for life

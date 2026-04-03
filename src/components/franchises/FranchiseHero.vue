@@ -39,7 +39,7 @@ const { t } = useI18n();
   width: 100%;
   height: 100%;
   // Using scraped banner image
-  background-image: url('https://www.themastercrepes.com/wp-content/uploads/2024/10/The-master-crepes-fracnchises-banner-scaled.webp');
+  background-image: url('https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230296/master-crepes/u3wtyhomhonmvcqosrja.jpg');
   background-size: cover;
   background-position: center;
   z-index: 1;

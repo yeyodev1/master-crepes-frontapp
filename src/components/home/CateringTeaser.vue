@@ -167,7 +167,7 @@ const { t } = useI18n();
   right: 0;
   width: 60%; // Overlap slightly with content
   height: 100%;
-  background-image: url('https://www.themastercrepes.com/wp-content/uploads/2024/10/Master-crepes-home-img-4.webp');
+  background-image: url('https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230299/master-crepes/gyaklmzoysyc3s2n4bgm.jpg');
   background-size: cover;
   background-position: center;
   z-index: 1;

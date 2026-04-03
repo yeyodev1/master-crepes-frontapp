@@ -40,8 +40,13 @@ const { t } = useI18n();
         <div class="footer-col contact-col">
           <h4>{{ t('footer.contact') }}</h4>
           <address>
-            <p>Miami, Florida</p>
-            <p><a href="tel:+13050000000">(305) 555-0123</a></p>
+            <p>
+              <a href="https://maps.app.goo.gl/oEdpWRSYrktniWct9" target="_blank" rel="noopener noreferrer">
+                3905 NW 107th Ave Suite 106<br>Doral, FL 33178
+              </a>
+            </p>
+            <p><a href="tel:+17864782727">(786) 478-2727</a></p>
+            <p><a href="tel:+18668273737">+1 (866) 827-3737</a></p>
             <p><a href="mailto:info@themastercrepes.com">info@themastercrepes.com</a></p>
           </address>
         </div>

@@ -38,7 +38,7 @@ const { t } = useI18n();
   width: 100%;
   height: 100%;
   // Using scraped banner image
-  background-image: url('https://www.themastercrepes.com/wp-content/uploads/2024/11/the-master-crepes-banner-contac-scaled.webp');
+  background-image: url('https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230298/master-crepes/ptr3b2rjbcmsqlyddugb.jpg');
   background-size: cover;
   background-position: center;
   z-index: 1;

@@ -24,8 +24,8 @@ const { t } = useI18n();
           </div>
           <div class="image-col">
             <div class="image-grid">
-              <img src="https://www.themastercrepes.com/wp-content/uploads/2024/10/The-master-crepes-fracnchises-img-1.webp" alt="Franchise Detail" class="grid-item item-1">
-              <img src="https://www.themastercrepes.com/wp-content/uploads/2024/10/The-master-crepes-fracnchises-img-2.webp" alt="Franchise Detail" class="grid-item item-2">
+              <img src="https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230300/master-crepes/qt5byb1l8jjbuo3xduqw.jpg" alt="Franchise Detail" class="grid-item item-1">
+              <img src="https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230302/master-crepes/k6tvgrpndyrybpnc0biy.jpg" alt="Franchise Detail" class="grid-item item-2">
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ const { t } = useI18n();
         <div class="grid-layout reverse-desktop">
           <div class="image-col">
             <div class="image-grid single-focus">
-               <img src="https://www.themastercrepes.com/wp-content/uploads/2024/10/The-master-crepes-fracnchises-img-3.webp" alt="Franchise Support" class="grid-item main-focus">
+               <img src="https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230304/master-crepes/brietjvbc5fjag6jhspt.jpg" alt="Franchise Support" class="grid-item main-focus">
             </div>
           </div>
           <div class="text-col" data-aos="fade-left">

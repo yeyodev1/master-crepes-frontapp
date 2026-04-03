@@ -37,7 +37,7 @@ const { t } = useI18n();
         
         <div class="image-content" data-aos="fade-left">
            <div class="image-stack">
-              <img src="https://www.themastercrepes.com/wp-content/uploads/2024/10/Master-crepes-home-img-4.webp" alt="Live Catering" class="img-main">
+              <img src="https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230304/master-crepes/yir8fptysnwpvibysetj.jpg" alt="Live Catering" class="img-main">
               <div class="img-accent"></div>
            </div>
         </div>

@@ -24,15 +24,15 @@ const { t } = useI18n();
         <div class="image-col">
           <div class="image-wrapper main-img">
             <img 
-              src="https://www.themastercrepes.com/wp-content/uploads/2024/10/Master-crepes-home-img.webp" 
-              alt="Making Crepes" 
+              src="https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230289/master-crepes/ilnvcspnsouwjhysqbdg.jpg"
+              alt="Making Crepes"
               loading="lazy"
             >
           </div>
           <div class="image-wrapper secondary-img">
             <img 
-              src="https://www.themastercrepes.com/wp-content/uploads/2024/10/Master-crepes-home-img2.webp" 
-              alt="Plated Crepe Presentation" 
+              src="https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230290/master-crepes/dk103laqpwiiv1eqh3lk.jpg"
+              alt="Plated Crepe Presentation"
               loading="lazy"
             >
           </div>

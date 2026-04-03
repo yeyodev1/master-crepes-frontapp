@@ -13,16 +13,26 @@ const { t } = useI18n();
       <div class="info-group">
         <h3>{{ t('contact.info.address_title') }}</h3>
         <p>
-          3905 NW 107th Ave, Suite 106<br>
+          3905 NW 107th Ave Suite 106<br>
           Doral, FL 33178
         </p>
-        <a 
-          href="https://maps.google.com/?q=3905+NW+107th+Ave+Suite+106+Doral+FL+33178" 
-          target="_blank" 
+        <a
+          href="https://maps.google.com/?q=3905+NW+107th+Ave+Suite+106+Doral+FL+33178"
+          target="_blank"
           class="map-link"
         >
           {{ t('contact.info.directions') }} &rarr;
         </a>
+      </div>
+
+      <div class="info-group">
+        <h3>{{ t('contact.info.phone_title') }}</h3>
+        <p>
+          <a href="tel:+17864782727" class="phone-link">(786) 478-2727</a>
+        </p>
+        <p>
+          <a href="tel:+18668273737" class="phone-link">+1 (866) 827-3737</a>
+        </p>
       </div>
 
       <div class="info-group">
@@ -117,6 +127,17 @@ const { t } = useI18n();
   &:hover {
     color: #d4af37;
     border-color: #d4af37;
+  }
+}
+
+.phone-link {
+  @include body-font(400);
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #d4af37;
   }
 }
 
