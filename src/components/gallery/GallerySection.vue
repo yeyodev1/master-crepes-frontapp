@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
@@ -34,6 +34,7 @@ const cloudUrl = (id: string) =>
   `https://res.cloudinary.com/dpjzfua3n/image/upload/master-crepes/${id}.jpg`;
 
 const lightboxIndex = ref<number | null>(null);
+const activeImage = computed(() => (lightboxIndex.value !== null ? images[lightboxIndex.value] : null));
 
 const openLightbox = (index: number) => {
   lightboxIndex.value = index;
@@ -99,8 +100,9 @@ const handleKey = (e: KeyboardEvent) => {
         </button>
         <div class="lb-img-wrap">
           <img
-            :src="cloudUrl(images[lightboxIndex].id)"
-            :alt="images[lightboxIndex].alt"
+            v-if="activeImage"
+            :src="cloudUrl(activeImage.id)"
+            :alt="activeImage.alt"
           />
         </div>
         <button class="lb-arrow lb-next" @click="next" aria-label="Next">
