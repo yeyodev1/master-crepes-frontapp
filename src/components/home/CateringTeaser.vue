@@ -167,7 +167,7 @@ const { t } = useI18n();
   right: 0;
   width: 60%; // Overlap slightly with content
   height: 100%;
-  background-image: url('https://res.cloudinary.com/dpjzfua3n/image/upload/v1775230299/master-crepes/gyaklmzoysyc3s2n4bgm.jpg');
+  background-image: url('https://res.cloudinary.com/dz6qozi9i/image/upload/master-crepes/crepes/389A5288.jpg');
   background-size: cover;
   background-position: center;
   z-index: 1;

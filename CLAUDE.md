@@ -40,9 +40,12 @@ src/
 
 ## Images
 
-- Hosted on **Cloudinary** (cloud: `dpjzfua3n`)
+- Primary Cloudinary cloud: **`dz6qozi9i`** (May 2026 onwards). Folders: `master-crepes/crepes/`, `master-crepes/cafe/`, `master-crepes/bebidas/`, `master-crepes/otros/`
+- Legacy cloud: `dpjzfua3n` (still referenced by `gallery`, `contact`, `franchises`, `catering`, `bio` views — pending migration)
+- New photoshoot manifest: `photos-pixieset-2026.json` (78 photos, source: gastronofoto.pixieset.com/mastercrepes2)
 - All image URLs should use Cloudinary public URLs
 - Old URLs from `www.themastercrepes.com/wp-content/uploads/` are broken — do not use
+- **Client rule (Apr 2026):** Home page must show only crêpes. Café/bebidas live in `/restaurante` only. NEVER mix salads/non-crêpe foods on the home page.
 
 ## Key Rules
 

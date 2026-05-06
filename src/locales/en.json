@@ -6,6 +6,7 @@
     "services": "Services",
     "contact": "Contact",
     "gallery": "Gallery",
+    "restaurante": "Restaurant",
     "order_now": "Order Now"
   },
   "promo": {
@@ -174,7 +175,14 @@
   "gallery": {
     "eyebrow": "OUR CREATIONS",
     "title": "The Gallery",
-    "subtitle": "A visual journey through our handcrafted crêpes and catering events."
+    "subtitle": "A visual journey through our handcrafted crêpes, specialty coffee, and signature drinks.",
+    "filter": {
+      "aria_label": "Filter gallery by category",
+      "all": "All",
+      "crepes": "Crêpes",
+      "cafe": "Coffee",
+      "bebidas": "Drinks"
+    }
   },
   "common": {
     "first_name": "First Name *",
@@ -186,5 +194,24 @@
     "loading": "Sending...",
     "success": "Received!",
     "required": "Required"
+  },
+  "restaurante": {
+    "eyebrow": "BEYOND THE CRÊPE",
+    "hero": {
+      "title": "Coffee, Lattes & Drinks",
+      "subtitle": "An invitation to slow down. Specialty coffee, signature lemonades and refreshing drinks crafted for every visit."
+    },
+    "tab": {
+      "cafe": "Coffee",
+      "bebidas": "Drinks"
+    },
+    "cafe": {
+      "title": "Specialty Coffee & Lattes",
+      "subtitle": "From perfect espresso shots to detailed latte art — every cup poured with French precision."
+    },
+    "bebidas": {
+      "title": "Signature Drinks",
+      "subtitle": "Hand-crafted lemonades, smoothies and seasonal refreshers, ready to pair with your favorite crêpe."
+    }
   }
 }

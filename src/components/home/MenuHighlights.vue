@@ -51,7 +51,7 @@ const { t } = useI18n();
     
     <!-- Background element using the unused asset -->
     <div class="floated-bg">
-      <img src="https://res.cloudinary.com/dpjzfua3n/image/upload/master-crepes/xmltr5uqtazbh4rkb841.jpg" alt="Fresh Crepe with Toppings">
+      <img src="https://res.cloudinary.com/dz6qozi9i/image/upload/master-crepes/crepes/389A5366.jpg" alt="Fresh Crepe with Toppings">
     </div>
   </section>
 </template>

@@ -50,6 +50,15 @@ const router = createRouter({
       }
     },
     {
+      path: '/restaurante',
+      name: 'restaurante',
+      component: () => import('../views/RestauranteView.vue'),
+      meta: {
+        title: 'Restaurant - Coffee & Drinks - Master Crepes',
+        description: 'Beyond crêpes: discover our specialty coffee, lattes and refreshing drinks at Master Crepes Doral.',
+      }
+    },
+    {
       path: '/bio',
       name: 'bio',
       component: () => import('../views/BioView.vue'),
@@ -68,16 +77,33 @@ const router = createRouter({
   },
 })
 
-router.beforeEach((to, from, next) => {
-  // Update Title
-  const defaultTitle = 'Master Crepes';
-  document.title = (to.meta.title as string) || defaultTitle;
+const SITE_ORIGIN = 'https://www.themastercrepes.com';
+const DEFAULT_TITLE = 'Master Crepes - Authentic French Crêpes, Coffee & Catering in Doral, Miami';
+const DEFAULT_DESC = 'French crêperie in Doral, FL. Sweet and savory crêpes, specialty coffee, signature drinks and live crêpe-station catering across Miami.';
 
-  // Update Meta Description
-  const metaDescription = document.querySelector('meta[name="description"]');
-  if (metaDescription) {
-    metaDescription.setAttribute('content', (to.meta.description as string) || 'Authentic French Crepes in Miami');
-  }
+const setMeta = (selector: string, attr: 'content' | 'href', value: string) => {
+  const el = document.head.querySelector<HTMLMetaElement | HTMLLinkElement>(selector);
+  if (el) el.setAttribute(attr, value);
+};
+
+router.beforeEach((to, _from, next) => {
+  const title = (to.meta.title as string) || DEFAULT_TITLE;
+  const description = (to.meta.description as string) || DEFAULT_DESC;
+  const canonical = SITE_ORIGIN + to.path;
+
+  document.title = title;
+
+  setMeta('meta[name="title"]', 'content', title);
+  setMeta('meta[name="description"]', 'content', description);
+  setMeta('link[rel="canonical"]', 'href', canonical);
+
+  setMeta('meta[property="og:title"]', 'content', title);
+  setMeta('meta[property="og:description"]', 'content', description);
+  setMeta('meta[property="og:url"]', 'content', canonical);
+
+  setMeta('meta[name="twitter:title"]', 'content', title);
+  setMeta('meta[name="twitter:description"]', 'content', description);
+  setMeta('meta[name="twitter:url"]', 'content', canonical);
 
   next();
 })

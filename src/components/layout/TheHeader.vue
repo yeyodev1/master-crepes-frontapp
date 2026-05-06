@@ -38,6 +38,7 @@ onUnmounted(() => {
 
 const navItems = computed(() => [
   { name: t('nav.home'), path: '/' },
+  { name: t('nav.restaurante'), path: '/restaurante' },
   { name: t('nav.catering'), path: '/catering' },
   { name: t('nav.gallery'), path: '/gallery' },
   { name: t('nav.franchises'), path: '/franchises' },
@@ -51,7 +52,7 @@ const navItems = computed(() => [
       <!-- Logo -->
       <RouterLink to="/" class="logo-wrapper" @click="closeMenu">
         <img :src="logoDesktop" alt="Master Crepes" class="logo desktop-logo" />
-        <img :src="logoDesktop" alt="Master Crepes" class="logo mobile-logo" />
+        <img :src="logoMobile"  alt="Master Crepes" class="logo mobile-logo" />
       </RouterLink>
 
       <!-- Desktop Navigation -->
@@ -87,9 +88,23 @@ const navItems = computed(() => [
         </span>
       </button>
 
-      <!-- Mobile Navigation Overlay -->
+    </div>
+
+    <!-- Mobile Navigation Overlay (teleported to body so backdrop-filter on .header doesn't trap fixed positioning) -->
+    <Teleport to="body">
       <transition name="fade">
         <div v-if="isMenuOpen" class="mobile-nav-overlay">
+          <button
+            type="button"
+            class="mobile-nav-close"
+            aria-label="Close menu"
+            @click="closeMenu"
+          >
+            <span class="x-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </span>
+          </button>
           <div class="mobile-nav-content">
             <img :src="logoMobile" alt="Master Crepes" class="mobile-menu-logo" />
             <ul class="mobile-nav-list">
@@ -99,9 +114,9 @@ const navItems = computed(() => [
                 </RouterLink>
               </li>
               <li>
-                <a 
-                  href="https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106" 
-                  target="_blank" 
+                <a
+                  href="https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106"
+                  target="_blank"
                   class="mobile-nav-cta"
                 >
                   {{ t('nav.order_now') }}
@@ -114,12 +129,16 @@ const navItems = computed(() => [
           </div>
         </div>
       </transition>
-    </div>
+    </Teleport>
   </header>
 </template>
 
 <style lang="scss" scoped>
 @use '@/styles/index.scss' as *;
+
+/* =========================================================
+   Header — mobile first, desktop nav unlocks at >=1024px
+   ========================================================= */
 
 .header {
   position: sticky;
@@ -128,12 +147,10 @@ const navItems = computed(() => [
   width: 100%;
   z-index: 100;
   background-color: #fff;
-  transition: all 0.3s ease;
+  transition: padding 0.3s ease, background-color 0.3s ease;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
 
   &.is-scrolled {
-    padding-top: 5px;
-    padding-bottom: 5px;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
   }
@@ -143,71 +160,96 @@ const navItems = computed(() => [
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 15px 20px;
-  height: 80px; // Fixed height for consistency
+  padding: 8px 14px;
+  min-height: 60px;
+  gap: 8px;
+  box-sizing: border-box;
+
+  @media (min-width: 480px) { padding: 10px 18px; min-height: 64px; }
+  @media (min-width: 768px) { padding: 14px 24px; min-height: 76px; }
+  @media (min-width: 1024px) { padding: 14px 28px; min-height: 80px; }
 }
 
 .logo-wrapper {
   display: flex;
   align-items: center;
   text-decoration: none;
-  z-index: 102; // Above mobile menu
+  z-index: 102;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .logo {
-  height: 50px;
+  display: block;
   width: auto;
+  max-width: 100%;
   transition: transform 0.3s ease;
 
-  &:hover {
-    transform: scale(1.02);
+  &:hover { transform: scale(1.02); }
+}
+
+/* Mobile-first: vertical logo on phones/tablets, horizontal on desktop */
+.desktop-logo {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+    height: 50px;
   }
 }
 
 .mobile-logo {
+  display: block;
+  height: 40px;
+
+  @media (min-width: 480px) { height: 44px; }
+  @media (min-width: 768px) { height: 52px; }
+  @media (min-width: 1024px) { display: none; }
+}
+
+/* =========================================================
+   Desktop nav — only at >=1024px to avoid wrap on tablets
+   ========================================================= */
+
+.desktop-nav {
   display: none;
 
-  @media (max-width: 768px) {
+  @media (min-width: 1024px) {
     display: block;
-    height: 40px;
-  }
-}
-
-.desktop-logo {
-  display: block;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
-
-/* Desktop Navigation */
-.desktop-nav {
-  @media (max-width: 768px) {
-    display: none;
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .nav-list {
     display: flex;
-    gap: 30px;
+    gap: 18px;
     list-style: none;
     margin: 0;
     padding: 0;
     align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+
+    @media (min-width: 1200px) { gap: 26px; }
+    @media (min-width: 1360px) { gap: 32px; }
   }
 
   .nav-link {
     text-decoration: none;
-    color: #333; // Dark grey for elegance
+    color: #333;
     font-family: $font-interface;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    white-space: nowrap;
     position: relative;
     transition: color 0.3s ease;
+
+    @media (min-width: 1200px) { font-size: 14px; }
 
     &::after {
       content: '';
@@ -224,24 +266,25 @@ const navItems = computed(() => [
     &.router-link-active {
       color: #000;
 
-      &::after {
-        width: 100%;
-      }
+      &::after { width: 100%; }
     }
   }
 
   .nav-cta {
-    padding: 10px 24px;
+    padding: 9px 18px;
     background-color: #000;
     color: #fff;
     text-decoration: none;
     font-family: $font-interface;
     font-weight: 600;
-    font-size: 13px;
-    text-transform: uppercase;
+    font-size: 12px;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
     border-radius: $border-radius-md;
+    white-space: nowrap;
     transition: all 0.3s ease;
+
+    @media (min-width: 1200px) { padding: 10px 22px; font-size: 13px; }
 
     &:hover {
       background-color: #333;
@@ -250,17 +293,23 @@ const navItems = computed(() => [
   }
 }
 
-/* Mobile Menu Button */
+/* =========================================================
+   Mobile menu button — visible <1024px
+   ========================================================= */
+
 .menu-toggle {
-  display: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   cursor: pointer;
   padding: 10px;
+  margin: -10px;
   z-index: 102;
 
-  @media (max-width: 768px) {
-    display: block;
+  @media (min-width: 1024px) {
+    display: none;
   }
 
   .hamburger-box {
@@ -278,7 +327,7 @@ const navItems = computed(() => [
     height: 2px;
     background-color: #000;
     position: absolute;
-    transition: transform 0.15s ease;
+    transition: transform 0.15s ease, background-color 0.15s ease;
 
     &::before,
     &::after {
@@ -291,51 +340,102 @@ const navItems = computed(() => [
       transition: transform 0.15s ease;
     }
 
-    &::before {
-      top: -8px;
-    }
-
-    &::after {
-      bottom: -8px;
-    }
+    &::before { top: -8px; }
+    &::after  { bottom: -8px; }
   }
 
   &[aria-expanded="true"] .hamburger-inner {
     background-color: transparent;
 
-    &::before {
-      transform: translateY(8px) rotate(45deg);
-    }
-
-    &::after {
-      transform: translateY(-8px) rotate(-45deg);
-    }
+    &::before { transform: translateY(8px) rotate(45deg); }
+    &::after  { transform: translateY(-8px) rotate(-45deg); }
   }
 }
 
-/* Mobile Navigation Overlay */
+/* =========================================================
+   Mobile nav overlay — full-screen, SCROLLABLE, dvh-safe
+   ========================================================= */
+
 .mobile-nav-overlay {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
   background-color: #fff;
   z-index: 101;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.mobile-nav-close {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 103;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+
+  @media (min-width: 480px) { top: 18px; right: 18px; }
+
+  &:hover  { background: rgba(0, 0, 0, 0.08); }
+  &:active { transform: scale(0.94); }
+
+  .x-icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    display: block;
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 2px;
+      background: #000;
+      border-radius: 2px;
+      margin-top: -1px;
+
+      &:first-child { transform: rotate(45deg); }
+      &:last-child  { transform: rotate(-45deg); }
+    }
+  }
 }
 
 .mobile-nav-content {
+  box-sizing: border-box;
+  min-height: 100%;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 80px 20px 28px; // space for header at top
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 20px;
+  gap: 18px;
 }
 
 .mobile-menu-logo {
-  max-width: 120px;
-  margin-bottom: 40px;
+  max-width: 80px;
+  width: 100%;
+  height: auto;
+  margin: 0 0 8px 0;
+
+  @media (min-height: 640px) { max-width: 96px;  margin-bottom: 16px; }
+  @media (min-height: 760px) { max-width: 110px; margin-bottom: 24px; }
 }
 
 .mobile-nav-list {
@@ -344,37 +444,64 @@ const navItems = computed(() => [
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+
+  @media (min-height: 640px) { gap: 16px; }
+  @media (min-height: 760px) { gap: 20px; }
+
+  > li { width: 100%; display: flex; justify-content: center; }
 
   .mobile-nav-link {
-    font-family: $font-principal; // Use the fancy font for mobile menu items for impact
-    font-size: 32px;
+    font-family: $font-principal;
+    font-size: 22px;
+    line-height: 1.15;
     color: #000;
     text-decoration: none;
     font-weight: 400;
     transition: color 0.3s;
 
-    &:hover {
-      color: #666;
-    }
+    @media (min-height: 640px) { font-size: 26px; }
+    @media (min-height: 760px) { font-size: 30px; }
+
+    &:hover  { color: #666; }
+    &.router-link-active { color: #d4af37; }
   }
 
   .mobile-nav-cta {
     display: inline-block;
-    margin-top: 20px;
-    padding: 15px 40px;
+    margin-top: 4px;
+    padding: 11px 28px;
     background-color: #000;
     color: #fff;
     text-decoration: none;
     font-family: $font-interface;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-size: 13px;
     border-radius: $border-radius-md;
+
+    @media (min-height: 640px) {
+      margin-top: 10px;
+      padding: 13px 32px;
+      font-size: 14px;
+    }
+    @media (min-height: 760px) {
+      margin-top: 16px;
+      padding: 15px 40px;
+      font-size: 15px;
+    }
   }
+
+  .mobile-lang-switch { margin-top: 4px; }
 }
 
-/* Transitions */
+/* =========================================================
+   Transitions
+   ========================================================= */
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;

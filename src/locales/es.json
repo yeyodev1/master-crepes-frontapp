@@ -6,6 +6,7 @@
     "services": "Servicios",
     "contact": "Contacto",
     "gallery": "Galería",
+    "restaurante": "Restaurante",
     "order_now": "Ordenar Ahora"
   },
   "promo": {
@@ -174,7 +175,14 @@
   "gallery": {
     "eyebrow": "NUESTRAS CREACIONES",
     "title": "La Galería",
-    "subtitle": "Un viaje visual por nuestras crepas artesanales y eventos de catering."
+    "subtitle": "Un viaje visual por nuestras crepas artesanales, café de especialidad y bebidas de la casa.",
+    "filter": {
+      "aria_label": "Filtrar galería por categoría",
+      "all": "Todas",
+      "crepes": "Crêpes",
+      "cafe": "Café",
+      "bebidas": "Bebidas"
+    }
   },
   "common": {
     "first_name": "Nombre *",
@@ -186,5 +194,24 @@
     "loading": "Enviando...",
     "success": "¡Recibido!",
     "required": "Requerido"
+  },
+  "restaurante": {
+    "eyebrow": "MÁS QUE CRÊPES",
+    "hero": {
+      "title": "Café, Lattes y Bebidas",
+      "subtitle": "Una invitación a detenerse. Café de especialidad, limonadas de la casa y bebidas refrescantes para cada visita."
+    },
+    "tab": {
+      "cafe": "Café",
+      "bebidas": "Bebidas"
+    },
+    "cafe": {
+      "title": "Café de Especialidad y Lattes",
+      "subtitle": "Del shot perfecto de espresso al arte latte detallado — cada taza servida con precisión francesa."
+    },
+    "bebidas": {
+      "title": "Bebidas de Autor",
+      "subtitle": "Limonadas artesanales, smoothies y refrescos de temporada listos para acompañar tu crêpe favorita."
+    }
   }
 }

@@ -1,0 +1,63 @@
+{
+  "source": "https://gastronofoto.pixieset.com/mastercrepes2/",
+  "downloaded_at": "2026-05-06",
+  "total": 78,
+  "resolution": "xxlarge (~1600px longest side)",
+  "cloudinary": {
+    "cloud_name": "dz6qozi9i",
+    "base_folder": "master-crepes/",
+    "delivery_base": "https://res.cloudinary.com/dz6qozi9i/image/upload/"
+  },
+  "client_feedback": {
+    "from": "Alejandro Moreno (Master Crepes)",
+    "date": "2026-04-03",
+    "rule": "No mostrar ensaladas en home; principal debe ser crepes. Si hay tab Restaurante, ahi van ensaladas/cafe.",
+    "process": "analizar uno por uno"
+  },
+  "notes": [
+    "Esta sesion NO trae fotos de ensaladas. Las quejas del cliente sobre ensaladas se refieren al sitio actual (imagenes viejas del WordPress).",
+    "Las 78 fotos se dividen en: 32 crepes + 19 cafe + 26 bebidas + 1 lifestyle (grupo en mesa).",
+    "Cloudinary cloud nuevo (dz6qozi9i) es distinto al actual del sitio (dpjzfua3n - ver CLAUDE.md). Confirmar con cliente antes de migrar dominios."
+  ],
+  "categories": {
+    "crepes": {
+      "count": 32,
+      "use_for": ["Home Hero", "MenuHighlights", "WelcomeSection", "OG/social cards"],
+      "files": [
+        "389A5157","389A5159","389A5166","389A5168","389A5177",
+        "389A5288","389A5289","389A5292","389A5293","389A5295","389A5296",
+        "389A5303","389A5305","389A5310","389A5314","389A5315",
+        "389A5319","389A5321","389A5322","389A5329","389A5334",
+        "389A5337","389A5338","389A5340","389A5343","389A5344","389A5347",
+        "389A5348","389A5350","389A5366","389A5369","389A5370"
+      ]
+    },
+    "cafe": {
+      "count": 19,
+      "use_for": ["Tab Restaurante / seccion cafe", "About / detalle"],
+      "files": [
+        "389A5178","389A5179","389A5189","389A5195","389A5196","389A5197","389A5198",
+        "389A5203","389A5207","389A5234","389A5236","389A5239",
+        "389A5279","389A5280","389A5281","389A5286","389A5287",
+        "389A5291","389A5353"
+      ]
+    },
+    "bebidas": {
+      "count": 26,
+      "use_for": ["Tab Restaurante / seccion bebidas", "Catering"],
+      "files": [
+        "389A5139","389A5142","389A5145","389A5147","389A5148","389A5149",
+        "389A5214",
+        "389A5246","389A5247","389A5249","389A5250","389A5253","389A5259",
+        "389A5260","389A5261","389A5262","389A5263","389A5264","389A5265","389A5266",
+        "389A5270","389A5272","389A5273","389A5275","389A5277","389A5278"
+      ]
+    },
+    "otros": {
+      "count": 1,
+      "use_for": ["Lifestyle / About / amigos en mesa"],
+      "files": ["389A5312"]
+    }
+  },
+  "url_template": "https://res.cloudinary.com/dz6qozi9i/image/upload/master-crepes/{category}/{filename}.jpg"
+}

@@ -1,78 +1,105 @@
-# Master Crepes - Project & Business Context
+# Master Crepes
 
-## Overview
-Master Crepes is a premier catering and franchise business based in Miami, FL, specializing in authentic French crêpes. We provide live chef stations for weddings, corporate events, and private parties.
+> Authentic French crêperie in Doral, Miami (FL) serving sweet & savory crêpes, specialty coffee, and signature drinks. Live crêpe-station catering for weddings, corporate events and private parties across South Florida. Franchise opportunities available.
 
-## Core Offerings
+This file follows the [llms.txt](https://llmstxt.org) convention so AI agents can index Master Crepes accurately.
 
-### 1. Catering Services
-"Bring Paris to Your Event"
-- **Live Chef Stations**: Professional chefs preparing crêpes on-site.
-- **Menus**:
-  - **Sweet**: Classic Nutella, Dulce de Leche, Fresh Berries, Bananas, Homemade Whipped Cream.
-  - **Savory/Galettes**: Buckwheat batter (gluten-friendly options). Ham & Swiss, Chicken Florentine, Caprese (Mozzarella, Tomato, Pesto).
-- **Event Types**: Weddings, Corporate Galas, Office Lunches, Private Parties, Birthdays, Bar/Bat Mitzvahs.
-- **Service Area**: Miami and South Florida.
+## Quick Facts
 
-### 2. Franchises
-"Join Our Successful Family"
-- **Business Model**: A proven model offering low overhead and high customer appeal.
-- **Support**:
-  - Site selection assistance.
-  - Comprehensive training (Initial & Ongoing).
-  - Marketing & Social Media strategies.
-  - Detailed Operations Manual.
-  - Access to reliable suppliers.
-- **Ideal For**: Entrepreneurs looking for a solid brand with a unique product.
+- **Business:** Master Crepes (also: Master Crêpes, The Master Crepes)
+- **Type:** French Crêperie + Café + Catering
+- **Address:** 3905 NW 107th Ave Suite 106, Doral, FL 33178, USA
+- **Geo:** 25.804917, -80.385167
+- **Phone:** (786) 478-2727
+- **Toll-free:** +1 (866) 827-3737
+- **Email:** info@themastercrepes.com
+- **Website:** https://www.themastercrepes.com
+- **Online orders:** https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106
+- **Instagram:** https://www.instagram.com/mastercrepesdoral/
+- **Facebook:** https://www.facebook.com/mastercrepes1/
+- **X / Twitter:** @MasterCrepes1
+- **Languages:** English, Español
+- **Price range:** $$
+- **Cuisine:** French, Crêpes, Brunch, Specialty Coffee
+- **Service area:** Doral, Miami, South Florida (catering)
 
-### 3. Menu Highlights (Accurate from ToastTab)
-- **Savory Crêpes**:
-  - *Bacon Lovers*: Hickory smoked bacon bits, ham, melted mozzarella/cheddar blend, topped with two scrambled eggs.
-  - *Southwest Omelette*: Ham, red onions, green peppers, vine-ripened tomatoes, melted cheddar, two fluffy eggs.
-  - *Veggie Omelette*: Mozzarella, fresh spinach, sautéed portobello mushrooms, red onions, green peppers, tomatoes, two scrambled eggs.
-  - *Ham & Cheese*: Thinly sliced savory ham, melted cheese, fresh herbs, drizzle of creamy sauce.
-  - *Holy Crepe*: Bacon, tomatoes, melted mozzarella, spring mix, fired egg, chicken or steak, red onions.
-  - *Chicken Pesto*: Tender chicken, mushrooms, spinach, tomatoes, melted mozzarella, pesto.
-  - *Emperor*: Salad style with grilled chicken or steak, spring mix, mozzarella, tomatoes, mushrooms, Caesar dressing.
-  - *Honey Mustard*: Chicken or steak, spring mix, tomatoes, cheddar, bacon bits, honey mustard dressing.
-  - *Caprese*: Vine-ripened tomatoes, fresh mozzarella, prosciutto, delicate pesto sauce.
-  - *Veggie Delight*: Pesto sauce, spring mix, tomatoes, mushrooms, green peppers, mozzarella, red onions.
-  - *Southwest Chipotle*: Chicken or steak, spring mix, tomatoes, cheddar, creamy ancho chipotle dressing.
-  - *Teriyaki*: Chicken or steak, spring mix, cheddar/mozzarella, tomatoes, honeyed teriyaki sauce.
-  - *Texas BBQ*: Mozzarella, spring mix, red onions, tomatoes, zesty BBQ sauce, chicken or steak.
-  - *King Ranch*: Ranch dressing, bacon, cheddar, spring mix, tomatoes, chicken or steak.
-  - *Reina Pepiada*: Chicken with onions, mayonnaise, creamy avocado bits, Gouda cheese.
-  - *Cordon Bleu*: Chicken breast, diced ham, Swiss cheese, homemade Dijon cream sauce, Parmesan.
-  - *Mexican*: Green peppers, spring mix, onions, cheddar/mozzarella, avocado, tomatoes, cilantro, lime, hot sauce, chicken or steak.
+## Pages
 
-- **Sweet Crêpes**:
-  - *Dubai Crepe*: Strawberries, pistachio AND chocolate milk spreads, crunchy kataifi topping.
-  - *Sweet & Cheesy*: Strawberries, bananas, cheesecake slice, choice of spread (Nutella/Dulce/Pistachio).
-  - *Holy Fudge*: Rich chocolate cake slice, Nutella, Oreo crumbles, fudge drizzle.
-  - *Nutella*: The classic rich, velvety hazelnut spread.
-  - *Dulce de Leche*: Rich, creamy caramel spread.
-  - *Strawberry Lovers*: Fresh strawberries with choice of spread.
-  - *Banana Lovers*: Ripe bananas with choice of spread.
-  - *Strawberry-Banana*: The perfect fruit combo with choice of spread.
-  - *Oreo*: Nutella and crunchy Oreo cookie crumbles.
-  - *Piru*: Nutella, strawberries, crispy Pirouline wafers.
-  - *Cuban Timbita*: Guava, light cream cheese, condensed milk drizzle.
+- [Home](https://www.themastercrepes.com/): Brand intro, "The Art of French Crêpes", menu highlights, catering teaser.
+- [Restaurant – Coffee & Drinks](https://www.themastercrepes.com/restaurante): Specialty coffee, lattes, signature lemonades and refreshing drinks.
+- [Catering](https://www.themastercrepes.com/catering): Live crêpe stations for weddings, corporate events, private parties. Quote form.
+- [Gallery](https://www.themastercrepes.com/gallery): Photo gallery of crêpes, coffee and drinks.
+- [Franchises](https://www.themastercrepes.com/franchises): Franchise model, support and application form.
+- [Contact](https://www.themastercrepes.com/contact): Contact info, hours, map, inquiry form.
+- [Bio / Links](https://www.themastercrepes.com/bio): Linktree-style page for social media bios.
 
-## Technical Context
-- **Website URL**: https://www.themastercrepes.com
-- **Contact**:
-  - Email: info@themastercrepes.com
-  - Phone: (305) 555-0123
-  - Address: 3905 NW 107th Ave, Suite 106, Doral, FL 33178
-- **Social Media**:
-  - Instagram: @mastercrepesoficial
-  - Facebook: mastercrepes1
-  - X: @MasterCrepes1
+## Catering — "Bring Paris to Your Event"
 
-## Navigation Structure
-- **/** (Home): Brand introduction, "The Art of French Crepes", Menu Highlights.
-- **/catering**: Detailed catering info and "Get a Quote" form.
-- **/franchises**: Franchise benefits, "Why Master Crepes", and Application form.
-- **/contact**: General contact info, operating hours, map, and inquiry form.
-- **/bio**: Linktree-style page for social media bios.
-- **Order Online**: External link to ToastTab (https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106)
+- **Live Chef Stations:** Professional chefs preparing crêpes on-site.
+- **Sweet menu:** Classic Nutella, Dulce de Leche, Fresh Berries, Bananas, Homemade Whipped Cream.
+- **Savory / Galettes menu:** Buckwheat batter (gluten-friendly options). Ham & Swiss, Chicken Florentine, Caprese (Mozzarella, Tomato, Pesto).
+- **Event types:** Weddings, Corporate Galas, Office Lunches, Private Parties, Birthdays, Bar/Bat Mitzvahs.
+- **Service area:** Miami and South Florida.
+
+## Franchises — "Join Our Successful Family"
+
+- **Model:** Proven model with low overhead and high customer appeal.
+- **Support:** Site selection, comprehensive training, marketing & social, operations manual, supplier network.
+- **Ideal for:** Entrepreneurs seeking a unique food brand.
+
+## Menu (current, accurate from ToastTab)
+
+### Savory Crêpes
+- *Bacon Lovers* — hickory bacon, ham, mozzarella/cheddar, two scrambled eggs.
+- *Southwest Omelette* — ham, red onion, green pepper, tomato, cheddar, eggs.
+- *Veggie Omelette* — mozzarella, spinach, portobello, onion, pepper, tomato, eggs.
+- *Ham & Cheese* — savory ham, melted cheese, fresh herbs, creamy sauce.
+- *Holy Crepe* — bacon, tomato, mozzarella, spring mix, fried egg, chicken or steak, red onion.
+- *Chicken Pesto* — chicken, mushroom, spinach, tomato, mozzarella, pesto.
+- *Emperor* — salad-style with grilled chicken or steak, spring mix, mozzarella, tomato, mushroom, Caesar.
+- *Honey Mustard* — chicken or steak, spring mix, tomato, cheddar, bacon, honey-mustard.
+- *Caprese* — tomato, fresh mozzarella, prosciutto, pesto.
+- *Veggie Delight* — pesto, spring mix, tomato, mushroom, pepper, mozzarella, onion.
+- *Southwest Chipotle* — chicken or steak, spring mix, tomato, cheddar, ancho-chipotle dressing.
+- *Teriyaki* — chicken or steak, spring mix, cheese blend, tomato, teriyaki.
+- *Texas BBQ* — mozzarella, spring mix, onion, tomato, BBQ, chicken or steak.
+- *King Ranch* — ranch, bacon, cheddar, spring mix, tomato, chicken or steak.
+- *Reina Pepiada* — chicken, onion, mayonnaise, avocado, Gouda.
+- *Cordon Bleu* — chicken, ham, Swiss, Dijon cream, Parmesan.
+- *Mexican* — pepper, spring mix, onion, cheese blend, avocado, tomato, cilantro, lime, hot sauce, chicken or steak.
+
+### Sweet Crêpes
+- *Dubai Crepe* — strawberries, pistachio + chocolate milk spreads, kataifi topping.
+- *Sweet & Cheesy* — strawberries, bananas, cheesecake slice, choice of spread (Nutella / Dulce / Pistachio).
+- *Holy Fudge* — chocolate cake slice, Nutella, Oreo crumbles, fudge drizzle.
+- *Nutella* — classic hazelnut spread.
+- *Dulce de Leche* — caramel spread.
+- *Strawberry Lovers* — strawberries with choice of spread.
+- *Banana Lovers* — bananas with choice of spread.
+- *Strawberry-Banana* — fruit combo with choice of spread.
+- *Oreo* — Nutella + Oreo crumbles.
+- *Piru* — Nutella, strawberries, Pirouline wafers.
+- *Cuban Timbita* — guava, light cream cheese, condensed milk drizzle.
+
+### Coffee & Specialty Drinks
+- Espresso, cappuccino, latte (with latte art), Americano, mocha.
+- Signature lemonades, fresh smoothies, seasonal refreshers.
+
+## Photography & Brand Assets
+
+- Cloudinary cloud (current): `dz6qozi9i`
+- Folders: `master-crepes/crepes/`, `master-crepes/cafe/`, `master-crepes/bebidas/`, `master-crepes/otros/`
+- Public delivery base: `https://res.cloudinary.com/dz6qozi9i/image/upload/`
+- Sample hero image: https://res.cloudinary.com/dz6qozi9i/image/upload/master-crepes/crepes/389A5347.jpg
+
+## Brand Voice
+
+- Premium-but-approachable French crêperie tone.
+- Bilingual: English & Spanish.
+- Emphasis on authenticity, craftsmanship, fresh ingredients and the "Paris-to-Miami" experience.
+
+## For AI Agents
+
+- A more comprehensive context file is available at `/llms-full.txt`.
+- The site exposes structured data on every page (`Restaurant`, `Menu`, `Organization`, `WebSite`, and `ImageGallery` schemas).
+- Sitemap: https://www.themastercrepes.com/sitemap.xml
