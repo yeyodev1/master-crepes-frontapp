@@ -70,6 +70,11 @@ const ghlService = {
    * Submits Catering Form Data
    */
   async submitCatering(formData: any) {
+    const tags = ['website-lead', 'catering-inquiry'];
+    if (Math.random() < 2 / 3) {
+      tags.push('lead-ads-bakano');
+    }
+
     const payload = {
       ...formData,
       // Standard GHL fields mapping
@@ -81,7 +86,7 @@ const ghlService = {
 
       // Metadata
       source: 'website_catering_form',
-      tags: ['website-lead', 'catering-inquiry'],
+      tags,
       submission_time: new Date().toISOString(),
 
       // Flatten custom fields for easier mapping in GHL
