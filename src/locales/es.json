@@ -582,7 +582,7 @@
             "desc": "Fresas frescas y el relleno de tu elección.",
             "variants": [
               {
-                "label": "Dulce de Leche / Nutella",
+                "label": "Nutella / Dulce de Leche",
                 "price": "$13.99"
               },
               {
@@ -596,7 +596,7 @@
             "desc": "Banana madura con el relleno de tu elección.",
             "variants": [
               {
-                "label": "Dulce de Leche / Nutella",
+                "label": "Nutella / Dulce de Leche",
                 "price": "$12.99"
               },
               {
@@ -610,7 +610,7 @@
             "desc": "Fresas frescas y banana con el relleno de tu elección.",
             "variants": [
               {
-                "label": "Dulce de Leche / Nutella",
+                "label": "Nutella / Dulce de Leche",
                 "price": "$14.99"
               },
               {
@@ -624,7 +624,7 @@
             "desc": "Relleno cremoso con crocante de Oreo.",
             "variants": [
               {
-                "label": "Dulce de Leche / Nutella",
+                "label": "Nutella / Dulce de Leche",
                 "price": "$12.99"
               },
               {
@@ -638,7 +638,7 @@
             "desc": "Fresas, banana y cheesecake con tu relleno favorito.",
             "variants": [
               {
-                "label": "Dulce de Leche / Nutella",
+                "label": "Nutella / Dulce de Leche",
                 "price": "$16.99"
               },
               {
@@ -652,7 +652,7 @@
             "desc": "Torta de chocolate, Oreo e hilo de fudge.",
             "variants": [
               {
-                "label": "Dulce de Leche / Nutella",
+                "label": "Nutella / Dulce de Leche",
                 "price": "$16.99"
               },
               {
@@ -666,7 +666,7 @@
             "desc": "Fresas cubiertas con barquillos Pirouline.",
             "variants": [
               {
-                "label": "Dulce de Leche / Nutella",
+                "label": "Nutella / Dulce de Leche",
                 "price": "$15.99"
               },
               {
@@ -826,7 +826,14 @@
           {
             "name": "Iced Chai Latte",
             "price": "$7.00"
-          },
+          }
+        ]
+      },
+      {
+        "id": "milk",
+        "group": "drinks",
+        "title": "Opciones de Leche",
+        "items": [
           {
             "name": "Almond Milk",
             "price": "+$0.60"
@@ -835,7 +842,8 @@
             "name": "Oat Milk",
             "price": "+$0.60"
           }
-        ]
+        ],
+        "note": "Selecciona una."
       },
       {
         "id": "juices",
