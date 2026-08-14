@@ -14,6 +14,15 @@ const router = createRouter({
       }
     },
     {
+      path: '/menu',
+      name: 'menu',
+      component: () => import('../views/MenuView.vue'),
+      meta: {
+        title: 'Menu - Crêpes, Salads, Gelato & Coffee - Master Crepes',
+        description: 'Our full 2026 menu: sweet and savory French crêpes, salads, açaí bowls, gelato and specialty coffee in Doral, FL.',
+      }
+    },
+    {
       path: '/catering',
       name: 'catering',
       component: () => import('../views/CateringView.vue'),

@@ -7,7 +7,8 @@
     "contact": "Contact",
     "gallery": "Gallery",
     "restaurante": "Restaurant",
-    "order_now": "Order Now"
+    "order_now": "Order Now",
+    "menu": "Menu"
   },
   "promo": {
     "topbar_text": "Delicious Crepes & Catering Services",
@@ -213,5 +214,759 @@
       "title": "Signature Drinks",
       "subtitle": "Hand-crafted lemonades, smoothies and seasonal refreshers, ready to pair with your favorite crêpe."
     }
+  },
+  "menuPage": {
+    "hero": {
+      "eyebrow": "Menu 2026",
+      "title": "Our Menu",
+      "subtitle": "Authentic French crêpes, salads, gelato and specialty coffee — made fresh in Doral.",
+      "download": "Download PDF Menu",
+      "order": "Order Online"
+    },
+    "groups": [
+      {
+        "id": "all",
+        "label": "All"
+      },
+      {
+        "id": "savory",
+        "label": "Savory"
+      },
+      {
+        "id": "sweet",
+        "label": "Sweet"
+      },
+      {
+        "id": "drinks",
+        "label": "Coffee & Drinks"
+      },
+      {
+        "id": "extras",
+        "label": "Kids & Extras"
+      }
+    ],
+    "notes": [
+      "Table service includes gratuity.",
+      "Please inform your server of any food allergies.",
+      "Raw or undercooked foods may pose a health risk."
+    ],
+    "sections": [
+      {
+        "id": "breakfast",
+        "group": "savory",
+        "title": "Breakfast Crepes",
+        "items": [
+          {
+            "name": "Bacon Lovers",
+            "desc": "Bacon, ham, melted mozzarella and cheddar cheese & scrambled eggs.",
+            "price": "$13.99"
+          },
+          {
+            "name": "Ham & Cheese",
+            "desc": "Classic crepe with ham, mozzarella & cheddar cheese.",
+            "price": "$11.99"
+          },
+          {
+            "name": "Veggie Omelette",
+            "desc": "Mozzarella, tomatoes, spinach, mushrooms, red onions, peppers & eggs.",
+            "price": "$13.99"
+          },
+          {
+            "name": "Southwest Omelette",
+            "desc": "Ham, onion, peppers, tomato, cheddar & eggs.",
+            "price": "$13.99"
+          }
+        ]
+      },
+      {
+        "id": "entree",
+        "group": "savory",
+        "title": "Entrée Crepes",
+        "items": [
+          {
+            "name": "Southwest Chipotle",
+            "desc": "Tomatoes, spring mix, cheddar & chipotle dressing.",
+            "variants": [
+              {
+                "label": "Chicken",
+                "price": "$15.99"
+              },
+              {
+                "label": "Steak",
+                "price": "$16.99"
+              },
+              {
+                "label": "Mix",
+                "price": "$17.99"
+              },
+              {
+                "label": "Picanha",
+                "price": "$18.99"
+              }
+            ]
+          },
+          {
+            "name": "Texas BBQ",
+            "desc": "Mozzarella, tomatoes, spring mix, red onions & BBQ sauce.",
+            "variants": [
+              {
+                "label": "Chicken",
+                "price": "$15.99"
+              },
+              {
+                "label": "Steak",
+                "price": "$16.99"
+              },
+              {
+                "label": "Mix",
+                "price": "$17.99"
+              },
+              {
+                "label": "Picanha",
+                "price": "$18.99"
+              }
+            ]
+          },
+          {
+            "name": "Teriyaki",
+            "desc": "Cheddar, mozzarella, tomatoes, spring mix & teriyaki sauce.",
+            "variants": [
+              {
+                "label": "Chicken",
+                "price": "$15.99"
+              },
+              {
+                "label": "Steak",
+                "price": "$16.99"
+              },
+              {
+                "label": "Mix",
+                "price": "$17.99"
+              },
+              {
+                "label": "Picanha",
+                "price": "$18.99"
+              }
+            ]
+          },
+          {
+            "name": "King Ranch",
+            "desc": "Bacon, cheddar, tomatoes, spring mix & ranch dressing.",
+            "variants": [
+              {
+                "label": "Chicken",
+                "price": "$15.99"
+              },
+              {
+                "label": "Steak",
+                "price": "$16.99"
+              },
+              {
+                "label": "Mix",
+                "price": "$17.99"
+              },
+              {
+                "label": "Picanha",
+                "price": "$18.99"
+              }
+            ]
+          },
+          {
+            "name": "Emperor",
+            "desc": "Mozzarella, tomatoes, spring mix, mushrooms & Caesar dressing.",
+            "variants": [
+              {
+                "label": "Chicken",
+                "price": "$15.99"
+              },
+              {
+                "label": "Steak",
+                "price": "$16.99"
+              },
+              {
+                "label": "Mix",
+                "price": "$17.99"
+              },
+              {
+                "label": "Picanha",
+                "price": "$18.99"
+              }
+            ]
+          },
+          {
+            "name": "Honey Mustard",
+            "desc": "Cheddar, bacon, spring mix, tomatoes & honey mustard.",
+            "variants": [
+              {
+                "label": "Chicken",
+                "price": "$15.99"
+              },
+              {
+                "label": "Steak",
+                "price": "$16.99"
+              },
+              {
+                "label": "Mix",
+                "price": "$17.99"
+              },
+              {
+                "label": "Picanha",
+                "price": "$18.99"
+              }
+            ]
+          },
+          {
+            "name": "Holy Crepe!",
+            "desc": "Bacon, mozzarella, tomatoes, red onions, spring mix, fried egg.",
+            "variants": [
+              {
+                "label": "Chicken",
+                "price": "$16.99"
+              },
+              {
+                "label": "Steak",
+                "price": "$17.99"
+              },
+              {
+                "label": "Mix",
+                "price": "$18.99"
+              },
+              {
+                "label": "Picanha",
+                "price": "$19.99"
+              }
+            ]
+          },
+          {
+            "name": "Home Style Pizza",
+            "desc": "House pizza sauce, mozzarella, tomatoes & pesto.",
+            "variants": [
+              {
+                "label": "Cheese",
+                "price": "$11.99"
+              },
+              {
+                "label": "Ham",
+                "price": "$12.99"
+              },
+              {
+                "label": "Pepperoni",
+                "price": "$12.99"
+              },
+              {
+                "label": "Chicken",
+                "price": "$14.99"
+              }
+            ]
+          },
+          {
+            "name": "Wagyu Smash",
+            "desc": "Wagyu beef, bacon, caramelized onions and bacon, cheddar, pickles & smash sauce.",
+            "variants": [
+              {
+                "label": "Double",
+                "price": "$15.99"
+              }
+            ]
+          },
+          {
+            "name": "Picanha Lovers",
+            "desc": "Angus picanha, bacon, arugula, Argentinian sausage with cilantro sauce & queso de mano topped.",
+            "price": "$19.99"
+          },
+          {
+            "name": "Caprese",
+            "desc": "Tomatoes, fresh mozzarella, prosciutto & pesto.",
+            "price": "$13.99"
+          },
+          {
+            "name": "Veggie Delight",
+            "desc": "Pesto, tomatoes, mushrooms, peppers, spring mix, mozzarella & red onions.",
+            "price": "$13.99"
+          },
+          {
+            "name": "Chicken Pesto",
+            "desc": "Chicken, mushrooms, spinach, tomatoes, pesto & mozzarella.",
+            "price": "$14.99"
+          }
+        ]
+      },
+      {
+        "id": "world",
+        "group": "savory",
+        "title": "Around the World",
+        "items": [
+          {
+            "name": "Reina Pepiada (VNZ)",
+            "desc": "Chicken, onion, mayonnaise, avocado & gouda.",
+            "price": "$13.99"
+          },
+          {
+            "name": "Cordon Bleu (SWITZ)",
+            "desc": "Chicken, ham, shaved Parmesan cheese, Swiss cheese & Dijon cream sauce.",
+            "price": "$15.99"
+          },
+          {
+            "name": "Mexican (MEX)",
+            "desc": "Peppers, avocado, tomatoes, spring mix, lime, mozzarella, red onions, cheddar, cilantro & hot sauce.",
+            "variants": [
+              {
+                "label": "Chicken",
+                "price": "$16.99"
+              },
+              {
+                "label": "Steak",
+                "price": "$17.99"
+              },
+              {
+                "label": "Mix",
+                "price": "$18.99"
+              },
+              {
+                "label": "Picanha",
+                "price": "$19.99"
+              }
+            ]
+          },
+          {
+            "name": "Cuban Twist",
+            "desc": "Mojo slow roasted pork, sweet plantains, fried cheese, grilled onions.",
+            "price": "$15.99"
+          },
+          {
+            "name": "Cuban Timbita (CUB)",
+            "desc": "Guava spread & cream cheese with condensed milk drizzle.",
+            "price": "$13.99"
+          }
+        ]
+      },
+      {
+        "id": "salads",
+        "group": "savory",
+        "title": "Salads",
+        "items": [
+          {
+            "name": "Picanha Salad",
+            "desc": "Angus picanha with arugula and spring mix, sweet plantains, tomatoes & queso de mano.",
+            "price": "$19.99"
+          },
+          {
+            "name": "Salmon & Feta Power Salad",
+            "desc": "Grilled salmon, black olives, tomatoes, red onions & feta cheese.",
+            "price": "$17.99"
+          },
+          {
+            "name": "Steakhouse Churrasco Salad",
+            "desc": "Angus churrasco with caramelized onions, spring mix, grilled corn, green peppers & Gouda cheese.",
+            "price": "$16.99"
+          },
+          {
+            "name": "Parmesan Olive Chicken Salad",
+            "desc": "Grilled chicken breast, tomatoes, spring mix, black olives & shaved Parmesan.",
+            "price": "$15.99"
+          }
+        ]
+      },
+      {
+        "id": "dessert",
+        "group": "sweet",
+        "title": "Dessert Crepes",
+        "items": [
+          {
+            "name": "Nutella / Dulce de Leche",
+            "desc": "Classic crepe with filling & powdered sugar.",
+            "price": "$10.99"
+          },
+          {
+            "name": "Strawberry Lovers",
+            "desc": "Fresh strawberries & your choice of spread.",
+            "variants": [
+              {
+                "label": "Dulce de Leche / Nutella",
+                "price": "$13.99"
+              },
+              {
+                "label": "Pistachio",
+                "price": "$15.99"
+              }
+            ]
+          },
+          {
+            "name": "Banana Lovers",
+            "desc": "Ripe bananas with spread of choice.",
+            "variants": [
+              {
+                "label": "Dulce de Leche / Nutella",
+                "price": "$12.99"
+              },
+              {
+                "label": "Pistachio",
+                "price": "$14.99"
+              }
+            ]
+          },
+          {
+            "name": "Strawberry Banana",
+            "desc": "Fresh strawberries & bananas with spread of choice.",
+            "variants": [
+              {
+                "label": "Dulce de Leche / Nutella",
+                "price": "$14.99"
+              },
+              {
+                "label": "Pistachio",
+                "price": "$16.99"
+              }
+            ]
+          },
+          {
+            "name": "Oreo",
+            "desc": "Creamy filling with Oreo crunch.",
+            "variants": [
+              {
+                "label": "Dulce de Leche / Nutella",
+                "price": "$12.99"
+              },
+              {
+                "label": "Pistachio",
+                "price": "$14.99"
+              }
+            ]
+          },
+          {
+            "name": "Sweet & Cheesy",
+            "desc": "Strawberries, bananas & cheesecake with your favorite spread.",
+            "variants": [
+              {
+                "label": "Dulce de Leche / Nutella",
+                "price": "$16.99"
+              },
+              {
+                "label": "Pistachio",
+                "price": "$18.99"
+              }
+            ]
+          },
+          {
+            "name": "Holy Fudge",
+            "desc": "Chocolate cake, Oreo & fudge drizzle.",
+            "variants": [
+              {
+                "label": "Dulce de Leche / Nutella",
+                "price": "$16.99"
+              },
+              {
+                "label": "Pistachio",
+                "price": "$18.99"
+              }
+            ]
+          },
+          {
+            "name": "Piru",
+            "desc": "Strawberries topped with Pirouline wafers.",
+            "variants": [
+              {
+                "label": "Dulce de Leche / Nutella",
+                "price": "$15.99"
+              },
+              {
+                "label": "Pistachio",
+                "price": "$17.99"
+              }
+            ]
+          },
+          {
+            "name": "Dubai",
+            "desc": "Strawberries, pistachio, chocolate & crunchy kataifi.",
+            "price": "$18.99"
+          }
+        ]
+      },
+      {
+        "id": "gelato",
+        "group": "sweet",
+        "title": "Gelato & Sorbetto",
+        "items": [
+          {
+            "name": "Small / Single Scoop",
+            "price": "$6.99"
+          },
+          {
+            "name": "Large / Double Scoop",
+            "price": "$9.49"
+          },
+          {
+            "name": "Cone",
+            "price": "+$2.00"
+          }
+        ],
+        "note": "Flavors: Vanilla, Nutella, Pistachio, Ferrero, Strawberry, Tiramisu, Rum & Raisins, Cotton Candy, Stracciatella, Dulce de Leche, Chocolate, Coffee, Peanut Butter, Cookies & Cream, Mango, Coconut, Passion Fruit."
+      },
+      {
+        "id": "acai",
+        "group": "sweet",
+        "title": "Açaí Bowls",
+        "items": [
+          {
+            "name": "Classic",
+            "desc": "Açaí, granola, banana, strawberry & honey.",
+            "price": "$14.99"
+          },
+          {
+            "name": "Tropical",
+            "desc": "Açaí, granola, banana, pineapple, blueberries & coconut.",
+            "price": "$15.99"
+          },
+          {
+            "name": "Peanut Berries Blizz",
+            "desc": "Açaí, granola, banana, strawberry, choco chips & peanut butter.",
+            "price": "$15.99"
+          }
+        ]
+      },
+      {
+        "id": "coffee",
+        "group": "drinks",
+        "title": "Coffee",
+        "items": [
+          {
+            "name": "Espresso",
+            "price": "$3.00"
+          },
+          {
+            "name": "Double Espresso",
+            "price": "$4.50"
+          },
+          {
+            "name": "Cortadito",
+            "price": "$4.00"
+          },
+          {
+            "name": "Macchiato",
+            "price": "$4.00"
+          },
+          {
+            "name": "Latte",
+            "price": "$6.00"
+          },
+          {
+            "name": "Cappuccino",
+            "price": "$6.00"
+          },
+          {
+            "name": "Mochaccino",
+            "price": "$6.00"
+          },
+          {
+            "name": "Americano",
+            "price": "$5.00"
+          },
+          {
+            "name": "Affogato",
+            "price": "$6.00"
+          }
+        ]
+      },
+      {
+        "id": "hot_lattes",
+        "group": "drinks",
+        "title": "Hot Lattes",
+        "items": [
+          {
+            "name": "Vanilla Latte",
+            "price": "$6.50"
+          },
+          {
+            "name": "Caramel Latte",
+            "price": "$6.50"
+          },
+          {
+            "name": "Pistachio Latte",
+            "price": "$6.50"
+          },
+          {
+            "name": "Chai Latte",
+            "price": "$6.00"
+          },
+          {
+            "name": "Dirty Chai Latte",
+            "price": "$7.00"
+          },
+          {
+            "name": "Matcha Latte",
+            "price": "$7.00"
+          }
+        ]
+      },
+      {
+        "id": "iced_lattes",
+        "group": "drinks",
+        "title": "Iced Lattes",
+        "items": [
+          {
+            "name": "Iced Vanilla Latte",
+            "price": "$7.00"
+          },
+          {
+            "name": "Iced Caramel Latte",
+            "price": "$7.00"
+          },
+          {
+            "name": "Iced Mocha Latte",
+            "price": "$6.00"
+          },
+          {
+            "name": "Iced Pistachio Latte",
+            "price": "$6.50"
+          },
+          {
+            "name": "Iced Matcha Latte",
+            "price": "$7.00"
+          },
+          {
+            "name": "Iced Chai Latte",
+            "price": "$7.00"
+          },
+          {
+            "name": "Almond Milk",
+            "price": "+$0.60"
+          },
+          {
+            "name": "Oat Milk",
+            "price": "+$0.60"
+          }
+        ]
+      },
+      {
+        "id": "juices",
+        "group": "drinks",
+        "title": "Juices & Smoothies",
+        "items": [
+          {
+            "name": "Orange",
+            "price": "$6.50"
+          },
+          {
+            "name": "Lemonade",
+            "price": "$7.50"
+          },
+          {
+            "name": "Strawberry Lemonade",
+            "price": "$7.50"
+          },
+          {
+            "name": "Coconut Lemonade",
+            "price": "$7.50"
+          },
+          {
+            "name": "Papelón con Limón",
+            "price": "$5.00"
+          },
+          {
+            "name": "Smoothies",
+            "desc": "Blackberry, mango, passion fruit or strawberry. Choice of water or milk.",
+            "price": "$7.00"
+          }
+        ]
+      },
+      {
+        "id": "sodas",
+        "group": "drinks",
+        "title": "Sodas, Waters & Beers",
+        "items": [
+          {
+            "name": "Coke · Diet Coke · Coke Zero · Sprite",
+            "price": "$3.50"
+          },
+          {
+            "name": "Mexican Coke",
+            "price": "$4.75"
+          },
+          {
+            "name": "Nestea Peach / Lemon",
+            "price": "$5.00"
+          },
+          {
+            "name": "Water",
+            "price": "$3.50"
+          },
+          {
+            "name": "Sparkling Water",
+            "price": "$4.00"
+          },
+          {
+            "name": "Corona Extra Light · Polar Pilsener · Peroni · Michelob Ultra Light",
+            "price": "$5.50"
+          }
+        ]
+      },
+      {
+        "id": "kids",
+        "group": "extras",
+        "title": "Kids Menu",
+        "items": [
+          {
+            "name": "Ham & Cheese Crepe",
+            "price": "$10.99"
+          },
+          {
+            "name": "Chicken & Cheese Crepe",
+            "price": "$11.99"
+          },
+          {
+            "name": "Steak & Cheese Crepe",
+            "price": "$12.99"
+          },
+          {
+            "name": "Pizza Crepe",
+            "price": "$11.99"
+          },
+          {
+            "name": "Chicken Nuggets",
+            "price": "$11.99"
+          }
+        ],
+        "note": "Includes kids' juice box & French fries."
+      },
+      {
+        "id": "sides",
+        "group": "extras",
+        "title": "Sides & Extras",
+        "items": [
+          {
+            "name": "Tequeños",
+            "price": "$7.50"
+          },
+          {
+            "name": "French Fries",
+            "price": "$5.50"
+          },
+          {
+            "name": "Sweet Plantains",
+            "price": "$2.00"
+          },
+          {
+            "name": "Queso de Mano",
+            "price": "$3.00"
+          },
+          {
+            "name": "Avocado",
+            "price": "$1.50"
+          },
+          {
+            "name": "Chicken",
+            "price": "$3.00"
+          },
+          {
+            "name": "Steak",
+            "price": "$4.00"
+          },
+          {
+            "name": "Picanha",
+            "price": "$6.00"
+          }
+        ]
+      }
+    ]
   }
 }

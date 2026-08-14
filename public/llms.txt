@@ -26,6 +26,7 @@ This file follows the [llms.txt](https://llmstxt.org) convention so AI agents ca
 ## Pages
 
 - [Home](https://www.themastercrepes.com/): Brand intro, "The Art of French Crêpes", menu highlights, catering teaser.
+- [Menu](https://www.themastercrepes.com/menu): Full 2026 menu — savory & sweet crêpes, salads, kids menu, gelato, açaí bowls, coffee and drinks with prices. PDF: /menu/master-crepes-menu-2026.pdf
 - [Restaurant – Coffee & Drinks](https://www.themastercrepes.com/restaurante): Specialty coffee, lattes, signature lemonades and refreshing drinks.
 - [Catering](https://www.themastercrepes.com/catering): Live crêpe stations for weddings, corporate events, private parties. Quote form.
 - [Gallery](https://www.themastercrepes.com/gallery): Photo gallery of crêpes, coffee and drinks.
