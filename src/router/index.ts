@@ -68,6 +68,16 @@ const router = createRouter({
       }
     },
     {
+      path: '/giveaway',
+      alias: ['/sorteo'],
+      name: 'giveaway',
+      component: () => import('../views/GiveawayView.vue'),
+      meta: {
+        title: 'Win a Year of Free Crêpes - Master Crepes Doral',
+        description: 'Enter for your chance to win a full year of free crêpes at Master Crepes in Doral, FL. Sign up in 30 seconds.',
+      }
+    },
+    {
       path: '/bio',
       name: 'bio',
       component: () => import('../views/BioView.vue'),
