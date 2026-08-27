@@ -177,12 +177,12 @@ const submitForm = async () => {
 
   .title {
     @include heading-font(400);
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     color: #fff;
     margin-bottom: 15px;
 
     @media (max-width: 768px) {
-      font-size: 2.1rem;
+      font-size: 1.8rem;
     }
   }
 

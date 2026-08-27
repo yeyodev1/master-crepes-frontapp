@@ -980,8 +980,8 @@
   },
   "giveaway": {
     "hero": {
-      "eyebrow": "Master Crepes Doral Giveaway",
-      "title": "Win a Year of Free Crêpes",
+      "eyebrow": "Anniversary Giveaway · Master Crepes Doral",
+      "title": "Win Free Crêpes for a Year",
       "subtitle": "One winner gets free crêpes for a whole year at Master Crepes Doral. Entering takes 30 seconds.",
       "cta": "Enter the Giveaway",
       "step_1": "Fill out the form below",
@@ -989,8 +989,8 @@
       "step_3": "We announce the winner on Instagram"
     },
     "form": {
-      "eyebrow": "Free Entry",
-      "title": "Enter to Win",
+      "eyebrow": "Anniversary Giveaway",
+      "title": "Enter to Win Free Crêpes for a Year",
       "subtitle": "Complete your details and you're in. We'll contact the winner by phone and email.",
       "first_name_placeholder": "John",
       "last_name_placeholder": "Smith",

@@ -980,8 +980,8 @@
   },
   "giveaway": {
     "hero": {
-      "eyebrow": "Sorteo Master Crepes Doral",
-      "title": "Gana un Año de Crepes Gratis",
+      "eyebrow": "Sorteo de Aniversario · Master Crepes Doral",
+      "title": "Gana Crepes Gratis por un Año",
       "subtitle": "Un ganador se lleva crepes gratis por todo un año en Master Crepes Doral. Participar toma 30 segundos.",
       "cta": "Participar en el Sorteo",
       "step_1": "Llena el formulario",
@@ -989,8 +989,8 @@
       "step_3": "Anunciamos al ganador en Instagram"
     },
     "form": {
-      "eyebrow": "Participación Gratis",
-      "title": "Inscríbete para Ganar",
+      "eyebrow": "Sorteo de Aniversario",
+      "title": "Inscríbete y Gana Crepes Gratis por un Año",
       "subtitle": "Completa tus datos y ya estás participando. Contactaremos al ganador por teléfono y correo.",
       "first_name_placeholder": "Juan",
       "last_name_placeholder": "Pérez",
