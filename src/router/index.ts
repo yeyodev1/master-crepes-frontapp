@@ -73,8 +73,8 @@ const router = createRouter({
       name: 'giveaway',
       component: () => import('../views/GiveawayView.vue'),
       meta: {
-        title: 'Win a Year of Free Crêpes - Master Crepes Doral',
-        description: 'Enter for your chance to win a full year of free crêpes at Master Crepes in Doral, FL. Sign up in 30 seconds.',
+        title: '2nd Anniversary Giveaway - Win Free Crepes for a Year - Master Crepes Doral',
+        description: "Master Crepes Doral 2nd Anniversary Giveaway: win free crepes for a year — that's 1 free crepe every month for a whole year. Enter in 30 seconds.",
       }
     },
     {
