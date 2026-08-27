@@ -1002,7 +1002,8 @@
       "disclaimer": "By entering you agree to receive messages from Master Crepes. No purchase necessary. One entry per person.",
       "success_title": "You're In!",
       "success_msg": "Your entry has been received. Follow us on Instagram — we announce the winner there.",
-      "success_cta": "Follow on Instagram"
+      "success_cta": "Follow on Instagram",
+      "phone": "Phone Number"
     }
   }
 }

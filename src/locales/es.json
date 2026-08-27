@@ -1002,7 +1002,8 @@
       "disclaimer": "Al participar aceptas recibir mensajes de Master Crepes. No es necesario comprar. Una participación por persona.",
       "success_title": "¡Ya Estás Participando!",
       "success_msg": "Recibimos tu inscripción. Síguenos en Instagram — ahí anunciamos al ganador.",
-      "success_cta": "Seguir en Instagram"
+      "success_cta": "Seguir en Instagram",
+      "phone": "Teléfono"
     }
   }
 }

@@ -83,7 +83,7 @@ const submitForm = async () => {
             <div class="form-group">
               <PhoneInput
                 v-model="formData.phone"
-                :label="t('common.phone')"
+                :label="t('giveaway.form.phone')"
                 :required="true"
               />
             </div>
@@ -151,6 +151,10 @@ const submitForm = async () => {
   color: #fff;
 }
 
+.giveaway-form-section :where(input, button, .giveaway-form, .success-message) {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -192,6 +196,7 @@ const submitForm = async () => {
   background-color: #1a1a1a;
   padding: 50px;
   border: 1px solid #333;
+  border-radius: 4px;
 
   @media (max-width: 768px) {
     padding: 25px;
@@ -226,6 +231,100 @@ const submitForm = async () => {
       background-color: #2a2a2a;
       box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.2);
     }
+
+    &::placeholder {
+      color: #555;
+    }
+  }
+}
+
+/* PhoneInput dark-theme overrides (its styles are global, light by default) */
+.form-group :deep(.phone-input-wrapper) {
+  margin-bottom: 0;
+
+  label {
+    @include interface-font(500);
+    font-size: 0.9rem;
+    text-transform: none;
+    letter-spacing: normal;
+    color: #ddd;
+    margin-bottom: 10px;
+  }
+}
+
+.form-group :deep(.styled-phone-input.vue-tel-input) {
+  min-height: 51px;
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: $border-radius-md;
+  overflow: hidden;
+
+  &:focus-within {
+    border-color: #d4af37;
+    background-color: #2a2a2a;
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.2);
+  }
+
+  .vti__dropdown {
+    background-color: #2a2a2a;
+    border-right: 1px solid #333;
+    padding: 0 12px;
+    border-radius: 0;
+
+    &:hover,
+    &.open {
+      background-color: #333;
+    }
+  }
+
+  .vti__dropdown-arrow {
+    color: #d4af37;
+  }
+
+  .vti__dropdown-list {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #ddd;
+    z-index: 5;
+    width: 320px;
+    max-width: 80vw;
+  }
+
+  .vti__dropdown-item {
+    color: #ddd;
+    padding: 10px 12px;
+
+    &.highlighted,
+    &:hover {
+      background-color: #2a2a2a;
+      color: #fff;
+    }
+
+    strong {
+      color: #fff;
+    }
+
+    span {
+      color: #888;
+    }
+  }
+
+  .vti__search_box {
+    background-color: #222;
+    border: 1px solid #333;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin: 8px;
+    width: calc(100% - 16px);
+  }
+
+  .vti__input {
+    background-color: transparent;
+    color: #fff;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 0;
 
     &::placeholder {
       color: #555;
@@ -299,6 +398,7 @@ const submitForm = async () => {
   padding: 60px 30px;
   background-color: #1a1a1a;
   border: 1px solid #d4af37;
+  border-radius: 4px;
 
   .check-icon {
     font-size: 3rem;
