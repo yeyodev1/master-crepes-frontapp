@@ -126,6 +126,27 @@ const ghlService = {
     return this.sendToWebhook(payload);
   },
 
+/**
+   * Submits Giveaway Form Data (Win a Year of Free Crepes)
+   */
+  async submitGiveaway(formData: any) {
+    const payload = {
+      first_name: formData.firstName,
+      last_name: formData.lastName,
+      full_name: `${formData.firstName || ''} ${formData.lastName || ''}`.trim(),
+      email: formData.email,
+      phone: formData.phone,
+      instagram: formData.instagram,
+      instagram_handle: formData.instagram,
+
+      source: 'website_giveaway_form',
+      tags: ['website-lead', 'giveaway-free-crepes-year', 'sorteo-2026'],
+      submission_time: new Date().toISOString()
+    };
+
+    return this.sendToWebhook(payload);
+  },
+
   /**
    * Submits General Contact Form Data
    */
