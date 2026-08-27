@@ -8,7 +8,8 @@
     "gallery": "Galería",
     "restaurante": "Restaurante",
     "order_now": "Ordenar Ahora",
-    "menu": "Menú"
+    "menu": "Menú",
+    "giveaway": "Sorteo"
   },
   "promo": {
     "topbar_text": "Deliciosas Crepas y Servicios de Catering",
@@ -976,5 +977,32 @@
         ]
       }
     ]
+  },
+  "giveaway": {
+    "hero": {
+      "eyebrow": "Sorteo Master Crepes Doral",
+      "title": "Gana un Año de Crepes Gratis",
+      "subtitle": "Un ganador se lleva crepes gratis por todo un año en Master Crepes Doral. Participar toma 30 segundos.",
+      "cta": "Participar en el Sorteo",
+      "step_1": "Llena el formulario",
+      "step_2": "Sigue a @mastercrepesdoral",
+      "step_3": "Anunciamos al ganador en Instagram"
+    },
+    "form": {
+      "eyebrow": "Participación Gratis",
+      "title": "Inscríbete para Ganar",
+      "subtitle": "Completa tus datos y ya estás participando. Contactaremos al ganador por teléfono y correo.",
+      "first_name_placeholder": "Juan",
+      "last_name_placeholder": "Pérez",
+      "instagram": "Cuenta de Instagram *",
+      "instagram_placeholder": "tuusuario",
+      "submit": "Participar Ahora",
+      "submitting": "Enviando...",
+      "error": "Algo salió mal. Por favor intenta de nuevo.",
+      "disclaimer": "Al participar aceptas recibir mensajes de Master Crepes. No es necesario comprar. Una participación por persona.",
+      "success_title": "¡Ya Estás Participando!",
+      "success_msg": "Recibimos tu inscripción. Síguenos en Instagram — ahí anunciamos al ganador.",
+      "success_cta": "Seguir en Instagram"
+    }
   }
 }
