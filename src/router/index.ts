@@ -32,6 +32,16 @@ const router = createRouter({
       }
     },
     {
+      path: '/embed/catering',
+      name: 'embed-catering',
+      component: () => import('../views/EmbedCateringView.vue'),
+      meta: {
+        embed: true,
+        title: 'Catering Quote - Master Crepes',
+        description: 'Request a quote for a Master Crepes live crêpe station.',
+      }
+    },
+    {
       path: '/franchises',
       name: 'franchises',
       component: () => import('../views/FranchisesView.vue'),
@@ -100,6 +110,8 @@ const SITE_ORIGIN = 'https://www.themastercrepes.com';
 const DEFAULT_TITLE = 'Master Crepes - Authentic French Crêpes, Coffee & Catering in Doral, Miami';
 const DEFAULT_DESC = 'French crêperie in Doral, FL. Sweet and savory crêpes, specialty coffee, signature drinks and live crêpe-station catering across Miami.';
 
+const ROBOTS_DEFAULT = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+
 const setMeta = (selector: string, attr: 'content' | 'href', value: string) => {
   const el = document.head.querySelector<HTMLMetaElement | HTMLLinkElement>(selector);
   if (el) el.setAttribute(attr, value);
@@ -115,6 +127,7 @@ router.beforeEach((to, _from, next) => {
   setMeta('meta[name="title"]', 'content', title);
   setMeta('meta[name="description"]', 'content', description);
   setMeta('link[rel="canonical"]', 'href', canonical);
+  setMeta('meta[name="robots"]', 'content', to.meta.embed ? 'noindex, nofollow' : ROBOTS_DEFAULT);
 
   setMeta('meta[property="og:title"]', 'content', title);
   setMeta('meta[property="og:description"]', 'content', description);

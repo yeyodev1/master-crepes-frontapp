@@ -1,13 +1,16 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router';
+import { RouterView, useRoute } from 'vue-router';
 import TheTopBar from '@/components/layout/TheTopBar.vue';
 import TheHeader from '@/components/layout/TheHeader.vue';
 import TheFooter from '@/components/layout/TheFooter.vue';
 import WhatsAppButton from '@/components/ui/WhatsAppButton.vue';
+
+const route = useRoute();
 </script>
 
 <template>
-  <div class="app-layout">
+  <RouterView v-if="route.meta.embed" />
+  <div v-else class="app-layout">
     <TheTopBar />
     <TheHeader />
     
