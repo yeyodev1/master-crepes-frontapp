@@ -2,7 +2,9 @@
 // TheFooter.vue
 // Professional footer with site map and contact info
 import { useI18n } from 'vue-i18n';
+import { useLocalePath } from '@/composables/useLocalePath';
 const { t } = useI18n();
+const { lp } = useLocalePath();
 </script>
 
 <template>
@@ -29,10 +31,11 @@ const { t } = useI18n();
         <div class="footer-col nav-col">
           <h4>{{ t('footer.about_us') }}</h4>
           <ul>
-            <li><RouterLink to="/">{{ t('nav.home') }}</RouterLink></li>
-            <li><RouterLink to="/catering">{{ t('nav.catering') }}</RouterLink></li>
-            <li><RouterLink to="/franchises">{{ t('nav.franchises') }}</RouterLink></li>
-            <li><RouterLink to="/contact">{{ t('nav.contact') }}</RouterLink></li>
+            <li><RouterLink :to="lp('/')">{{ t('nav.home') }}</RouterLink></li>
+            <li><RouterLink :to="lp('/menu')">{{ t('nav.menu') }}</RouterLink></li>
+            <li><RouterLink :to="lp('/catering')">{{ t('nav.catering') }}</RouterLink></li>
+            <li><RouterLink :to="lp('/franchises')">{{ t('nav.franchises') }}</RouterLink></li>
+            <li><RouterLink :to="lp('/contact')">{{ t('nav.contact') }}</RouterLink></li>
           </ul>
         </div>
 

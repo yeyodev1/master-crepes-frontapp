@@ -1,18 +1,25 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+import { basePath, localizedPath } from '@/seo';
 
 const { locale } = useI18n();
+const route = useRoute();
+const router = useRouter();
 
-const currentLocale = computed({
-  get: () => locale.value,
-  set: (value) => {
-    locale.value = value;
-  },
-});
+const currentLocale = computed(() => locale.value);
 
+// Each language has its own URL (/menu ↔ /es/menu); the router sets the locale from it
 const toggleLanguage = () => {
-  currentLocale.value = currentLocale.value === 'en' ? 'es' : 'en';
+  const next = currentLocale.value === 'en' ? 'es' : 'en';
+  const target = localizedPath(basePath(route.path), next);
+  const resolved = router.resolve({ path: target, query: route.query, hash: route.hash });
+  if (resolved.matched.length) {
+    router.push(resolved);
+  } else {
+    locale.value = next;
+  }
 };
 </script>
 

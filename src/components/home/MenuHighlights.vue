@@ -51,7 +51,7 @@ const { t } = useI18n();
     
     <!-- Background element using the unused asset -->
     <div class="floated-bg">
-      <img src="https://res.cloudinary.com/dz6qozi9i/image/upload/master-crepes/crepes/389A5366.jpg" alt="Fresh Crepe with Toppings">
+      <img src="https://res.cloudinary.com/dz6qozi9i/image/upload/master-crepes/crepes/389A5366.jpg" :alt="t('alt.menu_highlight')" loading="lazy">
     </div>
   </section>
 </template>

@@ -2,12 +2,14 @@
 // HeroSection.vue
 // High impact visual introduction using the brand's main imagery
 import { useI18n } from 'vue-i18n';
+import { useLocalePath } from '@/composables/useLocalePath';
 const { t } = useI18n();
+const { lp } = useLocalePath();
 </script>
 
 <template>
   <section class="hero-section">
-    <div class="hero-background"></div>
+    <div class="hero-background" role="img" :aria-label="t('alt.hero')"></div>
     <div class="hero-overlay"></div>
     
     <div class="hero-content">
@@ -20,7 +22,7 @@ const { t } = useI18n();
       </p>
       
       <div class="hero-actions animate-fade-up delay-2">
-        <a href="/catering" class="btn btn-primary">{{ t('home.hero.cta_book') }}</a>
+        <RouterLink :to="lp('/catering')" class="btn btn-primary">{{ t('home.hero.cta_book') }}</RouterLink>
         <a href="https://order.toasttab.com/online/master-crepes-new-3905-nw-107th-ave-106" target="_blank" class="btn btn-outline">{{ t('home.hero.cta_order') }}</a>
       </div>
     </div>

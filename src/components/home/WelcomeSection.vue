@@ -25,14 +25,14 @@ const { t } = useI18n();
           <div class="image-wrapper main-img">
             <img 
               src="https://res.cloudinary.com/dz6qozi9i/image/upload/master-crepes/crepes/389A5292.jpg"
-              alt="Making Crepes"
+              :alt="t('alt.welcome_main')"
               loading="lazy"
             >
           </div>
           <div class="image-wrapper secondary-img">
             <img 
               src="https://res.cloudinary.com/dz6qozi9i/image/upload/master-crepes/crepes/389A5305.jpg"
-              alt="Master Crepes Chef"
+              :alt="t('alt.welcome_secondary')"
               loading="lazy"
             >
           </div>

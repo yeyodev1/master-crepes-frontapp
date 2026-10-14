@@ -36,10 +36,10 @@ const links = ref<BioLink[]>([
     isExternal: false,
   },
   {
-    id: 'menu-foodtruck',
-    label: 'Foodtruck Menu (PDF)',
-    url: 'https://www.themastercrepes.com/wp-content/uploads/2025/12/Menu-foodtruck-24in-x-36in-Digital.pdf',
-    icon: 'fa-solid fa-truck-fast',
+    id: 'menu-pdf',
+    label: 'Menu 2026 (PDF)',
+    url: '/menu/master-crepes-menu-2026.pdf',
+    icon: 'fa-solid fa-book-open',
     isExternal: true,
   },
   {

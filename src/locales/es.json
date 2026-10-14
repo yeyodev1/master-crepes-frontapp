@@ -12,7 +12,7 @@
     "giveaway": "Sorteo"
   },
   "promo": {
-    "topbar_text": "Deliciosas Crepas y Servicios de Catering",
+    "topbar_text": "Crepes en Doral · Catering para Eventos · We speak English",
     "order_now": "ORDENAR AHORA"
   },
   "footer": {
@@ -20,22 +20,22 @@
     "follow_us": "Síguenos",
     "contact": "Contáctanos",
     "rights": "Todos los derechos reservados.",
-    "brand_desc": "Experiencia francesa auténtica disponible para catering y franquicias. Prueba la diferencia de la verdadera artesanía."
+    "brand_desc": "Tu crepería de barrio en Doral, FL. Crepes dulces y salados, brunch, menú infantil, café y catering para eventos en todo Miami. We speak English."
   },
   "home": {
     "hero": {
-      "intro": "El Arte de las",
-      "title_span": "Crepas Francesas",
-      "subtitle": "La Mejor Experiencia de Catering y Franquicias en Miami",
+      "intro": "Crepes en Doral",
+      "title_span": "para Toda la Familia",
+      "subtitle": "Crepes dulces y salados, brunch y catering con estación en vivo, cerca de ti. Atención en español e inglés.",
       "cta_book": "Reservar Catering",
       "cta_order": "Ordenar Online"
     },
     "welcome": {
-      "eyebrow": "DESDE 2017",
-      "title_1": "Bienvenido a",
-      "title_2": "Master Crepes",
-      "p1": "Somos más que una simple crepería; somos una experiencia. Nacidos de la pasión por las auténticas tradiciones culinarias francesas, llevamos el arte de hacer crepas directamente a tu evento.",
-      "p2": "Utilizando solo los mejores ingredientes y técnicas tradicionales, cada crepa es una obra maestra de sabor y textura, doblada a la perfección."
+      "eyebrow": "DESDE 2017 · DORAL, FL",
+      "title_1": "Tu Crepería",
+      "title_2": "de Barrio",
+      "p1": "Desde 2017, Master Crepes es la crepería del barrio en Doral. Familias, amigos y compañeros de trabajo vienen por el desayuno, el brunch del fin de semana, la merienda después del colegio o un buen café, y nuestro equipo te atiende en español o inglés.",
+      "p2": "Cada crepe se hace a mano, al momento, con ingredientes de calidad. Dulce o salado, hay uno para cada edad, desde el menú infantil hasta el Dubai Crepe. Y si estás celebrando, llevamos nuestra estación de crepes en vivo a tu evento."
     },
     "menu": {
       "eyebrow": "NUESTRAS ESPECIALIDADES",
@@ -59,28 +59,59 @@
       }
     },
     "catering": {
-      "eyebrow": "SERVICIOS PREMIUM",
-      "title": "Lleva París a tu Evento",
-      "desc": "Eleva tus bodas, eventos corporativos y fiestas privadas con nuestras estaciones de crepas en vivo. Ofrecemos un espectáculo culinario sofisticado que tus invitados nunca olvidarán.",
+      "eyebrow": "CATERING EN MIAMI Y DORAL",
+      "title": "Catering de Crepes para tu Evento",
+      "desc": "Llevamos una estación de crepes en vivo a bodas, quinceañeras, cumpleaños, baby showers, eventos escolares y almuerzos de empresa en Doral, Miami y el sur de Florida. Nuestros chefs cocinan frente a tus invitados, con un menú hecho para ti.",
       "feature1": "Estaciones con Chef en Vivo",
       "feature2": "Menús Dulces y Salados",
       "feature3": "Montaje Personalizado",
       "cta": "Solicitar Cotización"
-    }
+    },
+    "faq": {
+      "eyebrow": "PREGUNTAS",
+      "title": "Preguntas Frecuentes",
+      "items": [
+        {
+          "q": "¿Dónde queda Master Crepes?",
+          "a": "Estamos en 3905 NW 107th Ave Suite 106, Doral, FL 33178. Ven a comer, ordena en línea para recoger o pide a domicilio cerca de ti."
+        },
+        {
+          "q": "¿Es un restaurante para ir con niños?",
+          "a": "¡Sí! Somos un restaurante familiar con menú infantil, crepes dulces y salados para todas las edades, açaí bowls y gelato."
+        },
+        {
+          "q": "¿Hacen catering para eventos?",
+          "a": "Sí. Llevamos una estación de crepes en vivo con nuestros chefs a bodas, quinceañeras, cumpleaños, baby showers, eventos escolares y almuerzos de empresa en Doral, Miami y el sur de Florida. Pide tu cotización en la página de catering."
+        },
+        {
+          "q": "¿Atienden en español?",
+          "a": "¡Claro! Nuestro equipo habla español e inglés, en el restaurante, por teléfono y para el catering."
+        },
+        {
+          "q": "¿Tienen desayunos y brunch?",
+          "a": "Sí. Tenemos crepes de desayuno con huevos y tocineta, crepes salados, ensaladas, crepes dulces y café de especialidad, ideales para un brunch en Doral."
+        },
+        {
+          "q": "¿Cómo puedo ordenar?",
+          "a": "Ordena en línea para recoger o a domicilio, o llámanos al (786) 478-2727."
+        }
+      ]
+    },
+    "faq_cta": "Solicitar cotización de catering"
   },
   "catering": {
     "hero_title": "Servicios de Catering",
-    "hero_subtitle": "Llevando el arte de las crepas a tu evento",
+    "hero_subtitle": "Estaciones de crepes en vivo para eventos en Miami y el sur de Florida",
     "title": "Servicios de Catering",
-    "subtitle": "Llevando París a tu evento",
+    "subtitle": "Estaciones de crepes en vivo para eventos en Miami y el sur de Florida",
     "info": {
-      "eyebrow": "MOMENTOS INOLVIDABLES",
-      "title": "Llevamos París a Ti",
-      "lead": "Una experiencia culinaria única que deleitará a tus invitados. Nuestras estaciones de chef en vivo crean una atmósfera de elegancia y diversión.",
-      "desc": "Ya sea una boda, una gala corporativa o una fiesta privada íntima, Master Crepes ofrece un menú sofisticado de crepas dulces y saladas, hechas a la orden con los ingredientes más frescos.",
+      "eyebrow": "CATERING EN MIAMI Y EL SUR DE FLORIDA",
+      "title": "Llevamos la Estación de Crepes a tu Evento",
+      "lead": "Una experiencia divertida y deliciosa de la que tus invitados van a hablar. Nuestros chefs preparan crepes dulces y salados en vivo, frente a grandes y chicos.",
+      "desc": "Desde bodas y quinceañeras hasta cumpleaños, baby showers, eventos escolares y almuerzos de empresa, Master Crepes sirve crepes hechos al momento con ingredientes frescos en Doral, Miami y todo el sur de Florida. Nuestro equipo bilingüe planifica cada detalle contigo.",
       "feature1": "Estaciones en Vivo",
       "feature2": "Ingredientes Frescos",
-      "feature3": "Tradición Francesa"
+      "feature3": "Equipo Bilingüe"
     },
     "form": {
       "eyebrow": "COTIZACIÓN",
@@ -143,7 +174,7 @@
       "waiting_list_title": "Únete a la Lista de Espera",
       "waiting_list_subtitle": "Sé de los primeros en recibir actualizaciones sobre nuestra expansión y oportunidades exclusivas de franquicia.",
       "vision_title": "Nuestra Visión",
-      "vision_desc": "Creemos en crecer juntos. Nuestro futuro modelo de franquicia se centrará en la calidad premium, la auténtica tradición francesa y un soporte integral para nuestros socios.",
+      "vision_desc": "Creemos en crecer juntos. Nuestro futuro modelo de franquicia se centrará en la calidad, una experiencia cálida y familiar, y un soporte integral para nuestros socios.",
       "support_title": "Todo lo que necesitas para triunfar",
       "support_p1": "Como franquiciado de Master Crepes, recibirás un paquete completo que incluye capacitación inicial, soporte operativo, estrategias de marketing y acceso a proveedores confiables."
     }
@@ -209,7 +240,7 @@
     },
     "cafe": {
       "title": "Café de Especialidad y Lattes",
-      "subtitle": "Del shot perfecto de espresso al arte latte detallado — cada taza servida con precisión francesa."
+      "subtitle": "Del shot perfecto de espresso al arte latte más detallado, cada taza hecha con cariño para acompañar tu crepe favorito."
     },
     "bebidas": {
       "title": "Bebidas de Autor",
@@ -220,7 +251,7 @@
     "hero": {
       "eyebrow": "Menú 2026",
       "title": "Nuestro Menú",
-      "subtitle": "Auténticos crepes franceses, ensaladas, gelato y café de especialidad — hechos al momento en Doral.",
+      "subtitle": "Crepes dulces y salados, desayunos, menú infantil, ensaladas, açaí bowls, gelato y café de especialidad, hechos al momento en Doral.",
       "download": "Descargar Menú en PDF",
       "order": "Ordenar en Línea"
     },
@@ -1005,5 +1036,16 @@
       "success_cta": "Seguir en Instagram",
       "phone": "Teléfono"
     }
+  },
+  "alt": {
+    "hero": "Crepe dulce con fresas en Master Crepes, crepería familiar en Doral, FL",
+    "welcome_main": "Crepes hechos a mano al momento en Master Crepes Doral",
+    "welcome_secondary": "Equipo de Master Crepes preparando crepes en el restaurante de Doral",
+    "menu_highlight": "Crepes dulces y salados con toppings frescos en Master Crepes Doral",
+    "catering": "Catering con estación de crepes en vivo en un evento en Miami",
+    "franchise": "Restaurante de crepes Master Crepes, oportunidad de franquicia",
+    "crepes": "Crepes dulces y salados en Master Crepes, Doral, FL",
+    "cafe": "Café de especialidad y latte en Master Crepes Doral",
+    "bebidas": "Limonada y bebida de la casa en Master Crepes Doral"
   }
 }

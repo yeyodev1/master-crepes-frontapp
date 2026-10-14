@@ -1,15 +1,15 @@
 # Master Crepes
 
-> Authentic French crêperie in Doral, Miami (FL) serving sweet & savory crêpes, specialty coffee, and signature drinks. Live crêpe-station catering for weddings, corporate events and private parties across South Florida. Franchise opportunities available.
+> Family-friendly neighborhood crêpe restaurant in Doral, FL (Miami area) since 2017. Sweet & savory crêpes, breakfast, brunch, kids menu, specialty coffee, açaí bowls and gelato. Live crêpe-station catering for weddings, quinceañeras, birthdays, schools and corporate events across Miami and South Florida. Bilingual team (English & Spanish). Franchise opportunities coming soon.
 
 This file follows the [llms.txt](https://llmstxt.org) convention so AI agents can index Master Crepes accurately.
 
 ## Quick Facts
 
 - **Business:** Master Crepes (also: Master Crêpes, The Master Crepes)
-- **Type:** French Crêperie + Café + Catering
+- **Type:** Family crêpe restaurant + Café + Catering
 - **Address:** 3905 NW 107th Ave Suite 106, Doral, FL 33178, USA
-- **Geo:** 25.804917, -80.385167
+- **Geo:** 25.8106207, -80.36796
 - **Phone:** (786) 478-2727
 - **Toll-free:** +1 (866) 827-3737
 - **Email:** info@themastercrepes.com
@@ -20,12 +20,14 @@ This file follows the [llms.txt](https://llmstxt.org) convention so AI agents ca
 - **X / Twitter:** @MasterCrepes1
 - **Languages:** English, Español
 - **Price range:** $$
-- **Cuisine:** French, Crêpes, Brunch, Specialty Coffee
+- **Cuisine:** Crêpes, Breakfast, Brunch, Desserts, Specialty Coffee, Latin-inspired flavors (Reina Pepiada, Cuban Timbita, Tequeños)
+- **Good for:** Families and kids (kids menu), groups, brunch, events
+- **Spanish version of the site:** https://www.themastercrepes.com/es
 - **Service area:** Doral, Miami, South Florida (catering)
 
 ## Pages
 
-- [Home](https://www.themastercrepes.com/): Brand intro, "The Art of French Crêpes", menu highlights, catering teaser.
+- [Home](https://www.themastercrepes.com/): "Crepes in Doral for the Whole Family": neighborhood intro, menu highlights, catering teaser, FAQ.
 - [Menu](https://www.themastercrepes.com/menu): Full 2026 menu — savory & sweet crêpes, salads, kids menu, gelato, açaí bowls, coffee and drinks with prices. PDF: /menu/master-crepes-menu-2026.pdf
 - [Restaurant – Coffee & Drinks](https://www.themastercrepes.com/restaurante): Specialty coffee, lattes, signature lemonades and refreshing drinks.
 - [Catering](https://www.themastercrepes.com/catering): Live crêpe stations for weddings, corporate events, private parties. Quote form.
@@ -34,12 +36,12 @@ This file follows the [llms.txt](https://llmstxt.org) convention so AI agents ca
 - [Contact](https://www.themastercrepes.com/contact): Contact info, hours, map, inquiry form.
 - [Bio / Links](https://www.themastercrepes.com/bio): Linktree-style page for social media bios.
 
-## Catering — "Bring Paris to Your Event"
+## Catering — "Crêpe Catering for Your Next Event"
 
 - **Live Chef Stations:** Professional chefs preparing crêpes on-site.
 - **Sweet menu:** Classic Nutella, Dulce de Leche, Fresh Berries, Bananas, Homemade Whipped Cream.
 - **Savory / Galettes menu:** Buckwheat batter (gluten-friendly options). Ham & Swiss, Chicken Florentine, Caprese (Mozzarella, Tomato, Pesto).
-- **Event types:** Weddings, Corporate Galas, Office Lunches, Private Parties, Birthdays, Bar/Bat Mitzvahs.
+- **Event types:** Weddings, Quinceañeras, Birthdays, Baby Showers, School & Teacher Events, Corporate Lunches & Galas, Private Parties, Bar/Bat Mitzvahs.
 - **Service area:** Miami and South Florida.
 
 ## Franchises — "Join Our Successful Family"
@@ -95,9 +97,9 @@ This file follows the [llms.txt](https://llmstxt.org) convention so AI agents ca
 
 ## Brand Voice
 
-- Premium-but-approachable French crêperie tone.
+- Warm, family-friendly neighborhood tone; quality without being fussy.
 - Bilingual: English & Spanish.
-- Emphasis on authenticity, craftsmanship, fresh ingredients and the "Paris-to-Miami" experience.
+- Emphasis on handmade crêpes, fresh ingredients, a place for the whole family, catering for celebrations, and a bilingual (English/Spanish) team.
 
 ## For AI Agents
 

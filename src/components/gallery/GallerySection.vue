@@ -34,9 +34,9 @@ const cloudUrl = (folder: string, id: string) =>
   `https://res.cloudinary.com/dz6qozi9i/image/upload/master-crepes/${folder}/${id}.jpg`;
 
 const allImages = [
-  ...crepesIds.map(id => ({ id, category: 'crepes' as const, url: cloudUrl('crepes', id), alt: 'Master Crepes - French crêpe creation' })),
-  ...cafeIds.map(id => ({ id, category: 'cafe' as const, url: cloudUrl('cafe', id), alt: 'Master Crepes - specialty coffee and latte art' })),
-  ...bebidasIds.map(id => ({ id, category: 'bebidas' as const, url: cloudUrl('bebidas', id), alt: 'Master Crepes - signature drink and lemonade' })),
+  ...crepesIds.map(id => ({ id, category: 'crepes' as const, url: cloudUrl('crepes', id) })),
+  ...cafeIds.map(id => ({ id, category: 'cafe' as const, url: cloudUrl('cafe', id) })),
+  ...bebidasIds.map(id => ({ id, category: 'bebidas' as const, url: cloudUrl('bebidas', id) })),
 ];
 
 const activeCategory = ref<Category>('all');
@@ -155,10 +155,10 @@ const galleryJsonLd = computed(() => ({
           v-for="(img, i) in images"
           :key="img.category + '-' + img.id"
           class="grid-item"
-          :aria-label="img.alt"
+          :aria-label="t(`alt.${img.category}`)"
           @click="openLightbox(i)"
         >
-          <img :src="img.url" :alt="img.alt" loading="lazy" />
+          <img :src="img.url" :alt="t(`alt.${img.category}`)" loading="lazy" />
         </button>
       </div>
     </div>
@@ -171,7 +171,7 @@ const galleryJsonLd = computed(() => ({
       >
         <button class="lightbox-close" @click="closeLightbox" aria-label="Close">×</button>
         <button class="lightbox-nav prev" @click="prev" aria-label="Previous">‹</button>
-        <img :src="activeImage.url" :alt="activeImage.alt" class="lightbox-img" />
+        <img :src="activeImage.url" :alt="t(`alt.${activeImage.category}`)" class="lightbox-img" />
         <button class="lightbox-nav next" @click="next" aria-label="Next">›</button>
       </div>
     </Transition>

@@ -5,8 +5,10 @@ import { useI18n } from 'vue-i18n';
 import logoDesktop from '@/assets/logo/logo-horizontal.png';
 import logoMobile from '@/assets/logo/logo-vertical.png';
 import LanguageSwitcher from '@/components/common/LanguageSwitcher.vue';
+import { useLocalePath } from '@/composables/useLocalePath';
 
 const { t } = useI18n();
+const { lp } = useLocalePath();
 const isMenuOpen = ref(false);
 const isScrolled = ref(false);
 
@@ -37,13 +39,13 @@ onUnmounted(() => {
 });
 
 const navItems = computed(() => [
-  { name: t('nav.home'), path: '/' },
-  { name: t('nav.menu'), path: '/menu' },
-  { name: t('nav.restaurante'), path: '/restaurante' },
-  { name: t('nav.catering'), path: '/catering' },
-  { name: t('nav.gallery'), path: '/gallery' },
-  { name: t('nav.franchises'), path: '/franchises' },
-  { name: t('nav.contact'), path: '/contact' },
+  { name: t('nav.home'), path: lp('/') },
+  { name: t('nav.menu'), path: lp('/menu') },
+  { name: t('nav.restaurante'), path: lp('/restaurante') },
+  { name: t('nav.catering'), path: lp('/catering') },
+  { name: t('nav.gallery'), path: lp('/gallery') },
+  { name: t('nav.franchises'), path: lp('/franchises') },
+  { name: t('nav.contact'), path: lp('/contact') },
 ]);
 </script>
 
@@ -51,7 +53,7 @@ const navItems = computed(() => [
   <header :class="['header', { 'is-scrolled': isScrolled }]">
     <div class="container">
       <!-- Logo -->
-      <RouterLink to="/" class="logo-wrapper" @click="closeMenu">
+      <RouterLink :to="lp('/')" class="logo-wrapper" @click="closeMenu">
         <img :src="logoDesktop" alt="Master Crepes" class="logo desktop-logo" />
         <img :src="logoMobile"  alt="Master Crepes" class="logo mobile-logo" />
       </RouterLink>

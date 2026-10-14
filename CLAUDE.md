@@ -1,6 +1,6 @@
 # Master Crepes – FrontApp
 
-Vue 3 + TypeScript + Vite frontend for Master Crepes, a French crêperie in Doral, FL.
+Vue 3 + TypeScript + Vite frontend for Master Crepes, a family-friendly crêpe restaurant in Doral, FL (positioning: local + family + catering + bilingual, French is secondary).
 
 ## Stack
 

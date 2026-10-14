@@ -112,7 +112,7 @@ const setTab = (tab: Tab) => {
           class="grid-item"
           @click="openLightbox(i)"
         >
-          <img :src="img.url" :alt="img.id" loading="lazy" />
+          <img :src="img.url" :alt="t(`alt.${activeTab}`)" loading="lazy" />
         </button>
       </div>
     </div>
@@ -125,7 +125,7 @@ const setTab = (tab: Tab) => {
       >
         <button class="lightbox-close" @click="closeLightbox" aria-label="Close">×</button>
         <button class="lightbox-nav prev" @click="prev" aria-label="Previous">‹</button>
-        <img :src="activeImage.url" :alt="activeImage.id" class="lightbox-img" />
+        <img :src="activeImage.url" :alt="t(`alt.${activeTab}`)" class="lightbox-img" />
         <button class="lightbox-nav next" @click="next" aria-label="Next">›</button>
       </div>
     </Transition>

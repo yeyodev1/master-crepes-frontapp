@@ -2,7 +2,9 @@
 // CateringTeaser.vue
 // Highlights the catering service, a core business pillar
 import { useI18n } from 'vue-i18n';
+import { useLocalePath } from '@/composables/useLocalePath';
 const { t } = useI18n();
+const { lp } = useLocalePath();
 </script>
 
 <template>
@@ -27,9 +29,9 @@ const { t } = useI18n();
           </li>
         </ul>
 
-        <a href="/catering" class="cta-button">
+        <RouterLink :to="lp('/catering')" class="cta-button">
           {{ t('home.catering.cta') }}
-        </a>
+        </RouterLink>
       </div>
     </div>
     
